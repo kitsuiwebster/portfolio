@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#title {
+  font-size: 200px;
+  text-align: center;
+}
+
+#emoji {
+  font-size: 100px;
+  text-align: center;
+}
+
