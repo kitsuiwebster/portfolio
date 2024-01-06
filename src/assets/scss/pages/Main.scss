@@ -1,0 +1,55 @@
+
+.header {
+    padding: 0 0 0.3rem 0;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    
+
+    nav {
+        height: 3rem;
+        display: flex;
+        width: 100%;
+        ul {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            list-style: none;
+
+            li {
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-weight: 600;
+                    font-size: larger;
+                    padding: 1rem 1rem 0.95rem 1rem;
+                    margin: 1rem;
+                    transition-duration: 0.4s;
+
+
+                    &:hover {
+                        cursor: pointer;
+                        background-color: white;
+                        transform: scale(1.1);
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+.footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
