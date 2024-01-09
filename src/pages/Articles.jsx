@@ -1,13 +1,18 @@
+// Articles.jsx
+import { Link } from 'react-router-dom';
 import '../assets/scss/pages/Articles.scss';
-import Article from '../components/Article';
 
 function Articles() {
-    return(
+    return (
         <>
-            <p>articles</p>
-            <Article/>
+            <p>Articles</p>
+            <div>
+                <Link to="/articles/hackaprompt2023">Hack A Prompt</Link>
+                <br/>
+                <Link to="/articles/cozybot">Cozy-Bot</Link>
+            </div>
         </>
-    )
+    );
 }
 
-export default Articles
+export default Articles;
