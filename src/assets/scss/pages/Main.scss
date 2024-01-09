@@ -1,4 +1,8 @@
 
+/*
+* === HEADER ===
+*/
+
 .header {
     padding: 0 0 0.3rem 0;
     background-color: black;
@@ -42,7 +46,9 @@
     }
 }
 
-
+/*
+* === FOOTER ===
+*/
 
 .footer {
     margin-top: auto;
@@ -52,4 +58,6 @@
     width: 100%;
     position: fixed;
     bottom: 0;
+    color: white;
+    background-color: black;
 }

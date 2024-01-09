@@ -1,3 +1,7 @@
+/*
+* === 404 ERROR PAGE ===
+*/
+
 .error {
     display: flex;
     justify-content: center;
@@ -19,6 +23,7 @@
             font-size: 24rem;
             margin-bottom: 2rem;
             margin-top: 0;
+            color: #ff3b2d;
         }
 
         &--gohome {
