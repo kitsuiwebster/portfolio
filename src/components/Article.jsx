@@ -1,8 +1,11 @@
 import '../assets/scss/components/Article.scss';
+import '../assets/scss/index.scss'
 
 function Article() {
     return(
-        <p>article</p>
+        <div id="article">
+            <p>article</p>
+        </div>
     )
 }
 
