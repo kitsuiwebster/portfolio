@@ -12,13 +12,8 @@ code {
     monospace;
 }
 
-#title {
-  font-size: 200px;
+#underconstruction {
+  font-size: 50px;
   text-align: center;
+  margin: 10rem 0;
 }
-
-#emoji {
-  font-size: 70px;
-  text-align: center;
-}
-
