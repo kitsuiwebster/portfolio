@@ -10,6 +10,7 @@ import NotFound from './pages/NotFound';
 import { createBrowserRouter } from "react-router-dom";
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
+import CozyBotInvite from './pages/CozyBotInvite';
 
 const AppRouter = createBrowserRouter([
     {
@@ -39,6 +40,10 @@ const AppRouter = createBrowserRouter([
     {
         path: "/projects",
         element: <Layout><Projects/></Layout>
+    },
+    {
+        path: "/projects/cozybot/download",
+        element: <Layout><CozyBotInvite/></Layout>
     },
     {
         path: "*",
