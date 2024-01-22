@@ -11,16 +11,17 @@ import { createBrowserRouter } from "react-router-dom";
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import CozyBotInvite from './pages/CozyBotInvite';
+import Pika from './pages/Pika';
 
 const AppRouter = createBrowserRouter([
     {
         path: "/",
         element: <Layout><Main /></Layout>
     },
-    {
-        path: "/articles",
-        element: <Layout><Articles /></Layout>
-    },
+    // {
+    //     path: "/articles",
+    //     element: <Layout><Articles /></Layout>
+    // },
     {
         path: "/articles/hackaprompt2023",
         element: <Layout><HackAPrompt /></Layout>
@@ -33,21 +34,25 @@ const AppRouter = createBrowserRouter([
         path: "/articles/minecraft-java-admin-commands",
         element: <Layout><McJavaCmds/></Layout>
     },
+    // {
+    //     path: "/contact",
+    //     element: <Layout><Contact/></Layout>
+    // },
+    // {
+    //     path: "/projects",
+    //     element: <Layout><Projects/></Layout>
+    // },
     {
-        path: "/contact",
-        element: <Layout><Contact/></Layout>
-    },
-    {
-        path: "/projects",
-        element: <Layout><Projects/></Layout>
-    },
-    {
-        path: "/projects/cozybot/download",
+        path: "/projects/cozybot/invite",
         element: <Layout><CozyBotInvite/></Layout>
     },
     {
+        path: "/pika",
+        element: <Layout><Pika /></Layout>
+    },
+    {
         path: "*",
-        element: <NotFound />
+        element: <Layout><NotFound /></Layout>
     }
 ]);
 
