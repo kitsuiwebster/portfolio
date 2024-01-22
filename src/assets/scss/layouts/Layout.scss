@@ -1,64 +1,86 @@
 
-/*
-* === HEADER ===
-*/
+.layout {
 
-.header {
-    padding: 0 0 0.3rem 0;
-    background-color: black;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    width: 100%;
-    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 
-    nav {
-        height: 3rem;
-        display: flex;
+        /*
+    * === HEADER ===
+    */
+
+    &-header {
+        background-color: black;
+        position: sticky;
+        top: 0;
+        z-index: 1;
         width: 100%;
-        ul {
-            width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.3rem 0;
+        
+
+        nav {
+            height: 3rem;
             display: flex;
-            justify-content: center;
-            list-style: none;
-            padding-left: 0;
+            width: 100%;
+            ul {
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                list-style: none;
+                padding-left: 0;
 
-            li {
+                li {
+                    display: flex;
+                    align-items: center;
 
-                a {
-                    text-decoration: none;
-                    color: white;
-                    font-weight: 600;
-                    font-size: larger;
-                    padding: 1rem 1rem 0.95rem 1rem;
-                    margin: 1rem;
-                    transition-duration: 0.4s;
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        font-weight: 600;
+                        font-size: larger;
+                        padding: 1.15rem 1rem 1.12rem 1rem;
+                        margin: 0 1rem;
+                        transition-duration: 0.2s;
 
 
-                    &:hover {
-                        cursor: pointer;
-                        background-color: white;
-                        transform: scale(1.1);
-                        color: black;
+                        &:hover {
+                            cursor: pointer;
+                            background-color: white;
+                            transform: scale(1.1);
+                            color: black;
+                        }
                     }
                 }
             }
         }
+
+        &-title {
+            color: white;
+            font-size: 20px;
+            margin-left: 2rem;
+        }
     }
-}
 
-/*
-* === FOOTER ===
-*/
+    &-main {
+        flex: 1;
+    }
 
-.footer {
-    margin-top: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    color: white;
-    background-color: black;
+    /*
+    * === FOOTER ===
+    */
+
+    &-footer {
+        margin-top: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        color: white;
+        background-color: black;
+        position: relative;
+        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.473);
+    }
 }
