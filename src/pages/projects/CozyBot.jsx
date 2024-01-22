@@ -4,6 +4,7 @@ import ReactMarkdown from 'react-markdown';
 import 'github-markdown-css/github-markdown-light.css';
 import '../../assets/scss/index.scss'
 import '../../assets/scss/pages/projects/CozyBot.scss';
+import { Link } from 'react-router-dom';
 
 function CozyBot() {
   const [markdown, setMarkdown] = useState('');
@@ -22,9 +23,11 @@ function CozyBot() {
 
   return (
     <div id="cozybot">
+        <Link className="cozybot-try" to="/projects/cozybot/invite">Try CozyBot 😋!</Link>
         <div className="markdown-body">
             <ReactMarkdown>{markdown}</ReactMarkdown>
         </div>
+        <Link id="cozybot-try-bottom" className="cozybot-try" to="/projects/cozybot/invite">Try CozyBot 😋!</Link>
     </div>
   );
 }
