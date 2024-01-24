@@ -5,6 +5,7 @@ import 'github-markdown-css/github-markdown-light.css';
 import '../../assets/scss/index.scss'
 import '../../assets/scss/pages/projects/CozyBot.scss';
 import { Link } from 'react-router-dom';
+import backArrow from '../../assets/images/back-arrow.png';
 
 function CozyBot() {
   const [markdown, setMarkdown] = useState('');
@@ -22,13 +23,20 @@ function CozyBot() {
   }, []);
 
   return (
-    <div id="cozybot">
-        <Link className="cozybot-try" to="/projects/cozybot/invite">Try CozyBot 😋!</Link>
-        <div className="markdown-body">
-            <ReactMarkdown>{markdown}</ReactMarkdown>
-        </div>
-        <Link id="cozybot-try-bottom" className="cozybot-try" to="/projects/cozybot/invite">Try CozyBot 😋!</Link>
-    </div>
+    <>
+      <div className='back-arrow-container'>
+        <Link to="/projects">
+            <img className='back-arrow' alt="back arrow" src={backArrow}></img>
+        </Link>
+      </div>
+      <div id="cozybot">
+          <Link className="cozybot-try" to="/projects/cozybot/invite">Try CozyBot 😋!</Link>
+          <div className="markdown-body">
+              <ReactMarkdown>{markdown}</ReactMarkdown>
+          </div>
+          <Link id="cozybot-try-bottom" className="cozybot-try" to="/projects/cozybot/invite">Try CozyBot 😋!</Link>
+      </div>
+    </>
   );
 }
 
