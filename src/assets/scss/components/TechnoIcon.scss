@@ -1,0 +1,26 @@
+.techno-icon {
+    margin: 0.7rem 1.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 5rem;
+    min-height: 7.3rem;
+  
+    &-image {
+      width: 6rem;
+      height: auto;
+      margin-bottom: 5px;
+      transition: transform 0.2s;
+  
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  
+    &-name {
+      font-size: 1.2rem;
+      color: #000000;
+    }
+  }
+  
