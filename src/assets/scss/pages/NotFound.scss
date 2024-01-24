@@ -7,25 +7,25 @@
     justify-content: center;
     align-items: center;
 
-    &--container {
+    &-container {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
 
-        &--message {
+        &-message {
             font-size: 2rem;
             margin-bottom: 5rem;
         }
 
-        &--404 {
+        &-404 {
             font-size: 24rem;
             margin-bottom: 2rem;
             margin-top: 0;
             color: #ff3b2d;
         }
 
-        &--gohome {
+        &-gohome {
             font-weight: 700;
             margin: 0 auto;
             background-color: #ff3b2d;
