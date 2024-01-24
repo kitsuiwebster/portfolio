@@ -82,5 +82,26 @@
         background-color: black;
         position: relative;
         box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.473);
+        flex-direction: column;
+
+        &-links {
+            display: flex;
+            margin-top: 1rem;
+        }
+
+        &-link {
+            margin: 1rem;
+            border-radius: 10px;
+            cursor: pointer;
+            background-color: rgb(255, 255, 255);
+
+            &-img {
+                width: 2rem;
+                height: 2rem;
+                vertical-align: middle;
+                border-radius: 10px;
+                padding: 0.15rem;
+            }
+        }
     }
 }
