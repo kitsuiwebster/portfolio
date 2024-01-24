@@ -11,8 +11,15 @@ import devtoLogo from '../assets/images/social/devto.png';
 import discordLogo from '../assets/images/social/discord.jpg';
 
 function copyDiscordUsername() {
-    navigator.clipboard.writeText('kitsuiwebster');
-    alert('Discord username copied to clipboard!');
+    navigator.clipboard.writeText('kitsuiwebster').then(() => {
+        const copiedMessage = document.createElement('div');
+        copiedMessage.id = 'copiedMessage';
+        copiedMessage.innerText = 'Copied to clipboard!';
+        document.body.appendChild(copiedMessage);
+        setTimeout(() => {
+            document.body.removeChild(copiedMessage);
+        }, 3000);
+    });
 }
 
 function Layout({ children }) { 

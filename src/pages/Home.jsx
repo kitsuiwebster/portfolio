@@ -2,6 +2,7 @@ import React from 'react';
 import '../assets/scss/pages/Home.scss';
 import profilePicture from '../assets/images/profile-picture.jpg'; 
 import '../assets/scss/index.scss'
+import TechnoIcon from '../components/TechnoIcon';
 
 // Technos links
 import chatGptLogo from '../assets/images/technos/chat-gpt.png'; 
@@ -17,6 +18,11 @@ import nodeLogo from '../assets/images/technos/node.png';
 import jsLogo from '../assets/images/technos/js.png';
 import tsLogo from '../assets/images/technos/ts.png';
 import pythonLogo from '../assets/images/technos/python.png';
+import gitLogo from '../assets/images/technos/git.png';
+import linuxLogo from '../assets/images/technos/linux.png';
+import bashLogo from '../assets/images/technos/bash.png';
+import zshLogo from '../assets/images/technos/zsh.png';
+import n8nLogo from '../assets/images/technos/n8n.png';
 
 // Social links
 import gitlabLogo from '../assets/images/social/gitlab.png';
@@ -30,9 +36,17 @@ import discordLogo from '../assets/images/social/discord.jpg';
 
 
 function copyDiscordUsername() {
-    navigator.clipboard.writeText('kitsuiwebster');
-    alert('Discord username copied to clipboard!');
+    navigator.clipboard.writeText('kitsuiwebster').then(() => {
+        const copiedMessage = document.createElement('div');
+        copiedMessage.id = 'copiedMessage';
+        copiedMessage.innerText = 'Copied to clipboard!';
+        document.body.appendChild(copiedMessage);
+        setTimeout(() => {
+            document.body.removeChild(copiedMessage);
+        }, 3000);
+    });
 }
+
 
 function Home() {
     return (
@@ -79,68 +93,40 @@ function Home() {
                 </section>
 
                 <section className="home-skills">
-                    <h2 className="home-skills-title">Skills</h2>
-                    <h3 className="home-skills-titles">AI</h3>
-                    <div className="home-skills-ai">
-                        <div className="home-skills-skill">
-                            <img src={chatGptLogo} alt="Chat GPT" className="home-skills-skill-icon"/>
-                            <p className="home-skills-skill-name">ChatGPT</p>
-                        </div>
-                        <div className="home-skills-skill">
-                            <img src={claudeLogo} alt="Claude" className="home-skills-skill-icon"/>
-                            <p className="home-skills-skill-name">Claude</p>
-                        </div>
-                        <div className="home-skills-skill">
-                            <img src={bardLogo} alt="Bard" className="home-skills-skill-icon"/>
-                            <p className="home-skills-skill-name">Bard</p>
-                        </div>
-                        <div className="home-skills-skill">
-                            <img src={midjourneyLogo} alt="Midjourney" className="home-skills-skill-icon"/>
-                            <p className="home-skills-skill-name">Midjourney</p>
-                        </div>
-                        <div className="home-skills-skill">
-                            <img src={mistralLogo} alt="Mistral" className="home-skills-skill-icon"/>
-                            <p className="home-skills-skill-name">Mistral</p>
-                        </div>
-                    </div>
-                    <h3 className="home-skills-titles">Development</h3>
-                    <div className="home-skills-dev">
-                        <div className="home-skills-skill">
-                            <img src={htmlLogo} alt="Chat GPT" className="home-skills-skill-icon"/>
-                            <p className="home-skills-skill-name">HTML</p>
-                        </div>
-                        <div className="home-skills-skill">
-                            <img src={cssLogo} alt="Claude" className="home-skills-skill-icon"/>
-                            <p className="home-skills-skill-name">CSS</p>
-                        </div>
-                        <div className="home-skills-skill">
-                            <img src={sassLogo} alt="Bard" className="home-skills-skill-icon"/>
-                            <p className="home-skills-skill-name">Sass</p>
-                        </div>
-                        <div className="home-skills-skill">
-                            <img src={reactLogo} alt="Midjourney" className="home-skills-skill-icon"/>
-                            <p className="home-skills-skill-name">React.js</p>
-                        </div>
-                        <div className="home-skills-skill">
-                            <img src={nodeLogo} alt="Mistral" className="home-skills-skill-icon"/>
-                            <p className="home-skills-skill-name">Node.js</p>
-                        </div>
-                        <div className="home-skills-skill">
-                            <img src={jsLogo} alt="Mistral" className="home-skills-skill-icon"/>
-                            <p className="home-skills-skill-name">JavaScript</p>
-                        </div>
-                        <div className="home-skills-skill">
-                            <img src={tsLogo} alt="Mistral" className="home-skills-skill-icon"/>
-                            <p className="home-skills-skill-name">TypeScript</p>
-                        </div>
-                        <div className="home-skills-skill">
-                            <img src={pythonLogo} alt="Mistral" className="home-skills-skill-icon"/>
-                            <p className="home-skills-skill-name">Python</p>
-                        </div>
-                    </div>
+            <h2 className="home-skills-title">Skills</h2>
+        
+            <h3 className="home-skills-titles">AI - Prompt Engineering</h3>
+            <div className="home-skills-ai">
+                <TechnoIcon src={chatGptLogo} alt="Chat GPT" name="ChatGPT" />
+                <TechnoIcon src={claudeLogo} alt="Claude" name="Claude" />
+                <TechnoIcon src={bardLogo} alt="Bard" name="Bard" />
+                <TechnoIcon src={midjourneyLogo} alt="Midjourney" name="Midjourney" />
+                <TechnoIcon src={mistralLogo} alt="Mistral" name="Mistral" />
+            </div>
+
+            <h3 className="home-skills-titles">Development</h3>
+            <div className="home-skills-dev">
+                <TechnoIcon src={htmlLogo} alt="HTML" name="HTML" />
+                <TechnoIcon src={cssLogo} alt="CSS" name="CSS" />
+                <TechnoIcon src={sassLogo} alt="Sass" name="Sass" />
+                <TechnoIcon src={reactLogo} alt="React.js" name="React.js" />
+                <TechnoIcon src={nodeLogo} alt="Node.js" name="Node.js" />
+                <TechnoIcon src={jsLogo} alt="JavaScript" name="JavaScript" />
+                <TechnoIcon src={tsLogo} alt="TypeScript" name="TypeScript" />
+                <TechnoIcon src={pythonLogo} alt="Python" name="Python" />
+                <TechnoIcon src={gitLogo} alt="Git" name="Git" />
+                <TechnoIcon src={n8nLogo} alt="N8n" name="N8n" />
+            </div>
+
+            <h3 className="home-skills-titles">System</h3>
+            <div className="home-skills-dev">
+                <TechnoIcon src={linuxLogo} alt="Linux" name="Linux" />
+                <TechnoIcon src={bashLogo} alt="Bash" name="Bash" />
+                <TechnoIcon src={zshLogo} alt="Zsh" name="Zsh" />
+            </div>
                 </section>
-{/* 
-                <section className="home-section certifications">
+
+                {/* <section className="home-section certifications">
                     <h2 className="home-section-heading">Certifications</h2>
                 </section>
 
