@@ -1,7 +1,8 @@
 import React from 'react';
-import '../assets/scss/pages/Main.scss';
+import '../assets/scss/pages/UnderConstruction.scss';
+import '../assets/scss/index.scss'
 
-function Main() {
+function UnderConstruction() {
     return (
         <>
 
@@ -12,4 +13,4 @@ function Main() {
     );
 }
 
-export default Main;
+export default UnderConstruction;
