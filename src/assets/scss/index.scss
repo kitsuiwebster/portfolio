@@ -7,7 +7,12 @@
 #article,
 #project,
 #skills,
-#projects {
+#projects,
+#home,
+#underconstruction,
+#cozybotinvite,
+#error,
+#home {
     max-width: 1400px;
     margin-inline: auto;
 } 
@@ -17,7 +22,7 @@
     border-radius: 20px;
     margin: 2rem 10rem 2rem 10rem;
     text-align: justify;
-    padding: 0 5rem;
+    padding: 0 10rem;
     font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -32,6 +37,10 @@
     sans-serif;
 }
 
+#mcjavacmds, #hackaprompt {
+    margin-bottom: 5rem;
+}
+
 .back-arrow-container {
     display: flex;
     justify-content: flex-start;
@@ -39,7 +48,7 @@
 
     .back-arrow {
         width: 4rem;
-        padding: 1.5rem;
+        padding: 1rem 1.5rem 0 1.5rem;
         cursor: pointer;
         transition: all 0.2s ease;
         transition-duration: 0.4s;

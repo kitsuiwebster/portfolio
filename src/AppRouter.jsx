@@ -1,6 +1,5 @@
 // AppRouter.jsx
 import React from 'react';
-import Main from './pages/Main';
 import Articles from './pages/Articles';
 import HackAPrompt from './pages/articles/HackAPrompt';
 import CozyBot from './pages/projects/CozyBot'; 
@@ -12,11 +11,17 @@ import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import CozyBotInvite from './pages/CozyBotInvite';
 import Pika from './pages/Pika';
+import UnderConstruction from './pages/UnderConstruction';
+import Home from './pages/Home';
 
 const AppRouter = createBrowserRouter([
     {
         path: "/",
-        element: <Layout><Main /></Layout>
+        element: <Layout><UnderConstruction /></Layout>
+    },
+    {
+        path: "/home",
+        element: <Layout><Home /></Layout>
     },
     // {
     //     path: "/articles",
