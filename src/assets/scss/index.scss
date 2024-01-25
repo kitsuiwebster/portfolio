@@ -12,9 +12,13 @@
 #underconstruction,
 #cozybotinvite,
 #error,
-#home {
+#home,
+#articles {
     max-width: 1400px;
     margin-inline: auto;
+    display: flex;
+    justify-content: center;
+
 } 
 
 .markdown-body {
