@@ -62,6 +62,7 @@ function Home() {
                     <div className="home-header-text">
                         <h1 className="home-header-title">Raphaël MARTIN</h1>
                         <h2 className="home-header-subtitle">IT Freelance, Prompt Engineer, Developer</h2>
+                        <h3 className="home-header-location">📍 Toulouse, France</h3>
                         <p className="home-header-bio">
                             Passionate about IT, convinced by the values of opensource,
                             I am continually training and seeking out projects that resonate with me.

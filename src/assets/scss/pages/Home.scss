@@ -27,8 +27,14 @@
 
         &-subtitle {
             font-size: 19px;
-            margin-top: 0;
+            margin: 0;
             font-weight: 500;
+        }
+
+        &-location {
+            font-weight: 400;
+            margin: 0;
+            font-size: 15px;
         }
 
         &-bio {
@@ -84,6 +90,7 @@
         &-titles {
             font-size: 22px;
             margin-top: 3rem;
+            font-weight: 500;
         }
 
         &-ai, &-dev {
