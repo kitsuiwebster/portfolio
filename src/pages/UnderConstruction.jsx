@@ -5,10 +5,9 @@ import '../assets/scss/index.scss'
 function UnderConstruction() {
     return (
         <>
-
-            <p id='underconstruction'>Welcome! This website is under construction. 🤭</p>
-
-
+            <div id='underconstruction'>
+                <p>Welcome! This website is under construction. 🤭</p>
+            </div>
         </>
     );
 }

@@ -4,6 +4,16 @@ import profilePicture from '../assets/images/profile-picture.jpg';
 import '../assets/scss/index.scss'
 import TechnoIcon from '../components/TechnoIcon';
 
+// Social links
+import gitlabLogo from '../assets/images/social/gitlab.png';
+import githubLogo from '../assets/images/social/github.png';
+import linkedinLogo from '../assets/images/social/linkedin.png';
+import xLogo from '../assets/images/social/x.webp';
+import mediumLogo from '../assets/images/social/medium.png';
+import devtoLogo from '../assets/images/social/devto.png';
+import discordLogo from '../assets/images/social/discord.jpg';
+import PaperProof from '../components/PaperProof';
+
 // Technos links
 import chatGptLogo from '../assets/images/technos/chat-gpt.png'; 
 import claudeLogo from '../assets/images/technos/claude.webp';
@@ -24,15 +34,11 @@ import bashLogo from '../assets/images/technos/bash.png';
 import zshLogo from '../assets/images/technos/zsh.png';
 import n8nLogo from '../assets/images/technos/n8n.png';
 
-// Social links
-import gitlabLogo from '../assets/images/social/gitlab.png';
-import githubLogo from '../assets/images/social/github.png';
-import linkedinLogo from '../assets/images/social/linkedin.png';
-import xLogo from '../assets/images/social/x.webp';
-import mediumLogo from '../assets/images/social/medium.png';
-import devtoLogo from '../assets/images/social/devto.png';
-import discordLogo from '../assets/images/social/discord.jpg';
-
+// Certifications links
+import certifiedPromptEngineer from '../assets/images/certifications/prompt-engineer.jpg'
+import certifiedCsiLinuxInvestigator from '../assets/images/certifications/csi-linux-investigator.jpg'
+import cocLinux from '../assets/images/certifications/coc-linux.png'
+import justJavaScript from '../assets/images/certifications/just-javascript.jpg'
 
 
 function copyDiscordUsername() {
@@ -126,13 +132,27 @@ function Home() {
             </div>
                 </section>
 
-                {/* <section className="home-section certifications">
-                    <h2 className="home-section-heading">Certifications</h2>
+                <section className="home-certifications">
+                    <h2 className="home-certifications-title">Certifications</h2>
+                    <div className="home-certifications-certifs">
+                        <PaperProof src={certifiedPromptEngineer} alt="Certified Prompt Engineer"/>
+                        <PaperProof src={certifiedCsiLinuxInvestigator} alt="Certified CSI Linux Investigator"/>
+                    </div>
+                    <h3 className="home-certifications-subtitle">Certificates of Completion</h3>
+                    <div className="home-certifications-certificates">
+                        <PaperProof src={cocLinux} alt="Certificate of Completion General Linux Administration"/>
+                        <PaperProof src={justJavaScript} alt="Certificate of Completion Just JavaScript"/>
+                    </div>
                 </section>
 
-                <section className="home-section trainings">
-                    <h2 className="home-section-heading">Trainings</h2>
-                </section> */}
+                <section className="home-trainings">
+                    <h2 className="home-trainings-title">Trainings</h2>
+                </section>
+
+                <section>
+                    <p>Guess what, I'm also musician !</p>
+                </section>
+
             </div>
         </div>
     );

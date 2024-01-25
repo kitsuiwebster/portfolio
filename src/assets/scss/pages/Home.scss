@@ -80,15 +80,6 @@
     }
 
     &-skills {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        padding-top: 7rem;
-        border-top: 2px solid black;
-
-        &-title {
-            font-size: 35px;
-        }
 
         &-titles {
             font-size: 22px;
@@ -97,54 +88,38 @@
 
         &-ai, &-dev {
             display: flex;
-            justify-content: space-between;
             margin-bottom: 3rem;
-        }
-
-        &-skill {
-            margin: 0.7rem 1.5rem;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
+            flex-wrap: wrap;
             justify-content: space-between;
-            min-width: 5rem;
-            min-height: 7.3rem;
-
-            &-icon {
-                width: 6rem;
-                height: auto;
-                margin-bottom: 5px;
-                transition: transform 0.2s;
-
-                &:hover {
-                    transform: scale(1.05);
-                    }
-                }
-
-            &-name {
-                font-size: 1.2rem;
-                color: #000000;
-            }
         }
     }
 
-    &-social-links,
-    &-trainings,
-    &-certifications {
-        margin: 20px 0;
+    &-certifications, &-trainings, &-skills {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 7rem;
+        border-top: 2px solid black;
+        width: 50%;
+        margin: 0 3rem 7rem 3rem;
 
-        &-heading {
-            font-size: 2rem;
-            color: #2c3e50;
-            margin-bottom: 15px;
-            border-bottom: 2px solid #ff3b2d;
-            display: inline-block;
+        &-title {
+            font-size: 35px;
+        }
+    }
+
+    &-certifications {
+
+        &-subtitle {
+            font-size: 22px;
+            margin-top: 3rem;
         }
 
-        &-content,
-        &-nav {
-            font-size: 1rem;
-            line-height: 1.6;
+        &-certifs, &-certificates {
+            display: flex;
+            margin-bottom: 3rem;
+            justify-content: space-between;
+            align-items: center;
         }
     }
 }
