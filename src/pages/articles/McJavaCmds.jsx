@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 import 'github-markdown-css/github-markdown-light.css';
-import '../../assets/scss/pages/articles/McJavaCmds.scss';
 import '../../assets/scss/index.scss'
-import backArrow from '../../assets/images/back-arrow.png';
-import { Link } from 'react-router-dom';
+import BackArrow from '../../components/BackArrow';
 
 function McJavaCmds() {
   const [markdown, setMarkdown] = useState('');
@@ -27,11 +25,7 @@ function McJavaCmds() {
 
   return (
     <>
-      <div className='back-arrow-container'>
-        <Link to="/articles">
-            <img className='back-arrow' alt="back arrow" src={backArrow}></img>
-        </Link>
-      </div>
+      <BackArrow path="/articles"/>
       <div id="mcjavacmds">
           <div className="markdown-body">
               <ReactMarkdown>{markdown}</ReactMarkdown>
