@@ -29,7 +29,7 @@ const Pika = () => {
             {emojis.map((emoji, index) => (
                 <div key={emoji} className="emoji-wrapper">
                     <span ref={(el) => textRefs.current[index] = el} className="emoji">{emoji}</span>
-                    <button onClick={() => copyToClipboard(index)}>Copy</button>
+                    <button className='button' onClick={() => copyToClipboard(index)}>Copy</button>
                     {copiedIndex === index && <div className="copy-status">Copied!</div>}
                 </div>
             ))}

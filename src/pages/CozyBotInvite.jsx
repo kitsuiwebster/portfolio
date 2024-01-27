@@ -1,19 +1,14 @@
 import React from 'react';
 import '../assets/scss/pages/CozyBotInvite.scss';
 import cozyLogo from '../assets/images/cozybot-logo.png';
-import backArrow from '../assets/images/back-arrow.png';
-import { Link } from 'react-router-dom';
+import BackArrow from '../components/BackArrow';
 
 function CozyBotInvite() {
     const videoSrc = "https://www.youtube.com/embed/3q5n-jqTvsg";
 
     return (
         <>
-            <div className='back-arrow-container'>
-                <Link to="/projects/cozybot">
-                    <img className='back-arrow' alt="back arrow" src={backArrow}></img>
-                </Link>
-            </div>
+            <BackArrow path="/projects/cozybot"/>
             <div id="cozybotinvite">
                 <div className="cozybotinvite">
                     <div className='cozybotinvite-container'>
@@ -28,7 +23,7 @@ function CozyBotInvite() {
                             Join our support Discord server
                             </a>
                         </div>
-                        <h1>Watch the CozyBot teaser 😊!</h1>
+                        <h1 className='cozybotinvite-h1'>Watch the CozyBot teaser 😊!</h1>
                         <iframe
                             src={videoSrc}
                             title="YouTube video player"

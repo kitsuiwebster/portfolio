@@ -28,12 +28,12 @@ function Layout({ children }) {
             <div className="layout">
                 <header className="layout-header">
                     <h1 className='layout-header-title'>@kitsuiwebster</h1>
-                    <nav>
-                        <ul>
-                            <li className="tab"> <a href="/" >Home</a></li>
-                            <li className="tab"> <a href="/projects">Projects</a></li>
-                            <li className="tab"> <a href="/articles">Articles</a></li>
-                            <li className="tab"> <a href="/contact">Contact</a></li>
+                    <nav className='layout-header-nav'>
+                        <ul className='layout-header-nav-ul'>
+                            <li className="layout-header-nav-ul-li"> <a className="layout-header-nav-ul-li-a" href="/" >Home</a></li>
+                            <li className="layout-header-nav-ul-li"> <a className="layout-header-nav-ul-li-a" href="/projects">Projects</a></li>
+                            <li className="layout-header-nav-ul-li"> <a className="layout-header-nav-ul-li-a" href="/articles">Articles</a></li>
+                            <li className="layout-header-nav-ul-li"> <a className="layout-header-nav-ul-li-a" href="/contact">Contact</a></li>
                         </ul>
                     </nav>
                 </header>
