@@ -1,0 +1,17 @@
+.back-arrow-container {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+
+    .back-arrow {
+        width: 4rem;
+        padding: 1rem 1.5rem 0 1.5rem;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        transition-duration: 0.4s;
+
+        &:hover {
+            transform: scale(1.3);
+        }
+    }
+}
