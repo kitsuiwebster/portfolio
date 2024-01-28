@@ -25,6 +25,7 @@ function CozyBotInvite() {
                         </div>
                         <h1 className='cozybotinvite-h1'>Watch the CozyBot teaser 😊!</h1>
                         <iframe
+                            className='cozybotinvite-video'
                             src={videoSrc}
                             title="YouTube video player"
                             frameborder="0"
