@@ -35,6 +35,7 @@ import zshLogo from '../assets/images/technos/zsh.png';
 import n8nLogo from '../assets/images/technos/n8n.png';
 import condaLogo from '../assets/images/technos/conda.png';
 import raspberryLogo from '../assets/images/technos/raspberry-pi.png';
+// import figmaLogo from '../assets/images/technos/figma.png';
 
 // Certifications links
 import certifiedPromptEngineer from '../assets/images/certifications/prompt-engineer.jpg'
@@ -125,6 +126,7 @@ function Home() {
                 <TechnoIcon src={pythonLogo} alt="Python" name="Python" />
                 <TechnoIcon src={gitLogo} alt="Git" name="Git" />
                 <TechnoIcon src={n8nLogo} alt="N8n" name="N8n" />
+                {/* <TechnoIcon src={figmaLogo} alt="Figma" name="Figma" /> */}
             </div>
 
             <h3 className="home-skills-titles">System</h3>
@@ -151,11 +153,11 @@ function Home() {
                 </section>
 
                 <section className="home-trainings">
-                    <h2 className="home-trainings-title">Trainings</h2>
+                    {/* <h2 className="home-trainings-title">Trainings</h2> */}
                 </section>
 
                 <section>
-                    <p>Guess what, I'm also musician !</p>
+                    {/* <p>Guess what, I'm also musician !</p> */}
                 </section>
 
             </div>
