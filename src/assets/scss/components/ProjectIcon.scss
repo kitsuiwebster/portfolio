@@ -1,0 +1,19 @@
+.project-icon {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 10%;
+  
+    &-image {
+        width: 3rem;
+        height: auto;
+        margin-bottom: 5px;
+        transition: transform 0.2s;
+  
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}
+  
