@@ -1,5 +1,6 @@
 import React from 'react';
 import '../assets/scss/layouts/Layout.scss';
+import { Link } from 'react-router-dom';
 
 // Social links
 import gitlabLogo from '../assets/images/social/gitlab.png';
@@ -27,7 +28,9 @@ function Layout({ children }) {
         <>
             <div className="layout">
                 <header className="layout-header">
-                    <h1 className='layout-header-title'>@kitsuiwebster</h1>
+                    <Link to="/" className='layout-header-title-container'>
+                        <h1 className='layout-header-title'>@kitsuiwebster</h1>
+                    </Link>
                     <nav className='layout-header-nav'>
                         <ul className='layout-header-nav-ul'>
                             <li className="layout-header-nav-ul-li"> <a className="layout-header-nav-ul-li-a" href="/" >Home</a></li>
