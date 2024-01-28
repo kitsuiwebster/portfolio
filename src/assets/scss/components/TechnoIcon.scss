@@ -1,5 +1,6 @@
 .techno-icon {
-    margin: 0.7rem 1.5rem;
+    margin: 0.7rem 0;
+    padding: 0 1.5rem;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -22,6 +23,8 @@
     &-name {
       font-size: 1.2rem;
       color: #000000;
+      min-width: 7rem;
+      text-align: center;
     }
   }
   

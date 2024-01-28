@@ -3,6 +3,7 @@ import '../assets/scss/pages/Home.scss';
 import profilePicture from '../assets/images/profile-picture.jpg'; 
 import '../assets/scss/index.scss'
 import TechnoIcon from '../components/TechnoIcon';
+import PaperProof from '../components/PaperProof';
 
 // Social links
 import gitlabLogo from '../assets/images/social/gitlab.png';
@@ -12,7 +13,6 @@ import xLogo from '../assets/images/social/x.webp';
 import mediumLogo from '../assets/images/social/medium.png';
 import devtoLogo from '../assets/images/social/devto.png';
 import discordLogo from '../assets/images/social/discord.jpg';
-import PaperProof from '../components/PaperProof';
 
 // Technos links
 import chatGptLogo from '../assets/images/technos/chat-gpt.png'; 
@@ -33,6 +33,8 @@ import linuxLogo from '../assets/images/technos/linux.png';
 import bashLogo from '../assets/images/technos/bash.png';
 import zshLogo from '../assets/images/technos/zsh.png';
 import n8nLogo from '../assets/images/technos/n8n.png';
+import condaLogo from '../assets/images/technos/conda.png';
+import raspberryLogo from '../assets/images/technos/raspberry-pi.png';
 
 // Certifications links
 import certifiedPromptEngineer from '../assets/images/certifications/prompt-engineer.jpg'
@@ -130,6 +132,8 @@ function Home() {
                 <TechnoIcon src={linuxLogo} alt="Linux" name="Linux" />
                 <TechnoIcon src={bashLogo} alt="Bash" name="Bash" />
                 <TechnoIcon src={zshLogo} alt="Zsh" name="Zsh" />
+                <TechnoIcon src={condaLogo} alt="Conda" name="Conda" />
+                <TechnoIcon src={raspberryLogo} alt="Raspberry Pi" name="Raspberry Pi" />
             </div>
                 </section>
 

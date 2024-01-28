@@ -10,4 +10,5 @@ const TechnoIcon = ({ src, alt, name }) => {
   );
 };
 
+
 export default TechnoIcon;
