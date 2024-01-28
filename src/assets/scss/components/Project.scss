@@ -4,6 +4,8 @@
     border-bottom: 1px solid rgb(221, 221, 221);
     box-sizing: border-box;
     width: 40rem;
+    display: flex;
+    flex-direction: column;
 
 
     &-title {
@@ -22,5 +24,20 @@
         color: black;
         font-size: 20px;
         line-height: 1.6;
+    }
+
+    &-image {
+        width: 100%;
+        padding-bottom: 1rem;
+
+        &-img {
+            width: 100%;
+            border-radius: 20px;
+        }
+    }
+
+    &-icons {
+        display: flex;
+
     }
 }
