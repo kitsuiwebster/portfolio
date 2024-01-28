@@ -1,11 +1,26 @@
 .article {
 
+    padding: 2.5rem 0;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    box-sizing: border-box;
+    width: 40rem;
+
+
     &-title {
         font-size: 25px;
         color: black;
     }
 
+    &-date {
+        font-size: 15px;
+        color: rgb(97, 97, 97);
+        margin-top: 0;
+    }
+
     &-description {
         font-size: 1rem;
+        color: black;
+        font-size: 20px;
+        line-height: 1.6;
     }
 }
