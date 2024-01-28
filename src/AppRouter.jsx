@@ -14,6 +14,10 @@ import Pika from './pages/Pika';
 import UnderConstruction from './pages/UnderConstruction';
 import Home from './pages/Home';
 import Dihia from './pages/Dihia';
+import Kasa from './pages/projects/Kasa';
+import Qwenta from './pages/projects/Qwenta';
+import SophieBluel from './pages/projects/SophieBluel';
+import NinaCarducci from './pages/projects/NinaCarducci';
 
 const AppRouter = createBrowserRouter([
     {
@@ -59,6 +63,22 @@ const AppRouter = createBrowserRouter([
     {
         path: "/dihia",
         element: <Layout><Dihia /></Layout>
+    },
+    {
+        path: "/projects/kasa",
+        element: <Layout><Kasa /></Layout>
+    },
+    {
+        path: "/projects/qwenta",
+        element: <Layout><Qwenta /></Layout>
+    },
+    {
+        path: "/projects/sophie-bluel",
+        element: <Layout><SophieBluel /></Layout>
+    },
+    {
+        path: "/projects/nina-carducci",
+        element: <Layout><NinaCarducci /></Layout>
     },
     {
         path: "*",
