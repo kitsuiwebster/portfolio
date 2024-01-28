@@ -8,7 +8,7 @@ function HackAPrompt() {
   const [markdown, setMarkdown] = useState('');
 
   useEffect(() => {
-    const rawGistUrl = 'https://gist.githubusercontent.com/kitsuiwebster/b41c8af863c98120a22e8b2bcc20dc85/raw/c8129954d2d6c2e8f66cea50ca452e31664f3036/hackaprompt2023_b.md'
+    const rawGistUrl = 'https://gist.githubusercontent.com/kitsuiwebster/8102d128c174d3f93ed1904b9a2953ec/raw/768ba76428f640377f29b4f79ad79b1dddd28f58/hackaprompt2023.md'
     fetch(rawGistUrl)
       .then(response => {
         if (response.ok) {
