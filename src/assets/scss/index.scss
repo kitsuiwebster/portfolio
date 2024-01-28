@@ -37,9 +37,12 @@
     'Fira Sans',
     'Droid Sans',
     'Helvetica Neue',
-    sans-serif;
+    sans-serif !important;
     max-width: 800px;
+    color: black;
 }
+
+
 
 #mcjavacmds, #hackaprompt {
     margin-bottom: 5rem;
