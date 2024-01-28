@@ -2,13 +2,22 @@ import '../assets/scss/components/Project.scss';
 import '../assets/scss/index.scss'
 import ProjectIcon from './ProjectIcon';
 
-function Project({ title, description, imageSrc, imageAlt, logoSrc0, logoSrc1, logoSrc2, logoSrc3, logoSrc4, logoSrc5 }) {
+
+function Project({ schoolLogo, title, subtitle, description, imageSrc, imageAlt, logoSrc0, logoSrc1, logoSrc2, logoSrc3, logoSrc4, logoSrc5 }) {
 
     
     return(
         <div id="project">
             <div className="project">
-                <h1 className='project-title'>{title}</h1>
+                <div className='project-header'>
+                    <div className='project-header-container1'>
+                        <img className='project-header-logo' src={schoolLogo} alt="Openclassrooms"></img>
+                        <h1 className='project-header-title'>{title}</h1>
+                    </div>
+                    <div className='project-header-container2'>
+                        <h2 className='project-header-subtitle'>{subtitle}</h2>
+                    </div>
+                </div>
                 <p className='project-description'>{description}</p>
                 <div className='project-image'>
                     <img className='project-image-img' src={imageSrc} alt={imageAlt}></img>
