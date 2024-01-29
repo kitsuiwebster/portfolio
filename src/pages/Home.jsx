@@ -44,6 +44,11 @@ import vscodeLogo from '../assets/images/technos/vs-code.png';
 import flstudioLogo from '../assets/images/technos/fl-studio.png';
 import reaperLogo from '../assets/images/technos/reaper.png';
 import kdenliveLogo from '../assets/images/technos/kden-live.png'
+import windowsLogo from '../assets/images/technos/windows.png';
+import workstationLogo from '../assets/images/technos/workstation.png';
+import virtualboxLogo from '../assets/images/technos/virtualbox.png';
+import cubaseLogo from '../assets/images/technos/cubase.png';
+import autotuneLogo from '../assets/images/technos/auto-tune.png';
 
 // Stars
 import yellowStar from '../assets/images/stars/yellow.png';
@@ -155,13 +160,15 @@ function Home() {
                         <TechnoIcon src={n8nLogo} alt="N8n" name="N8n"
                         star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={clearStar} />
                         <TechnoIcon src={vscodeLogo} alt="VS Code" name="VS Code"
-                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={yellowStar} />
+                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={halfStar} />
                     </div>
 
                     <h3 className="home-skills-titles">System</h3>
                     <div className="home-skills-category">
-                        <TechnoIcon src={linuxLogo} alt="Linux" name="Linux ❤️"
+                        <TechnoIcon src={windowsLogo} alt="Windows" name="Windows"
                         star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={clearStar} />
+                        <TechnoIcon src={linuxLogo} alt="Linux" name="Linux ❤️"
+                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={halfStar} />
                         <TechnoIcon src={bashLogo} alt="Bash" name="Bash"
                         star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={halfStar} />
                         <TechnoIcon src={zshLogo} alt="Zsh" name="Zsh"
@@ -169,7 +176,11 @@ function Home() {
                         <TechnoIcon src={condaLogo} alt="Conda" name="Conda"
                         star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={clearStar} />
                         <TechnoIcon src={raspberryLogo} alt="Raspberry Pi" name="Raspberry Pi"
+                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={clearStar} />
+                        <TechnoIcon src={workstationLogo} alt="Workstation" name="Workstation"
                         star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={halfStar} />
+                        <TechnoIcon src={virtualboxLogo} alt="VirtualBox" name="VirtualBox"
+                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={yellowStar} />
                     </div>
 
 
@@ -195,10 +206,11 @@ function Home() {
                         star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={yellowStar} />
                         <TechnoIcon src={reaperLogo} alt="Reaper" name="Reaper ❤️"
                         star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={yellowStar} />
+                        <TechnoIcon src={cubaseLogo} alt="Cubase" name="Cubase"
+                        star1={yellowStar} star2={yellowStar} star3={halfStar} star4={clearStar} star5={clearStar} />
+                        <TechnoIcon src={autotuneLogo} alt="Auto-tune" name="Auto-tune"
+                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={halfStar} />
                     </div>
-
-                    
-                        
                 </section>
 
                 <section className="home-certifications">
