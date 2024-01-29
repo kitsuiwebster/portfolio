@@ -1,6 +1,7 @@
-import React from 'react';
 import '../assets/scss/layouts/Layout.scss';
 import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import menuIcon from '../assets/images/menu.png'
 
 // Social links
 import gitlabLogo from '../assets/images/social/gitlab.png';
@@ -23,7 +24,12 @@ function copyDiscordUsername() {
     });
 }
 
-function Layout({ children }) { 
+function Layout({ children }) {
+    const [isNavOpen, setIsNavOpen] = useState(false);
+
+    const toggleNav = () => {
+        setIsNavOpen(!isNavOpen);
+    };
     return (
         <>
             <div className="layout">
@@ -31,7 +37,10 @@ function Layout({ children }) {
                     <Link to="/" className='layout-header-title-container'>
                         <h1 className='layout-header-title'>@kitsuiwebster</h1>
                     </Link>
-                    <nav className='layout-header-nav'>
+                    <div className="layout-header-mobile" onClick={toggleNav}>
+                        <img alt="Menu Icon" src={menuIcon} className='layout-header-icon'></img>
+                    </div>
+                    <nav className={`layout-header-nav ${isNavOpen ? 'open' : ''}`}>
                         <ul className='layout-header-nav-ul'>
                             <li className="layout-header-nav-ul-li"> <a className="layout-header-nav-ul-li-a" href="/" >Home</a></li>
                             <li className="layout-header-nav-ul-li"> <a className="layout-header-nav-ul-li-a" href="/projects">Projects</a></li>

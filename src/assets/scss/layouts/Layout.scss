@@ -19,12 +19,26 @@
         justify-content: space-between;
         align-items: center;
         padding: 0.3rem 0;
+
+        &-mobile {
+            display: none; 
+            cursor: pointer;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 0.3rem;
+        }
+
+        &-icon {
+            display: none;
+        }
         
 
         &-nav {
             height: 3rem;
             display: flex;
             width: 100%;
+
             &-ul {
                 width: 100%;
                 display: flex;
@@ -32,9 +46,11 @@
                 list-style: none;
                 padding-left: 0;
 
+
                 &-li {
                     display: flex;
                     align-items: center;
+
 
                     &-a {
                         text-decoration: none;
@@ -109,6 +125,66 @@
                 border-radius: 10px;
                 padding: 0.15rem;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .layout-header {
+
+        &-mobile {
+            display: block; 
+        }
+
+        &-nav {
+            display: block;
+            position: absolute;
+            background-color: black;
+            top: 100%;
+            right: 0;
+            left: 0;
+            flex-direction: column;
+            width: 100%;
+            visibility: hidden; 
+
+
+            &.open {
+                visibility: visible; 
+                height: auto; 
+            }
+
+
+            &-ul {
+                display: block;
+                width: 100%;
+                padding: 0;
+                background-color: black;
+
+                &-li {
+                    width: 100%;
+                    &-a {
+                        display: block;
+                        width: 100%;
+                        padding: 1rem;
+                    }
+                }
+            }
+        }
+
+        &-icon {
+            display: block;
+            width: 3rem;
+            cursor: pointer;
+        }
+    }
+
+    .layout-footer {
+
+        &-links {
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 20rem;
         }
     }
 }

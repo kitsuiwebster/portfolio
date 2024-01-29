@@ -107,7 +107,7 @@
         flex-direction: column;
         padding-top: 7rem;
         border-top: 2px solid black;
-        width: 50%;
+        width: 70%;
         margin: 0 3rem 7rem 3rem;
 
         &-title {
@@ -127,6 +127,63 @@
             margin-bottom: 3rem;
             justify-content: space-between;
             align-items: center;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .home {
+
+        &-certifications, &-trainings, &-skills {
+            width: 80%;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .home {
+
+        &-header {
+
+            &-text {
+                margin-right: 0;
+            }
+
+            &-profilepic {
+                margin-left: 1rem;
+            }
+
+            &-bio {
+                width: 100%;
+            }
+        }
+
+        &-certifications {
+
+            &-certifs, &-certificates {
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home {
+
+        &-header {
+            flex-direction: column-reverse;
+            align-items: center;
+            margin-top: 4rem;
+        }
+
+        &-social {
+
+            &-links {
+                flex-wrap: wrap;
+                max-width: 20rem;
+                justify-content: center;
+            }
         }
     }
 }

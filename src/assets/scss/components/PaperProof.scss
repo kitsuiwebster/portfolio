@@ -8,15 +8,15 @@
     margin: 3rem;
   
     &-image {
-      width: 100%;
-      height: auto;
-      margin-bottom: 5px;
-      transition: transform 0.2s;
-      border-radius: 20px;
+        width: 100%;
+        height: auto;
+        margin-bottom: 5px;
+        transition: transform 0.2s;
+        border-radius: 20px;
   
-      &:hover {
-        transform: scale(1.05);
-      }
+        &:hover {
+          transform: scale(1.05);
+        }
     }
   
     &-name {
@@ -25,3 +25,14 @@
     }
   }
   
+@media screen and (max-width: 1200px) {
+    .paperproof {
+        min-width: 20rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .paperproof {
+        margin: 1rem 0;
+    }
+}
