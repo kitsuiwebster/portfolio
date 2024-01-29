@@ -35,7 +35,20 @@ import zshLogo from '../assets/images/technos/zsh.png';
 import n8nLogo from '../assets/images/technos/n8n.png';
 import condaLogo from '../assets/images/technos/conda.png';
 import raspberryLogo from '../assets/images/technos/raspberry-pi.png';
-// import figmaLogo from '../assets/images/technos/figma.png';
+import figmaLogo from '../assets/images/technos/figma.png';
+import vegasLogo from '../assets/images/technos/vegas-pro.webp';
+import obsLogo from '../assets/images/technos/obs.png';
+import gimpLogo from '../assets/images/technos/gimp.png';
+import blenderLogo from '../assets/images/technos/blender-icon.png';
+import vscodeLogo from '../assets/images/technos/vs-code.png';
+import flstudioLogo from '../assets/images/technos/fl-studio.png';
+import reaperLogo from '../assets/images/technos/reaper.png';
+import kdenliveLogo from '../assets/images/technos/kden-live.png'
+
+// Stars
+import yellowStar from '../assets/images/stars/yellow.png';
+import clearStar from '../assets/images/stars/clear.png';
+import halfStar from '../assets/images/stars/half.png'
 
 // Certifications links
 import certifiedPromptEngineer from '../assets/images/certifications/prompt-engineer.jpg'
@@ -103,40 +116,89 @@ function Home() {
                 </section>
 
                 <section className="home-skills">
-            <h2 className="home-skills-title">Skills</h2>
-        
-            <h3 className="home-skills-titles">AI - Prompt Engineering</h3>
-            <div className="home-skills-ai">
-                <TechnoIcon src={chatGptLogo} alt="Chat GPT" name="ChatGPT" />
-                <TechnoIcon src={claudeLogo} alt="Claude" name="Claude" />
-                <TechnoIcon src={bardLogo} alt="Bard" name="Bard" />
-                <TechnoIcon src={midjourneyLogo} alt="Midjourney" name="Midjourney" />
-                <TechnoIcon src={mistralLogo} alt="Mistral" name="Mistral" />
-            </div>
+                    <h2 className="home-skills-title">Skills</h2>
+                
+                    <h3 className="home-skills-titles">AI - Prompt Engineering</h3>
+                    <div className="home-skills-category">
+                        <TechnoIcon src={chatGptLogo} alt="Chat GPT" name="ChatGPT ❤️"
+                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={yellowStar}/>
+                        <TechnoIcon src={claudeLogo} alt="Claude" name="Claude"
+                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={clearStar} />
+                        <TechnoIcon src={bardLogo} alt="Bard" name="Bard"
+                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={halfStar} star5={clearStar} />
+                        <TechnoIcon src={midjourneyLogo} alt="Midjourney" name="Midjourney ❤️"
+                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={yellowStar} />
+                        <TechnoIcon src={mistralLogo} alt="Mistral" name="Mistral"
+                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={clearStar} star5={clearStar} />
+                    </div>
 
-            <h3 className="home-skills-titles">Development</h3>
-            <div className="home-skills-dev">
-                <TechnoIcon src={htmlLogo} alt="HTML" name="HTML" />
-                <TechnoIcon src={cssLogo} alt="CSS" name="CSS" />
-                <TechnoIcon src={sassLogo} alt="Sass" name="Sass" />
-                <TechnoIcon src={reactLogo} alt="React.js" name="React.js" />
-                <TechnoIcon src={nodeLogo} alt="Node.js" name="Node.js" />
-                <TechnoIcon src={jsLogo} alt="JavaScript" name="JavaScript" />
-                <TechnoIcon src={tsLogo} alt="TypeScript" name="TypeScript" />
-                <TechnoIcon src={pythonLogo} alt="Python" name="Python" />
-                <TechnoIcon src={gitLogo} alt="Git" name="Git" />
-                <TechnoIcon src={n8nLogo} alt="N8n" name="N8n" />
-                {/* <TechnoIcon src={figmaLogo} alt="Figma" name="Figma" /> */}
-            </div>
+                    <h3 className="home-skills-titles">Development</h3>
+                    <div className="home-skills-category">
+                        <TechnoIcon src={htmlLogo} alt="HTML" name="HTML"
+                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={yellowStar} />
+                        <TechnoIcon src={cssLogo} alt="CSS" name="CSS ❤️"
+                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={yellowStar} />
+                        <TechnoIcon src={sassLogo} alt="Sass" name="Sass ❤️"
+                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={halfStar} />
+                        <TechnoIcon src={reactLogo} alt="React.js" name="React.js"
+                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={clearStar} />
+                        <TechnoIcon src={nodeLogo} alt="Node.js" name="Node.js"
+                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={clearStar} star5={clearStar} />
+                        <TechnoIcon src={jsLogo} alt="JavaScript" name="JavaScript"
+                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={clearStar} star5={clearStar} />
+                        <TechnoIcon src={tsLogo} alt="TypeScript" name="TypeScript"
+                        star1={yellowStar} star2={yellowStar} star3={halfStar} star4={clearStar} star5={clearStar} />
+                        <TechnoIcon src={pythonLogo} alt="Python" name="Python"
+                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={halfStar} star5={clearStar} />
+                        <TechnoIcon src={gitLogo} alt="Git" name="Git"
+                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={halfStar} />
+                        <TechnoIcon src={n8nLogo} alt="N8n" name="N8n"
+                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={clearStar} />
+                        <TechnoIcon src={vscodeLogo} alt="VS Code" name="VS Code"
+                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={yellowStar} />
+                    </div>
 
-            <h3 className="home-skills-titles">System</h3>
-            <div className="home-skills-dev">
-                <TechnoIcon src={linuxLogo} alt="Linux" name="Linux" />
-                <TechnoIcon src={bashLogo} alt="Bash" name="Bash" />
-                <TechnoIcon src={zshLogo} alt="Zsh" name="Zsh" />
-                <TechnoIcon src={condaLogo} alt="Conda" name="Conda" />
-                <TechnoIcon src={raspberryLogo} alt="Raspberry Pi" name="Raspberry Pi" />
-            </div>
+                    <h3 className="home-skills-titles">System</h3>
+                    <div className="home-skills-category">
+                        <TechnoIcon src={linuxLogo} alt="Linux" name="Linux ❤️"
+                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={clearStar} />
+                        <TechnoIcon src={bashLogo} alt="Bash" name="Bash"
+                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={halfStar} />
+                        <TechnoIcon src={zshLogo} alt="Zsh" name="Zsh"
+                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={halfStar} />
+                        <TechnoIcon src={condaLogo} alt="Conda" name="Conda"
+                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={clearStar} />
+                        <TechnoIcon src={raspberryLogo} alt="Raspberry Pi" name="Raspberry Pi"
+                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={halfStar} />
+                    </div>
+
+
+                    <h3 className="home-skills-titles">Visual</h3>
+                    <div className="home-skills-category">
+                        <TechnoIcon src={vegasLogo} alt="Vegas Pro" name="Vegas Pro"
+                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={halfStar} star5={clearStar} />
+                        <TechnoIcon src={kdenliveLogo} alt="Kden Live" name="Kden Live"
+                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={clearStar} star5={clearStar} />
+                        <TechnoIcon src={gimpLogo} alt="Gimp" name="Gimp"
+                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={halfStar} />
+                        <TechnoIcon src={blenderLogo} alt="Blender" name="Blender"
+                        star1={yellowStar} star2={yellowStar} star3={halfStar} star4={clearStar} star5={clearStar} />
+                        <TechnoIcon src={obsLogo} alt="OBS" name="OBS"
+                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={yellowStar} />
+                        <TechnoIcon src={figmaLogo} alt="Figma" name="Figma"
+                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={clearStar} star5={clearStar} />
+                    </div>
+
+                    <h3 className="home-skills-titles">Audio</h3>
+                    <div className="home-skills-category">
+                        <TechnoIcon src={flstudioLogo} alt="FL Studio" name="FL Studio ❤️"
+                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={yellowStar} />
+                        <TechnoIcon src={reaperLogo} alt="Reaper" name="Reaper ❤️"
+                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={yellowStar} />
+                    </div>
+
+                    
+                        
                 </section>
 
                 <section className="home-certifications">

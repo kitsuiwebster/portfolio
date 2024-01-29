@@ -21,16 +21,12 @@ import NinaCarducci from './pages/projects/NinaCarducci';
 
 const AppRouter = createBrowserRouter([
     {
-        path: "/",
+        path: "/broken",
         element: <Layout><UnderConstruction /></Layout>
     },
     {
-        path: "/home",
+        path: "/",
         element: <Layout><Home /></Layout>
-    },
-    {
-        path: "/articles",
-        element: <Layout><Articles /></Layout>
     },
     {
         path: "/articles/hackaprompt2023",
@@ -43,6 +39,10 @@ const AppRouter = createBrowserRouter([
     {
         path: "/articles/minecraft-java-admin-commands",
         element: <Layout><McJavaCmds/></Layout>
+    },
+    {
+        path: "/articles",
+        element: <Layout><Articles /></Layout>
     },
     {
         path: "/contact",
