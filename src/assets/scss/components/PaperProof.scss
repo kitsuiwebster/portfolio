@@ -33,6 +33,9 @@
 
 @media screen and (max-width: 768px) {
     .paperproof {
-        margin: 1rem 0;
+
+      margin: 1rem;
+      min-width: 1rem;
+      max-width: 15rem;
     }
 }

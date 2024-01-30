@@ -120,6 +120,7 @@
         &-subtitle {
             font-size: 22px;
             margin-top: 3rem;
+            text-align: center;
         }
 
         &-certifs, &-certificates {
@@ -184,6 +185,14 @@
                 max-width: 20rem;
                 justify-content: center;
             }
+        }
+
+        &-certifications, &-trainings, &-skills {
+            margin: 0 0 7rem 0;
+        }
+
+        &-certifs, &-certificates {
+            width: 60%;
         }
     }
 }

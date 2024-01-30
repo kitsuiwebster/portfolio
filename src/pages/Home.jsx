@@ -120,7 +120,7 @@ function Home() {
                     </nav>
                 </section>
 
-                <section className="home-skills">
+                {/* <section className="home-skills">
                     <h2 className="home-skills-title">Skills</h2>
                 
                     <h3 className="home-skills-titles">AI - Prompt Engineering</h3>
@@ -211,7 +211,7 @@ function Home() {
                         <TechnoIcon src={autotuneLogo} alt="Auto-tune" name="Auto-tune"
                         star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={halfStar} />
                     </div>
-                </section>
+                </section> */}
 
                 <section className="home-certifications">
                     <h2 className="home-certifications-title">Certifications</h2>
