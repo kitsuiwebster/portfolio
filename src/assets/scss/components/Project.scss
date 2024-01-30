@@ -39,12 +39,6 @@
         }
     }
 
-    &-date {
-        font-size: 15px;
-        color: rgb(97, 97, 97);
-        margin-top: 0;
-    }
-
     &-description {
         font-size: 1rem;
         color: black;
@@ -65,5 +59,39 @@
     &-icons {
         display: flex;
 
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .project {
+        width: 30rem;
+
+        &-header {
+            &-subtitle {
+                font-size: 18px;
+            }
+        }
+
+        &-description {
+            font-size: 0.8rem;
+        }
+
+        &-icons {
+            justify-content: space-between;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .project {
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width: 345px) {
+    .project {
+        width: 17rem;
     }
 }

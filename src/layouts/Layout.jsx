@@ -78,7 +78,7 @@ function Layout({ children }) {
                             <img className="layout-footer-link-img" src={discordLogo} alt="Discord"/>
                         </div>
                     </nav>
-                    <p>© Copyright @kitsuiwebster All Rights Reserved</p>
+                    <p className='layout-footer-text'>© Copyright @kitsuiwebster All Rights Reserved</p>
                 </footer>
             </div>
         </>

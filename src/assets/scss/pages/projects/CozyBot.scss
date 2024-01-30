@@ -29,3 +29,16 @@
         margin-bottom: 5rem;
     }
 }
+
+@media screen and (max-width: 768px) {
+    #cozybot {
+        
+        .cozybot-try {
+            margin-bottom: 2rem;
+        }
+    
+        #cozybot-try-bottom {
+            margin-top: 2rem;
+        }
+    }
+}

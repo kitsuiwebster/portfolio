@@ -24,3 +24,35 @@
         line-height: 1.6;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .article {
+        width: 30rem;
+
+        &-header {
+            &-subtitle {
+                font-size: 18px;
+            }
+        }
+
+        &-description {
+            font-size: 0.8rem;
+        }
+
+        &-icons {
+            justify-content: space-between;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .article {
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width: 345px) {
+    .article {
+        width: 17rem;
+    }
+}

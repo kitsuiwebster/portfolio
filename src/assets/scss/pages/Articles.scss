@@ -28,3 +28,23 @@
 }
 
 
+@media screen and (max-width: 768px) {
+    .articles {
+        &-link {
+            padding: 0 0.5rem;
+        }
+
+        &-title {
+            margin-top: 2rem;
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 345px) {
+    .articles {
+        &-link {
+            padding: 0;
+        }
+    }
+}

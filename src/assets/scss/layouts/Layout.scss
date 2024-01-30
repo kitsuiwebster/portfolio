@@ -126,6 +126,10 @@
                 padding: 0.15rem;
             }
         }
+
+        &-text {
+            font-size: 20px;
+        }
     }
 }
 
@@ -185,6 +189,10 @@
             flex-wrap: wrap;
             justify-content: center;
             max-width: 20rem;
+        }
+
+        &-text {
+            font-size: 13px;
         }
     }
 }

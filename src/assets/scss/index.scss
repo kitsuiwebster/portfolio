@@ -72,3 +72,34 @@
     }
 }
 
+@media screen and (max-width: 1150px) {
+    .markdown-body {
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .markdown-body {
+        padding: 0 5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .markdown-body {
+        max-width: 400px;
+        padding: 0 2rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .markdown-body {
+        padding: 0 1rem;
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .markdown-body {
+        max-width: 250px;
+    }
+}
