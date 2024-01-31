@@ -50,4 +50,22 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .techno-icon {
+        padding: 0;
+
+        &-image {
+            width: 3rem;
+        }
+
+        &-name {
+            font-size: 0.8rem;
+        }
+
+        &-star {
+            width: 0.8rem;
+        }
+    }
+}
   
