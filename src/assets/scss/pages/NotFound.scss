@@ -35,17 +35,87 @@
             text-align: center;
             display: inline-block;
             font-size: 19px;
-            margin: 4px 2px;
             cursor: pointer;
-            transition-duration: 0.4s;
             border-radius: 10px;
             transition: transform 0.2s;
+            margin-bottom: 3rem;
 
             &:hover {
                 background-color: #000000; 
                 color: rgb(255, 255, 255);
                 box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.200);
                 transform: scale(1.05);
+            }
+        }
+    }
+
+    .dark & {
+
+        &-container {
+
+            &-message {
+                color: white;
+            }
+
+            &-gohome {
+                color: black;
+                border: 2px solid #ff3b2d;
+
+                &:hover {
+                    color: #ff3b2d;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .error {
+
+        &-container {
+
+            &-404 {
+                font-size: 18rem;
+            }
+
+            &-message {
+                font-size: 1.5rem;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .error {
+
+        &-container {
+
+            &-404 {
+                font-size: 12rem;
+            }
+
+            &-message {
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .error {
+
+        &-container {
+
+            &-404 {
+                font-size: 8rem;
+                margin-top: 5rem
+            }
+
+            &-message {
+                font-size: 1rem;
+                margin-left: 0.5rem;
+                margin-right: 0.5rem;
             }
         }
     }

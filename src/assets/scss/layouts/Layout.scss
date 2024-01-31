@@ -94,6 +94,12 @@
             position: relative;
             transition: background-color 0.3s;
             margin-right: 1rem;
+            margin-left: 0.9rem;
+            transition: transform 0.2s;
+
+            &:hover {
+                transform: scale(1.1) rotate(360deg);
+            }
         
             &.dark {
                 background: url('../../images/sun.png') no-repeat center; 
@@ -146,7 +152,7 @@
         }
 
         &-text {
-            font-size: 20px;
+            font-size: 15px;
         }
     }
 

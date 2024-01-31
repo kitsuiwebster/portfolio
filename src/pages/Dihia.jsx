@@ -1,9 +1,17 @@
 import styles from '../assets/css/Dihia.module.css';
+import { useTheme } from '../ThemeContext';
 
 function Dihia() {
+
+    const { theme } = useTheme(); // Retrieve the current theme
+    const isDarkMode = theme === 'dark'; // Check if the theme is dark
+
+    // Use a conditional class name based on the theme
+    const dihiawrapClass = isDarkMode ? `${styles.dihiawrap} ${styles.darkMode}` : styles.dihiawrap;
+
     return (
         <>
-            <div className={styles.dihiawrap}>
+            <div className={dihiawrapClass}>
                 <div className={styles.moon}></div>
 
                 <div className={styles.container}>

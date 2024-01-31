@@ -14,7 +14,6 @@
         margin-top: 1rem;
 
         &:hover {
-            
             border: 2px solid rgb(255, 0, 0);
             border-radius: 20px;
             transform: scale(1.01);
@@ -24,6 +23,21 @@
     &-title {
         font-size: 35px;
         font-weight: 550;
+    }
+
+    .dark & {   
+        
+        &-link {
+            border: 2px solid rgb(0, 0, 0);
+
+            &:hover {
+                border: 2px solid rgb(255, 0, 0);
+            }
+        }
+
+        &-title {
+            color: white;
+        }
     }
 }
 

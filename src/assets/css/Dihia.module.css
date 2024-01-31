@@ -1,33 +1,43 @@
-/* STYLES  */
-
-
-
 .dihiawrap {
   display: flex;
   justify-content: center;
   min-height: 100vh;
-  padding: 2rem 0;
-  background-color: #111111;
-  color: #ebebeb;
+  padding: 4rem 0;
+  background-color: #ffffff;
+  color: #000000;
   width: 100%;
 }
 
-  .title {
-    color: #ebebeb;
+.darkMode {
+  background-color: #000000; /* Dark background */
+  color: #ffffff; /* Light text */
+}
+
+.title {
+    color: #000000;
     text-align: center;
     margin-bottom: 2rem;
     margin-top: 2rem;
-  }
+}
+
+.darkMode .title {
+  color: white;
+}
   
-  .container {
+.container {
     max-width: 100rem;
     width: 100%;
-    background-color: rgba(32, 32, 32, 0.8);
+    background-color: rgba(235, 235, 235, 0.8);
     padding-left: 5rem;
     border-radius: 20px;
     padding-bottom: 2rem;
     z-index: 2;
-  }
+    margin: 0 2rem;
+}
+
+.darkMode .container {
+  background-color: rgba(24, 24, 24, 0.8);
+}
   
   .ul {
     list-style-type: none;
@@ -319,24 +329,89 @@
   
   /* OBJECTS */
   
-  .bubble {
+.bubble {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
   
+    -webkit-box-shadow: 0 20px 30px rgba(255, 255, 255, 0.1),
+      inset 0px 10px 30px 5px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 20px 30px rgba(255, 255, 255, 0.1),
+      inset 0px 10px 30px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 20px 30px rgba(255, 255, 255, 0.1),
+      inset 0px 10px 30px 5px rgba(0, 0, 0, 0.5);
+  
+    height: 200px;
+    position: absolute;
+    width: 200px;
+}
+
+.darkMode .bubble {
     -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1),
       inset 0px 10px 30px 5px rgba(255, 255, 255, 0.5);
     -moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1),
       inset 0px 10px 30px 5px rgba(255, 255, 255, 0.5);
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1),
       inset 0px 10px 30px 5px rgba(255, 255, 255, 0.5);
+}
   
-    height: 200px;
+.bubble:after {
+    background: -moz-radial-gradient(
+      center,
+      ellipse cover,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0) 70%
+    );
+    background: -webkit-gradient(
+      radial,
+      center center,
+      0px,
+      center center,
+      100%,
+      color-stop(0%, rgba(0, 0, 0, 0.3)),
+      color-stop(70%, rgba(0, 0, 0, 0))
+    );
+    background: -webkit-radial-gradient(
+      center,
+      ellipse cover,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0) 70%
+    );
+    background: -o-radial-gradient(
+      center,
+      ellipse cover,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0) 70%
+    );
+    background: -ms-radial-gradient(
+      center,
+      ellipse cover,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0) 70%
+    );
+    background: radial-gradient(
+      ellipse at center,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0) 70%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4Cffffff', endColorstr='#00ffffff',GradientType=1 );
+  
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+  
+    -webkit-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+    -moz-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+  
+    content: "";
+    height: 180px;
+    left: 10px;
     position: absolute;
-    width: 200px;
-  }
-  
-  .bubble:after {
+    width: 180px;
+}
+
+.darkMode .bubble:after {
     background: -moz-radial-gradient(
       center,
       ellipse cover,
@@ -375,20 +450,18 @@
       rgba(255, 255, 255, 0.3) 0%,
       rgba(255, 255, 255, 0) 70%
     );
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4Cffffff', endColorstr='#00ffffff',GradientType=1 );
-  
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-  
-    -webkit-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
-    -moz-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
-    box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
-  
-    content: "";
-    height: 180px;
-    left: 10px;
-    position: absolute;
-    width: 180px;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .container {
+        padding-right: 5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+      padding-left: 2rem;
+      padding-right: 2rem;
   }
-  
+}

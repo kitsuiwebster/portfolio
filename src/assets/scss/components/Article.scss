@@ -23,6 +23,18 @@
         font-size: 20px;
         line-height: 1.6;
     }
+
+    .dark & {
+        border-bottom: 1px solid rgb(51, 51, 51);
+
+        &-title, &-description {
+            color: white;
+        }
+
+        &-date {
+            color: rgb(185, 185, 185);
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {

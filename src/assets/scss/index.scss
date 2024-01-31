@@ -44,6 +44,23 @@
     sans-serif !important;
     max-width: 800px;
     color: black;
+
+    .dark & {
+        background-color: black;
+        color: white;
+
+        pre {
+            background-color: rgba(175,184,193,0.2);
+        }
+
+        .language-txt, .language-json, .language-java {
+            color: white;
+        }
+
+        a {
+            color: rgb(255, 0, 0);
+        }
+    }
 }
 
 
@@ -65,6 +82,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 1);
     z-index: 1000;
     animation: fade-in-out 3s;
+    text-align: center;
 
     @keyframes fade-in-out {
         0%, 100% { opacity: 0; }

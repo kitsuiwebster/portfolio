@@ -135,7 +135,11 @@
 
         &-header {
 
-            &-title, &-subtitle, &-bio, &-location {
+            &-title {
+                color: ff3b2d;
+            }
+
+            &-subtitle, &-bio, &-location {
                 color: white;
             }
         }
@@ -218,6 +222,11 @@
             flex-direction: column-reverse;
             align-items: center;
             margin-top: 4rem;
+
+            &-profilepic {
+                width: 10rem;
+                height: 10rem;
+            }
         }
 
         &-social {

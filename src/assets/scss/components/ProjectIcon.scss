@@ -15,5 +15,14 @@
             transform: scale(1.05);
         }
     }
+
+    .dark & {
+
+        &-image {
+            background-color: white;
+            padding: 0.3rem;
+            border-radius: 10px;
+        }
+    }
 }
   

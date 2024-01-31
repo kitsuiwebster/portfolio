@@ -57,33 +57,28 @@
     }
 
     .dark & {
-        background-color: rgba(0, 0, 0, 0.5); // Example dark mode background color
+        background-color: rgba(0, 0, 0, 0.5); 
 
         &-title {
-            color: #ffffff; // Example dark mode text color
+            color: #ffffff; 
         }
 
         &-list {
             &-item {
-                border-bottom: 1px solid #444; // Example dark mode border color
+                border-bottom: 1px solid #444; 
 
                 &-label {
-                    color: #ffffff; // Example dark mode text color
+                    color: #ffffff; 
                 }
 
                 &-link {
-                    color: #4ecdc4; // Example dark mode link color
+                    color: rgb(255, 0, 0); // Example dark mode link color
 
                     &:hover {
-                        color: #4ecdc4; // Example dark mode link hover color
-                        text-decoration: underline;
+                        color: rgb(255, 0, 0); // Example dark mode link hover color
                     }
                 }
             }
-        }
-
-        &-emoji {
-            // Dark mode styles for emoji if needed
         }
     }
 }
