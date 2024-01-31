@@ -1,5 +1,6 @@
 import '../assets/scss/pages/Contact.scss';
 import '../assets/scss/index.scss'
+import { useTheme } from '../ThemeContext';
 
 function copyDiscordUsername() {
     navigator.clipboard.writeText('kitsuiwebster').then(() => {
@@ -14,8 +15,10 @@ function copyDiscordUsername() {
 }
 
 function Contact() {
+    const { theme } = useTheme();
+
     return(
-        <div id="contact">
+        <div id="contact" className={theme}>
             <div className="contact">
                 <h2 className="contact-title">Contact</h2>
                 <ul className="contact-list">

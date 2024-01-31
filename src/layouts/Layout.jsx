@@ -2,6 +2,7 @@ import '../assets/scss/layouts/Layout.scss';
 import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
 import menuIcon from '../assets/images/menu.png'
+import { useTheme } from '../ThemeContext';
 
 // Social links
 import gitlabLogo from '../assets/images/social/gitlab.png';
@@ -27,12 +28,14 @@ function copyDiscordUsername() {
 function Layout({ children }) {
     const [isNavOpen, setIsNavOpen] = useState(false);
 
+    const { theme, toggleTheme } = useTheme();
+
     const toggleNav = () => {
         setIsNavOpen(!isNavOpen);
     };
     return (
         <>
-            <div className="layout">
+            <div className={`layout ${theme}`}>
                 <header className="layout-header">
                     <Link to="/" className='layout-header-title-container'>
                         <h1 className='layout-header-title'>@kitsuiwebster</h1>
@@ -48,6 +51,8 @@ function Layout({ children }) {
                             <li className="layout-header-nav-ul-li"> <a className="layout-header-nav-ul-li-a" href="/contact">Contact</a></li>
                         </ul>
                     </nav>
+                    <button onClick={toggleTheme} className={`layout-header-toggle-button ${theme}`}>
+                    </button>
                 </header>
 
                 <main className='layout-main'>

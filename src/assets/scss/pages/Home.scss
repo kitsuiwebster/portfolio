@@ -130,6 +130,48 @@
             align-items: center;
         }
     }
+
+    .dark & {
+
+        &-header {
+
+            &-title, &-subtitle, &-bio, &-location {
+                color: white;
+            }
+        }
+
+        &-social {
+            
+            &-link {
+                background-color: white;
+                padding: 0.2rem;
+                border-radius: 10px;
+            }
+        }
+
+        &-skills {
+
+            &-title {
+                color: white;
+            }
+        }
+
+        &-certifications, &-trainings, &-skills {
+            border-top: 2px solid rgb(255, 255, 255);
+            color: white;
+
+            &-title {
+                color: white;
+            }
+        }
+
+        &-certifications {
+
+            &-subtitle {
+                color: white;
+            }
+        }
+    }
 }
 
 

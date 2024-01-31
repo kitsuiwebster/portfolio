@@ -55,6 +55,37 @@
             cursor: pointer;
         }
     }
+
+    .dark & {
+        background-color: rgba(0, 0, 0, 0.5); // Example dark mode background color
+
+        &-title {
+            color: #ffffff; // Example dark mode text color
+        }
+
+        &-list {
+            &-item {
+                border-bottom: 1px solid #444; // Example dark mode border color
+
+                &-label {
+                    color: #ffffff; // Example dark mode text color
+                }
+
+                &-link {
+                    color: #4ecdc4; // Example dark mode link color
+
+                    &:hover {
+                        color: #4ecdc4; // Example dark mode link hover color
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        &-emoji {
+            // Dark mode styles for emoji if needed
+        }
+    }
 }
 
 

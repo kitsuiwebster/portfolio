@@ -4,6 +4,7 @@ import profilePicture from '../assets/images/profile-picture.jpg';
 import '../assets/scss/index.scss'
 import TechnoIcon from '../components/TechnoIcon';
 import PaperProof from '../components/PaperProof';
+import { useTheme } from '../ThemeContext';
 
 // Social links
 import gitlabLogo from '../assets/images/social/gitlab.png';
@@ -76,9 +77,12 @@ function copyDiscordUsername() {
 
 
 function Home() {
+
+const { theme } = useTheme();
+
     return (
         <div id="home">
-            <div className="home">
+            <div className={`home ${theme}`}>
                 <header className="home-header">
                     <div className="home-header-text">
                         <h1 className="home-header-title">Raphaël MARTIN</h1>

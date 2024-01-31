@@ -15,15 +15,22 @@
         border-radius: 20px;
   
         &:hover {
-          transform: scale(1.05);
+            transform: scale(1.05);
         }
     }
   
     &-name {
-      font-size: 1.2rem;
-      color: #000000;
+        font-size: 1.2rem;
+        color: #000000;
     }
-  }
+
+    .dark & {
+        
+        &-image {
+            box-shadow: 0px 0px 15px 2px rgba(255, 255, 255, 0.425);
+        }
+    }
+}
   
 @media screen and (max-width: 1200px) {
     .paperproof {

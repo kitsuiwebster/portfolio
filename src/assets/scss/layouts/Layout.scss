@@ -13,12 +13,12 @@
         background-color: black;
         position: sticky;
         top: 0;
-        z-index: 1;
+        z-index: 3;
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0.3rem 0;
+        padding: 0.4rem 0;
 
         &-mobile {
             display: none; 
@@ -82,6 +82,23 @@
             font-size: 20px;
             margin-left: 2rem;
         }
+
+
+        &-toggle-button {
+            background: url('../../images/moon.png') no-repeat center; 
+            border: none;
+            width: 3rem; 
+            height: 3rem;
+            cursor: pointer;
+            background-size: cover;
+            position: relative;
+            transition: background-color 0.3s;
+            margin-right: 1rem;
+        
+            &.dark {
+                background: url('../../images/sun.png') no-repeat center; 
+            }
+        }       
     }
 
     &-main {
@@ -106,6 +123,7 @@
         position: relative;
         box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.473);
         flex-direction: column;
+        z-index: 3;
 
         &-links {
             display: flex;
@@ -131,6 +149,22 @@
             font-size: 20px;
         }
     }
+
+
+    .dark & {
+
+        &-header {
+            border-bottom: 1px solid white;
+        }
+        
+        &-main {
+            background-color: black;
+        }
+
+        &-footer {
+            border-top: 1px solid white;
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -139,6 +173,10 @@
 
         &-mobile {
             display: block; 
+        }
+
+        &-toggle-button {
+            margin-right: 4rem;
         }
 
         &-nav {
