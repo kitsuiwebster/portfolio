@@ -36,7 +36,7 @@ function Layout({ children }) {
 
     const [isLangMenuOpen, setIsLangMenuOpen] = useState(false);
     const { i18n } = useTranslation();
-    const [currentLanguage, setCurrentLanguage] = useState('en'); // Default to 'en'
+    const [currentLanguage, setCurrentLanguage] = useState('en');
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
@@ -47,7 +47,6 @@ function Layout({ children }) {
 
         i18n.on('languageChanged', languageChangeHandler);
 
-        // Check if language is already detected
         if (i18n.isInitialized) {
             setCurrentLanguage(i18n.language);
             setLoading(false);
@@ -75,7 +74,7 @@ function Layout({ children }) {
     };
 
     if (loading) {
-        return <div>Loading...</div>; // Or any other loading indicator
+        return <div>Loading...</div>; 
     }
 
     return (
