@@ -36,17 +36,14 @@ function Layout({ children }) {
     const { theme, toggleTheme } = useTheme();
     const [isLangMenuOpen, setIsLangMenuOpen] = useState(false);
 
-    // Fonction pour obtenir la langue du stockage local ou définir 'en' par défaut
     const getStoredLanguage = () => {
         const storedLang = localStorage.getItem('i18nextLng');
         return storedLang || 'en';
     };
 
-    // Définir l'état initial de la langue et du drapeau
     const [currentLanguage, setCurrentLanguage] = useState(getStoredLanguage());
     const [currentFlag, setCurrentFlag] = useState(currentLanguage === 'en' ? ukFlag : frenchFlag);
 
-    // Mettre à jour le drapeau et la langue dans le stockage local lorsque la langue change
     useEffect(() => {
         i18n.changeLanguage(currentLanguage);
         localStorage.setItem('i18nextLng', currentLanguage);
@@ -62,7 +59,6 @@ function Layout({ children }) {
 
     const toggleNav = () => setIsNavOpen(!isNavOpen);
 
-    // Définir la langue opposée pour le menu de changement de langue
     const otherLanguage = currentLanguage === 'en' ? 'fr' : 'en';
     return (
         <>
