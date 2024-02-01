@@ -8,7 +8,7 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    fallbackLng: 'en',
+    fallbackLng: 'fr',
     debug: true,
     ns: ['layout', 'articles', 'contact', 'projects', 'kasa', 'nina', 'qwenta', 'sophie', 'cozybot', 'cozybotinvite'],
     defaultNS: 'layout',

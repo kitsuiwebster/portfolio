@@ -1,12 +1,12 @@
-import '../assets/scss/layouts/Layout.scss';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import React, { useState } from 'react';
-import menuIcon from '../assets/images/menu.png'
+import { useTranslation } from 'react-i18next';
 import { useTheme } from '../ThemeContext';
 
-import { useTranslation } from 'react-i18next';
-import ukFlag from '../assets/images/flags/uk.png'
-import frenchFlag from '../assets/images/flags/fr.png'
+import '../assets/scss/layouts/Layout.scss';
+import menuIcon from '../assets/images/menu.png';
+import ukFlag from '../assets/images/flags/uk.png';
+import frenchFlag from '../assets/images/flags/fr.png';
 
 // Social links
 import gitlabLogo from '../assets/images/social/gitlab.png';
@@ -30,19 +30,28 @@ function copyDiscordUsername() {
 }
 
 function Layout({ children }) {
-
     const { t } = useTranslation('layout');
     const [isNavOpen, setIsNavOpen] = useState(false);
     const { theme, toggleTheme } = useTheme();
 
-
-
     const [isLangMenuOpen, setIsLangMenuOpen] = useState(false);
     const { i18n } = useTranslation();
+    const [currentLanguage, setCurrentLanguage] = useState(i18n.language);
 
-    const currentLanguage = i18n.language;
-    const otherLanguage = currentLanguage === 'en' ? 'fr' : 'en';
-    const currentFlag = currentLanguage === 'en' ? ukFlag : frenchFlag;
+    useEffect(() => {
+        const languageChangeHandler = (lng) => {
+            setCurrentLanguage(lng);
+        };
+
+        i18n.on('languageChanged', languageChangeHandler);
+
+        return () => {
+            i18n.off('languageChanged', languageChangeHandler);
+        };
+    }, [i18n]);
+
+    const otherLanguage = currentLanguage === 'fr' ? 'en' : 'fr';
+    const currentFlag = currentLanguage === 'fr' ? frenchFlag : ukFlag;
 
     const toggleLangMenu = () => {
         setIsLangMenuOpen(!isLangMenuOpen);
@@ -56,6 +65,7 @@ function Layout({ children }) {
     const toggleNav = () => {
         setIsNavOpen(!isNavOpen);
     };
+
     return (
         <>
             <div className={`layout ${theme}`}>
