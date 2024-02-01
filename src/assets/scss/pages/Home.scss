@@ -106,7 +106,7 @@
         align-items: center;
         flex-direction: column;
         padding-top: 7rem;
-        border-top: 2px solid black;
+        border-top: 2px solid rgb(212, 212, 212);
         width: 70%;
         margin: 0 3rem 7rem 3rem;
 
@@ -161,7 +161,7 @@
         }
 
         &-certifications, &-trainings, &-skills {
-            border-top: 2px solid rgb(255, 255, 255);
+            border-top: 2px solid rgb(59, 59, 59);
             color: white;
 
             &-title {
