@@ -1,0 +1,15 @@
+{
+    "tasks": {
+        "task-1": "I Set up a technology monitoring/watch system to research and find ideas related to the project",
+        "task-2": "I defined the technical specifications for the 'Menu Maker' site based on provided functional specs",
+        "task-3": "I broke down the features and requirements into developer tasks and user stories",
+        "task-4": "I established a Kanban board with columns for tracking task status",
+        "task-5": "I evaluated and selected the appropriate project management tool to use",
+        "task-6": "I created multiple presentations to document research, plans, solutions",
+        "task-7": "I prepared to present and defend my technical choices to the client",
+        "task-8": "I planned meetings, communications and validation processes for an agile workflow",
+        "task-9": "I determined the need for collaboration with a backend developer and proposed an integration strategy",
+        "task-10": "I used diagrams and visuals to explain technical details to non-technical stakeholders",
+        "task-11": "I followed best practices in organizing, documenting and exporting deliverables"
+    }
+}

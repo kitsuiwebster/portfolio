@@ -1,0 +1,16 @@
+{
+    "tasks": {
+        "task-1": "J'ai utilisé React pour construire l'ensemble de l'interface frontale du site de location de maisons, en suivant les maquettes et composants Figma fournis.",
+        "task-2": "J'ai utilisé l'état (state) et les propriétés (props) pour gérer le flux de données et la communication entre les composants.",
+        "task-3": "J'ai créé des composants React pour des parties de l'interface utilisateur comme les annonces immobilières, les galeries d'images, les accordéons, les en-têtes, les pieds de page, etc.",
+        "task-4": "J'ai créé un routeur avec React Router pour gérer la navigation entre les différentes pages du site.",
+        "task-5": "J'ai implémenté des fonctionnalités telles que des curseurs d'images, l'ouverture/fermeture d'accordéons, le lien entre les pages, etc.",
+        "task-6": "J'ai stylisé les composants en utilisant Sass et CSS.",
+        "task-7": "J'ai ajouté des animations CSS pour des éléments comme l'expansion/réduction d'accordéon.",
+        "task-8": "J'ai initialisé le projet en utilisant Create React App et configuré la structure globale du système de fichiers.",
+        "task-9": "J'ai structuré, documenté et organisé tout le code pour suivre les meilleures pratiques de l'industrie.",
+        "task-10": "J'ai livré l'intégralité du code de l'application dans un dépôt GitHub pour révision.",
+        "task-11": "J'ai préparé et donné une présentation pour défendre mes décisions techniques."
+    },
+    "button": "Dépôt GitHub"
+}

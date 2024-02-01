@@ -10,7 +10,7 @@ i18n
   .init({
     fallbackLng: 'en',
     debug: true,
-    ns: ['layout', 'articles', 'contact', 'projects'],
+    ns: ['layout', 'articles', 'contact', 'projects', 'kasa', 'nina', 'qwenta', 'sophie', 'cozybot', 'cozybotinvite'],
     defaultNS: 'layout',
     interpolation: {
       escapeValue: false,

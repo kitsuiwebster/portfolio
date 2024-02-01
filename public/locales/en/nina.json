@@ -1,0 +1,16 @@
+{
+    "tasks": {
+        "task-1": "I analyzed the website's existing code to identify optimization opportunities",
+        "task-2": "I minified code and assets to improve performance",
+        "task-3": "I compressed and resized images to reduce page load time",
+        "task-4": "I improved SEO by adding metadata, alt text, headings and Schema markup",
+        "task-5": "I fixed bugs in the image gallery modal and filters functionality",
+        "task-6": "I improved accessibility using ARIA roles, labels and proper semantic HTML",
+        "task-7": "I optimized for mobile screens and touch targets",
+        "task-8": "I used Lighthouse and Wave tools to measure improvements",
+        "task-9": "I thoroughly documented all changes made in a detailed report",
+        "task-10": "I prepared a presentation to demonstrate optimizations to the client",
+        "task-11": "I defended my technical choices in an oral discussion"
+    },
+    "button": "GitHub Repository"
+}

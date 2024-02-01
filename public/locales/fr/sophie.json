@@ -1,0 +1,16 @@
+{
+    "tasks": {
+        "task-1": "J'ai amélioré une page de galerie de portfolio HTML statique en ajoutant des fonctionnalités dynamiques avec JavaScript",
+        "task-2": "J'ai implémenté une fonctionnalité de filtrage pour afficher dynamiquement les projets en fonction de critères",
+        "task-3": "J'ai construit une page de connexion à partir de zéro avec JavaScript pour gérer l'authentification de l'administrateur du site",
+        "task-4": "J'ai créé une pop-up modale avec JavaScript pour permettre à l'administrateur de télécharger de nouvelles images de galerie",
+        "task-5": "J'ai géré les événements utilisateurs comme les clics, les entrées, les soumissions de formulaires, etc., avec des écouteurs d'événements JavaScript",
+        "task-6": "J'ai manipulé le DOM en sélectionnant des éléments HTML et en mettant à jour des valeurs, styles, attributs, etc.",
+        "task-7": "Je me suis intégré à une API backend en utilisant JavaScript fetch pour obtenir les données du projet et poster de nouvelles images",
+        "task-8": "J'ai géré l'état d'authentification de l'utilisateur pour basculer les vues pour les utilisateurs connectés et déconnectés",
+        "task-9": "J'ai codé la fonctionnalité frontale selon les conceptions/exigences fournies",
+        "task-10": "J'ai correctement organisé et documenté mon code en suivant les meilleures pratiques",
+        "task-11": "J'ai préparé une présentation et discuté des décisions techniques et de l'implémentation"
+    },
+    "button": "Dépôt GitHub"
+}

@@ -5,6 +5,7 @@ import '../assets/scss/index.scss'
 import TechnoIcon from '../components/TechnoIcon';
 import PaperProof from '../components/PaperProof';
 import { useTheme } from '../ThemeContext';
+import { useTranslation } from 'react-i18next';
 
 // Social links
 import gitlabLogo from '../assets/images/social/gitlab.png';
@@ -78,7 +79,9 @@ function copyDiscordUsername() {
 
 function Home() {
 
-const { theme } = useTheme();
+    const { theme } = useTheme();
+
+    const { t } = useTranslation('home');
 
     return (
         <div id="home">
@@ -86,14 +89,9 @@ const { theme } = useTheme();
                 <header className="home-header">
                     <div className="home-header-text">
                         <h1 className="home-header-title">Raphaël MARTIN</h1>
-                        <h2 className="home-header-subtitle">IT Freelance, Prompt Engineer, Developer</h2>
+                        <h2 className="home-header-subtitle">{t('header.subtitle')}</h2>
                         <h3 className="home-header-location">📍 Toulouse, France</h3>
-                        <p className="home-header-bio">
-                            Passionate about IT, convinced by the values of opensource,
-                            I am continually training and seeking out projects that resonate with me.
-                            As a great self-taught,
-                            I have already developed a wide range of skills since I was very young around this field and always thirsty for knowledge,
-                            I never stop evolving in IT.</p>
+                        <p className="home-header-bio">{t('header.bio')}</p>
                     </div>
                     <img src={profilePicture} alt="Raphaël Martin" className="home-header-profilepic"/>
                 </header>
@@ -125,7 +123,7 @@ const { theme } = useTheme();
                 </section>
 
                 <section className="home-skills">
-                    <h2 className="home-skills-title">Skills</h2>
+                    <h2 className="home-skills-title">{t('skills.title')}</h2>
                 
                     <h3 className="home-skills-titles">AI - Prompt Engineering</h3>
                     <div className="home-skills-category">
@@ -141,7 +139,7 @@ const { theme } = useTheme();
                         star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={clearStar} star5={clearStar} />
                     </div>
 
-                    <h3 className="home-skills-titles">Development</h3>
+                    <h3 className="home-skills-titles">{t('skills.dev')}</h3>
                     <div className="home-skills-category">
                         <TechnoIcon src={htmlLogo} alt="HTML" name="HTML"
                         star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={yellowStar} />
@@ -167,7 +165,7 @@ const { theme } = useTheme();
                         star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={halfStar} />
                     </div>
 
-                    <h3 className="home-skills-titles">System</h3>
+                    <h3 className="home-skills-titles">{t('skills.sys')}</h3>
                     <div className="home-skills-category">
                         <TechnoIcon src={windowsLogo} alt="Windows" name="Windows"
                         star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={clearStar} />
@@ -188,7 +186,7 @@ const { theme } = useTheme();
                     </div>
 
 
-                    <h3 className="home-skills-titles">Visual</h3>
+                    <h3 className="home-skills-titles">{t('skills.visual')}</h3>
                     <div className="home-skills-category">
                         <TechnoIcon src={vegasLogo} alt="Vegas Pro" name="Vegas Pro"
                         star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={halfStar} star5={clearStar} />
@@ -223,7 +221,7 @@ const { theme } = useTheme();
                         <PaperProof src={certifiedPromptEngineer} alt="Certified Prompt Engineer"/>
                         <PaperProof src={certifiedCsiLinuxInvestigator} alt="Certified CSI Linux Investigator"/>
                     </div>
-                    <h3 className="home-certifications-subtitle">Certificates of Completion</h3>
+                    <h3 className="home-certifications-subtitle">{t('certifications.certificate')}</h3>
                     <div className="home-certifications-certificates">
                         <PaperProof src={cocLinux} alt="Certificate of Completion General Linux Administration"/>
                         <PaperProof src={justJavaScript} alt="Certificate of Completion Just JavaScript"/>

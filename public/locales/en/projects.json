@@ -1,0 +1,28 @@
+{
+    "titles": {
+        "title": "Projects",
+        "school": "School Projects",
+        "other": "Other Projects"
+    },
+    "kasa": {
+        "subtitle": "A real estate rental agency",
+        "description": "A React.js web application that allows tenants and landlords to find agreement on rental housing."
+    }
+    ,
+    "nina": {
+        "subtitle": "Optimizing a photographer's website.",
+        "description": "Website audit to optimise SEO, performance and accessibility."
+    },
+    "qwenta": {
+        "subtitle": "Website project management",
+        "description": "A website designed for restaurant owners so that they can manage their customers and their menus in one place."
+    },
+    "sophie": {
+        "subtitle": "The showcase of an interior artist",
+        "description": "Implementing functionality for the artist and optimising the UX thanks to JavaScript, and integrating the log-in page with authentication."
+    },
+    "cozybot": {
+        "subtitle": "A Discord bot running on a Raspberry Pi",
+        "description": "Bring tranquility to your Discord server with CozyBot. This innovative bot streams peaceful nature ambiences into voice channels on-demand."
+    }
+}

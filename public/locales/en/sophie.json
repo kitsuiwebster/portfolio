@@ -1,0 +1,16 @@
+{
+    "tasks": {
+        "task-1": "I enhanced a static HTML portfolio gallery page by adding dynamic functionality with JavaScript",
+        "task-2": "I implemented a filtering feature to dynamically display projects based on criteria",
+        "task-3": "I built a login page from scratch with JavaScript to handle site administrator authentication",
+        "task-4": "I created a modal pop-up with JavaScript to allow the admin to upload new gallery images",
+        "task-5": "I handled user events like clicks, inputs, form submits etc with JavaScript event listeners",
+        "task-6": "I manipulated the DOM by selecting HTML elements and updating values, styles, attributes etc",
+        "task-7": "I integrated with a backend API using JavaScript fetch to GET project data and POST new images",
+        "task-8": "I managed user authentication state to toggle views for logged in vs logged out",
+        "task-9": "I coded the front-end functionality according to provided designs/requirements",
+        "task-10": "I properly organized and documented by code following best practices",
+        "task-11": "I put together a presentation and discussed technical decisions and implementation"
+    },
+    "button": "GitHub Repository"
+}

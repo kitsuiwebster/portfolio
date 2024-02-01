@@ -1,0 +1,12 @@
+{
+    "hackaprompt": {
+        "title": "HackAPrompt 2023 : Comment j'ai trompé les modèles d'IA.",
+        "date": "4 août 2023",
+        "description": "J'ai participé au hackathon HackAPrompt où les concurrents devaient tromper des modèles d'IA pour qu'ils répondent 'I have been PWNED' tout en respectant des règles strictes. J'ai terminé 11ème sur plus de 2600 participants en testant diverses stratégies pour manipuler les modèles d'IA sur la plateforme de compétition AICrowd. Cette expérience a amélioré mes compétences en matière de sécurité de l'IA et de créativité à travers l'apprentissage de techniques de Prompt Hacking pour contrôler les comportements des modèles."
+    },
+    "minecraft-java-admin-commands": {
+        "title": "Serveur Minecraft (Java) : Toutes les commandes d'administrateur",
+        "date": "15 Juin 2023",
+        "description": "Ce guide couvre toutes les commandes d'administrateur pour les serveurs Minecraft Java. Apprenez à contrôler des mondes avec la téléportation, l'invocation, la météo, et plus encore. Maîtrisez l'administration de serveur pour créer des expériences personnalisées pour les joueurs."
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "tasks": {
+        "task-1": "J'ai mis en place un système de veille technologique pour rechercher et trouver des idées liées au projet",
+        "task-2": "J'ai défini les spécifications techniques pour le site 'Menu Maker' sur la base des spécifications fonctionnelles fournies",
+        "task-3": "J'ai décomposé les fonctionnalités et les exigences en tâches de développement et en histoires d'utilisateurs",
+        "task-4": "J'ai établi un tableau Kanban avec des colonnes pour suivre l'état des tâches",
+        "task-5": "J'ai évalué et sélectionné l'outil de gestion de projet approprié à utiliser",
+        "task-6": "J'ai créé plusieurs présentations pour documenter la recherche, les plans, les solutions",
+        "task-7": "Je me suis préparé à présenter et défendre mes choix techniques au client",
+        "task-8": "J'ai planifié des réunions, des communications et des processus de validation pour un flux de travail agile",
+        "task-9": "J'ai déterminé la nécessité de collaborer avec un développeur backend et proposé une stratégie d'intégration",
+        "task-10": "J'ai utilisé des diagrammes et des visuels pour expliquer les détails techniques aux parties prenantes non techniques",
+        "task-11": "J'ai suivi les meilleures pratiques dans l'organisation, la documentation et l'exportation des livrables"
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "tasks": {
+        "task-1": "I used React to build out the entire front-end interface of the home rental website, following provided Figma mockups and components.",
+        "task-2": "I used state and props to manage data flow and communication between components.",
+        "task-3": "I created React components for parts of the UI like the property listings, image galleries, accordions, headers, footers, etc.",
+        "task-4": "I created a router with React Router to handle navigation between different pages of the site.",
+        "task-5": "I implemented functionality like image sliders, opening/closing accordions, linking between pages, etc.",
+        "task-6": "I styled the components using Sass and CSS.",
+        "task-7": "I added CSS animations for elements like accordion expand/collapse.",
+        "task-8": "I initialized the project using Create React App and set up the overall filesystem structure.",
+        "task-9": "I structured, documented and organized all code to follow industry best practices.",
+        "task-10": "I delivered the full application code in a GitHub repository for review.",
+        "task-11": "I prepared and gave a presentation defending my technical decisions."
+    },
+    "button": "GitHub Repository"
+}

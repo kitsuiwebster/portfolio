@@ -1,0 +1,15 @@
+{
+    "header": {
+        "subtitle": "IT Freelance, Prompt Engineer, Developer",
+        "bio": "Passionate about IT, convinced by the values of opensource, I am continually training and seeking out projects that resonate with me. As a great self-taught, I have already developed a wide range of skills since I was very young around this field and always thirsty for knowledge, I never stop evolving in IT."
+    },
+    "skills" : {
+        "title": "Skills",
+        "dev": "Development",
+        "sys": "System",
+        "visual": "Visual"
+    },
+    "certifications": {
+        "certificate": "Certificate of Completion"
+    }
+}

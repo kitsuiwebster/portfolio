@@ -4,6 +4,7 @@ import '../assets/scss/index.scss'
 import Project from '../components/Project';
 import openclassroomsLogo from '../assets/images/openclassrooms.png'
 import cozybotLogo from '../assets/images/cozybot-logo.png'
+import { useTranslation } from 'react-i18next';
 
 // Technos icons
 import pythonLogo from '../assets/images/technos/python.png';
@@ -33,18 +34,19 @@ import cozybotImage from '../assets/images/projects/cozybot.png'
 
 
 function Projects() {
+    const { t } = useTranslation('projects');
     return (
         <>
             <div id="projects">
                 <div className="projects">
-                    <h1 className='projects-title'>Projects</h1>
-                    <h2 className='projects-subtitle'>School Projects</h2>
+                    <h1 className='projects-title'>{t('titles.title')}</h1>
+                    <h2 className='projects-subtitle'>{t('titles.school')}</h2>
                     <Link to="/projects/kasa" className="projects-link">
                         <Project
                         schoolLogo={openclassroomsLogo}
                         title="Kasa"
-                        subtitle="A real estate rental agency"
-                        description="A React.js web application that allows tenants and landlords to find agreement on rental housing." 
+                        subtitle={t('kasa.subtitle')}
+                        description={t('kasa.description')} 
                         imageSrc={kasaImage}
                         imageAlt="Kasa"
                         logoSrc0={reactLogo}
@@ -59,8 +61,8 @@ function Projects() {
                         <Project
                         schoolLogo={openclassroomsLogo}
                         title="Nina Carducci"
-                        subtitle="Optimizing a photographer's website."
-                        description="Website audit to optimise SEO, performance and accessibility." 
+                        subtitle={t('nina.subtitle')}
+                        description={t('nina.description')} 
                         imageSrc={ninacarducciImage}
                         imageAlt="Nina Carducci"
                         logoSrc0={htmlLogo}
@@ -75,8 +77,8 @@ function Projects() {
                         <Project
                         schoolLogo={openclassroomsLogo}
                         title="Qwenta"
-                        subtitle="Website project management"
-                        description="A website designed for restaurant owners so that they can manage their customers and their menus in one place. " 
+                        subtitle={t('qwenta.subtitle')}
+                        description={t('qwenta.description')} 
                         imageSrc={qwentaImage}
                         imageAlt="Qwenta"
                         logoSrc0={trelloLogo}
@@ -87,8 +89,8 @@ function Projects() {
                         <Project
                         schoolLogo={openclassroomsLogo}
                         title="Sophie Bluel"
-                        subtitle="The showcase of an interior artist"
-                        description="Implementing functionality for the artist and optimising the UX thanks to JavaScript, and integrating the log-in page with authentication." 
+                        subtitle={t('sophie.subtitle')}
+                        description={t('sophie.description')} 
                         imageSrc={sophiebluelImage}
                         imageAlt="Sophie Bluel"
                         logoSrc0={jsLogo}
@@ -97,13 +99,13 @@ function Projects() {
                         logoSrc3={gitLogo}
                         />
                     </Link>
-                    <h2 className='projects-subtitle'>Other Projects</h2>
+                    <h2 className='projects-subtitle'>{t('titles.other')}</h2>
                     <Link to="/projects/cozybot" className="projects-link">
                         <Project
                         schoolLogo={cozybotLogo}
                         title="CozyBot"
-                        subtitle="A Discord bot running on a Raspberry Pi"
-                        description="Bring tranquility to your Discord server with CozyBot. This innovative bot streams peaceful nature ambiences into voice channels on-demand." 
+                        subtitle={t('cozybot.subtitle')}
+                        description={t('cozybot.description')}
                         imageSrc={cozybotImage}
                         imageAlt="CozyBot"
                         logoSrc0={pythonLogo}
