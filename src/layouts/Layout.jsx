@@ -101,13 +101,13 @@ function Layout({ children }) {
                             <img src={currentFlag} alt="Language" onClick={toggleLangMenu} className="layout-header-toggle-language-icon" />
                             {isLangMenuOpen && (
                                 <div className="layout-header-toggle-language-menu">
-                                    {otherLanguage === 'en' && (
-                                        <img className='layout-header-toggle-language-menu-icon'
-                                        src={ukFlag} alt="United Kingdom flag" onClick={() => changeLanguage('en')}/>
-                                    )}
                                     {otherLanguage === 'fr' && (
                                         <img className='layout-header-toggle-language-menu-icon'
                                         src={frenchFlag} alt="France flag" onClick={() => changeLanguage('fr')}/>
+                                    )}
+                                    {otherLanguage === 'en' && (
+                                        <img className='layout-header-toggle-language-menu-icon'
+                                        src={ukFlag} alt="United Kingdom flag" onClick={() => changeLanguage('en')}/>
                                     )}
                                 </div>
                             )}
