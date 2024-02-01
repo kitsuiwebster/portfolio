@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import '../assets/scss/layouts/Layout.scss';
 import { Link } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import React, { useState, useEffect } from 'react';
+import menuIcon from '../assets/images/menu.png'
 import { useTheme } from '../ThemeContext';
 
-import '../assets/scss/layouts/Layout.scss';
-import menuIcon from '../assets/images/menu.png';
-import ukFlag from '../assets/images/flags/uk.png';
-import frenchFlag from '../assets/images/flags/fr.png';
+import { useTranslation } from 'react-i18next';
+import ukFlag from '../assets/images/flags/uk.png'
+import frenchFlag from '../assets/images/flags/fr.png'
 
 // Social links
 import gitlabLogo from '../assets/images/social/gitlab.png';
@@ -16,6 +16,7 @@ import xLogo from '../assets/images/social/x.webp';
 import mediumLogo from '../assets/images/social/medium.png';
 import devtoLogo from '../assets/images/social/devto.png';
 import discordLogo from '../assets/images/social/discord.jpg';
+
 
 function copyDiscordUsername() {
     navigator.clipboard.writeText('kitsuiwebster').then(() => {
@@ -35,36 +36,34 @@ function Layout({ children }) {
     const { theme, toggleTheme } = useTheme();
     const [isLangMenuOpen, setIsLangMenuOpen] = useState(false);
 
-    // Initialize the flag to the UK flag by default
-    const [currentFlag, setCurrentFlag] = useState(ukFlag);
+    // Fonction pour obtenir la langue du stockage local ou définir 'en' par défaut
+    const getStoredLanguage = () => {
+        const storedLang = localStorage.getItem('i18nextLng');
+        return storedLang || 'en';
+    };
 
-    // Initialize otherLanguage to French ('fr') as the initial opposite of English
-    const [otherLanguage, setOtherLanguage] = useState('fr');
+    // Définir l'état initial de la langue et du drapeau
+    const [currentLanguage, setCurrentLanguage] = useState(getStoredLanguage());
+    const [currentFlag, setCurrentFlag] = useState(currentLanguage === 'en' ? ukFlag : frenchFlag);
 
+    // Mettre à jour le drapeau et la langue dans le stockage local lorsque la langue change
     useEffect(() => {
-        // Update the flag and otherLanguage when the language changes
-        const handleLanguageChange = (lang) => {
-            setCurrentFlag(lang === 'en' ? ukFlag : frenchFlag);
-            setOtherLanguage(lang === 'en' ? 'fr' : 'en');
-        };
-
-        i18n.on('languageChanged', handleLanguageChange);
-
-        return () => {
-            i18n.off('languageChanged', handleLanguageChange);
-        };
-    }, [i18n]);
+        i18n.changeLanguage(currentLanguage);
+        localStorage.setItem('i18nextLng', currentLanguage);
+    }, [currentLanguage, i18n]);
 
     const toggleLangMenu = () => setIsLangMenuOpen(!isLangMenuOpen);
 
     const changeLanguage = (lang) => {
-        i18n.changeLanguage(lang);
+        setCurrentLanguage(lang);
+        setCurrentFlag(lang === 'en' ? ukFlag : frenchFlag);
         setIsLangMenuOpen(false);
     };
 
     const toggleNav = () => setIsNavOpen(!isNavOpen);
 
-
+    // Définir la langue opposée pour le menu de changement de langue
+    const otherLanguage = currentLanguage === 'en' ? 'fr' : 'en';
     return (
         <>
             <div className={`layout ${theme}`}>
@@ -88,13 +87,13 @@ function Layout({ children }) {
                             <img src={currentFlag} alt="Language" onClick={toggleLangMenu} className="layout-header-toggle-language-icon" />
                             {isLangMenuOpen && (
                                 <div className="layout-header-toggle-language-menu">
-                                    {otherLanguage === 'fr' && (
-                                        <img className='layout-header-toggle-language-menu-icon'
-                                        src={frenchFlag} alt="France flag" onClick={() => changeLanguage('fr')}/>
-                                    )}
                                     {otherLanguage === 'en' && (
                                         <img className='layout-header-toggle-language-menu-icon'
                                         src={ukFlag} alt="United Kingdom flag" onClick={() => changeLanguage('en')}/>
+                                    )}
+                                    {otherLanguage === 'fr' && (
+                                        <img className='layout-header-toggle-language-menu-icon'
+                                        src={frenchFlag} alt="France flag" onClick={() => changeLanguage('fr')}/>
                                     )}
                                 </div>
                             )}
