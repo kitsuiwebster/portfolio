@@ -30,48 +30,40 @@ function copyDiscordUsername() {
 }
 
 function Layout({ children }) {
-    const { t } = useTranslation('layout');
+    const { t, i18n } = useTranslation('layout');
     const [isNavOpen, setIsNavOpen] = useState(false);
     const { theme, toggleTheme } = useTheme();
-
     const [isLangMenuOpen, setIsLangMenuOpen] = useState(false);
-    const { i18n } = useTranslation();
 
-    // Use state for current language
-    const [currentLanguage, setCurrentLanguage] = useState(i18n.language);
+    // Initialize the flag to the UK flag by default
+    const [currentFlag, setCurrentFlag] = useState(ukFlag);
+
+    // Initialize otherLanguage to French ('fr') as the initial opposite of English
+    const [otherLanguage, setOtherLanguage] = useState('fr');
 
     useEffect(() => {
-        const languageChangeHandler = (lng) => {
-            setCurrentLanguage(lng);
+        // Update the flag and otherLanguage when the language changes
+        const handleLanguageChange = (lang) => {
+            setCurrentFlag(lang === 'en' ? ukFlag : frenchFlag);
+            setOtherLanguage(lang === 'en' ? 'fr' : 'en');
         };
 
-        // Listen for language changes
-        i18n.on('languageChanged', languageChangeHandler);
+        i18n.on('languageChanged', handleLanguageChange);
 
         return () => {
-            // Clean up
-            i18n.off('languageChanged', languageChangeHandler);
+            i18n.off('languageChanged', handleLanguageChange);
         };
     }, [i18n]);
 
-    // Update flag based on current language
-    const currentFlag = currentLanguage === 'en' ? ukFlag : frenchFlag;
-
-    // Define the other language based on the current language
-    const otherLanguage = currentLanguage === 'en' ? 'fr' : 'en';
-
-    const toggleLangMenu = () => {
-        setIsLangMenuOpen(!isLangMenuOpen);
-    };
+    const toggleLangMenu = () => setIsLangMenuOpen(!isLangMenuOpen);
 
     const changeLanguage = (lang) => {
         i18n.changeLanguage(lang);
         setIsLangMenuOpen(false);
     };
 
-    const toggleNav = () => {
-        setIsNavOpen(!isNavOpen);
-    };
+    const toggleNav = () => setIsNavOpen(!isNavOpen);
+
 
     return (
         <>
