@@ -90,7 +90,7 @@ function Home() {
                     <div className="home-header-text">
                         <h1 className="home-header-title">Raphaël MARTIN</h1>
                         <h2 className="home-header-subtitle">{t('header.subtitle')}</h2>
-                        <h3 className="home-header-location">📍 Toulouse, France</h3>
+                        <h3 className="home-header-location">{t('header.location')}</h3>
                         <p className="home-header-bio">{t('header.bio')}</p>
                     </div>
                     <img src={profilePicture} alt="Raphaël Martin" className="home-header-profilepic"/>
@@ -125,7 +125,7 @@ function Home() {
                 <section className="home-skills">
                     <h2 className="home-skills-title">{t('skills.title')}</h2>
                 
-                    <h3 className="home-skills-titles">AI - Prompt Engineering</h3>
+                    <h3 className="home-skills-titles">{t('skills.ai')}</h3>
                     <div className="home-skills-category">
                         <TechnoIcon src={chatGptLogo} alt="Chat GPT" name="ChatGPT ❤️"
                         star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={yellowStar}/>
@@ -202,7 +202,7 @@ function Home() {
                         star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={clearStar} star5={clearStar} />
                     </div>
 
-                    <h3 className="home-skills-titles">Audio</h3>
+                    <h3 className="home-skills-titles">{t('skills.audio')}</h3>
                     <div className="home-skills-category">
                         <TechnoIcon src={flstudioLogo} alt="FL Studio" name="FL Studio ❤️"
                         star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={yellowStar} />
@@ -216,7 +216,7 @@ function Home() {
                 </section>
 
                 <section className="home-certifications">
-                    <h2 className="home-certifications-title">Certifications</h2>
+                    <h2 className="home-certifications-title">{t('certifications.certif')}</h2>
                     <div className="home-certifications-certifs">
                         <PaperProof src={certifiedPromptEngineer} alt="Certified Prompt Engineer"/>
                         <PaperProof src={certifiedCsiLinuxInvestigator} alt="Certified CSI Linux Investigator"/>

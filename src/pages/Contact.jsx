@@ -22,10 +22,10 @@ function Contact() {
     return(
         <div id="contact" className={theme}>
             <div className="contact">
-                <h2 className="contact-title">Contact</h2>
+                <h2 className="contact-title">{t('title')}</h2>
                 <ul className="contact-list">
                     <li className="contact-list-item">
-                        <span className="contact-list-item-label">📧 Email : </span> 
+                        <span className="contact-list-item-label">{t('email')}</span> 
                         <a href="mailto:raphael.martin@bashroom.com" className="contact-list-item-link">raphael.martin@bashroom.com</a>
                     </li>
                     <li className="contact-list-item">
@@ -33,15 +33,15 @@ function Contact() {
                         <a href="tel:+33652639088" className="contact-list-item-link">+33 6 52 63 90 88</a>
                     </li>
                     <li className="contact-list-item">
-                        <span className="contact-list-item-label">💬 WhatsApp : </span> 
+                        <span className="contact-list-item-label">{t('whatsapp')}</span> 
                         <a href="https://wa.me/33652639088" className="contact-list-item-link">{t('send')}</a>
                     </li>
                     <li className="contact-list-item">
-                        <span className="contact-list-item-label">💬 Telegram : </span> 
+                        <span className="contact-list-item-label">{t('telegram')}</span> 
                         <a href="https://t.me/kitsuiwebster" className="contact-list-item-link">{t('send')}</a>
                     </li>
                     <li className="contact-list-item" id="contact-discord">
-                        <span className="contact-list-item-label">💬 Discord : </span> 
+                        <span className="contact-list-item-label">{t('discord')}</span> 
                         <p onClick={copyDiscordUsername} className="contact-list-item-link" id="contact-discord-text">{t('copy')}</p>
                     </li>
                 </ul>

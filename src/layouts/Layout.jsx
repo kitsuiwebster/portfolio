@@ -7,6 +7,7 @@ import { useTheme } from '../ThemeContext';
 import { useTranslation } from 'react-i18next';
 import ukFlag from '../assets/images/flags/uk.png'
 import frenchFlag from '../assets/images/flags/fr.png'
+import japaneseFlag from '../assets/images/flags/jp.png'
 
 // Social links
 import gitlabLogo from '../assets/images/social/gitlab.png';
@@ -42,7 +43,7 @@ function Layout({ children }) {
     };
 
     const [currentLanguage, setCurrentLanguage] = useState(getStoredLanguage());
-    const [currentFlag, setCurrentFlag] = useState(currentLanguage === 'en' ? ukFlag : frenchFlag);
+    const [currentFlag, setCurrentFlag] = useState(currentLanguage === 'en' ? ukFlag : currentLanguage === 'fr' ? frenchFlag : japaneseFlag);
 
     useEffect(() => {
         i18n.changeLanguage(currentLanguage);
@@ -53,13 +54,12 @@ function Layout({ children }) {
 
     const changeLanguage = (lang) => {
         setCurrentLanguage(lang);
-        setCurrentFlag(lang === 'en' ? ukFlag : frenchFlag);
+        setCurrentFlag(lang === 'en' ? ukFlag : lang === 'fr' ? frenchFlag : japaneseFlag);
         setIsLangMenuOpen(false);
     };
 
     const toggleNav = () => setIsNavOpen(!isNavOpen);
 
-    const otherLanguage = currentLanguage === 'en' ? 'fr' : 'en';
     return (
         <>
             <div className={`layout ${theme}`}>
@@ -83,13 +83,17 @@ function Layout({ children }) {
                             <img src={currentFlag} alt="Language" onClick={toggleLangMenu} className="layout-header-toggle-language-icon" />
                             {isLangMenuOpen && (
                                 <div className="layout-header-toggle-language-menu">
-                                    {otherLanguage === 'en' && (
+                                    {currentLanguage !== 'en' && (
                                         <img className='layout-header-toggle-language-menu-icon'
                                         src={ukFlag} alt="United Kingdom flag" onClick={() => changeLanguage('en')}/>
                                     )}
-                                    {otherLanguage === 'fr' && (
+                                    {currentLanguage !== 'fr' && (
                                         <img className='layout-header-toggle-language-menu-icon'
                                         src={frenchFlag} alt="France flag" onClick={() => changeLanguage('fr')}/>
+                                    )}
+                                    {currentLanguage !== 'jp' && (
+                                        <img className='layout-header-toggle-language-menu-icon'
+                                        src={japaneseFlag} alt="Japanese flag" onClick={() => changeLanguage('jp')} />
                                     )}
                                 </div>
                             )}

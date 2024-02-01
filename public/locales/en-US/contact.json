@@ -1,5 +1,10 @@
 {
+    "title": "Contact",
+    "email": "📧 Email : ",
     "tel": "📞 Phone : ",
+    "whatsapp": "💬 WhatsApp : ",
+    "telegram": "💬 Telegram : ",
+    "discord": "💬 Discord : ",
     "send": "Send me a message",
     "copy": "Copy my username"
 }
