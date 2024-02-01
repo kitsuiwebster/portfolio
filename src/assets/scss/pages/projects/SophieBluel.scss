@@ -57,4 +57,30 @@
             transform: scale(1.05);
         }
     }
+
+    .dark & {
+
+        &-header {
+
+            &-title {
+                color: white;
+            }
+        }
+
+        &-content {
+            color: white;
+        }
+
+        &-github {
+            background-color: white;
+            color: black;
+            box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.2);
+            border: 2px solid rgb(255, 255, 255);
+
+            &:hover {
+                background-color: black;
+                color: white;
+            }
+        }
+    }
 }
