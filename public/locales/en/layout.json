@@ -1,0 +1,11 @@
+{
+    "header": {
+        "home": "Home",
+        "projects": "Projects",
+        "articles": "Articles",
+        "contact": "Contact"
+    },
+    "footer": {
+        "copyright": "Copyright @kitsuiwebster All Rights Reserved"
+    }
+}
