@@ -36,28 +36,28 @@ function Layout({ children }) {
 
     const [isLangMenuOpen, setIsLangMenuOpen] = useState(false);
     const { i18n } = useTranslation();
-    const [currentLanguage, setCurrentLanguage] = useState('en');
-    const [loading, setLoading] = useState(true);
+
+    // Use state for current language
+    const [currentLanguage, setCurrentLanguage] = useState(i18n.language);
 
     useEffect(() => {
         const languageChangeHandler = (lng) => {
             setCurrentLanguage(lng);
-            setLoading(false);
         };
 
+        // Listen for language changes
         i18n.on('languageChanged', languageChangeHandler);
 
-        if (i18n.isInitialized) {
-            setCurrentLanguage(i18n.language);
-            setLoading(false);
-        }
-
         return () => {
+            // Clean up
             i18n.off('languageChanged', languageChangeHandler);
         };
     }, [i18n]);
 
+    // Update flag based on current language
     const currentFlag = currentLanguage === 'en' ? ukFlag : frenchFlag;
+
+    // Define the other language based on the current language
     const otherLanguage = currentLanguage === 'en' ? 'fr' : 'en';
 
     const toggleLangMenu = () => {
@@ -72,10 +72,6 @@ function Layout({ children }) {
     const toggleNav = () => {
         setIsNavOpen(!isNavOpen);
     };
-
-    if (loading) {
-        return <div>Loading...</div>; 
-    }
 
     return (
         <>
