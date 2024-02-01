@@ -84,27 +84,76 @@
         }
 
 
-        &-toggle-button {
-            background: url('../../images/moon.png') no-repeat center; 
-            border: none;
-            width: 3rem; 
-            height: 3rem;
-            cursor: pointer;
-            background-size: cover;
-            position: relative;
-            transition: background-color 0.3s;
-            margin-right: 1rem;
-            margin-left: 0.9rem;
-            transition: transform 0.2s;
+        &-toggle {
+            display: flex;
+            align-items: center;
 
-            &:hover {
-                transform: scale(1.1) rotate(360deg);
+            &-theme {
+                background: url('../../images/moon.png') no-repeat center; 
+                border: none;
+                width: 3rem; 
+                height: 3rem;
+                cursor: pointer;
+                background-size: cover;
+                position: relative;
+                transition: background-color 0.3s;
+                margin-right: 1rem;
+                margin-left: 0.9rem;
+                transition: transform 0.2s;
+    
+                &:hover {
+                    transform: scale(1.1) rotate(360deg);
+                }
+            
+                &.dark {
+                    background: url('../../images/sun.png') no-repeat center; 
+                }
             }
+
+            &-language {
+                position: relative;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                
+          
+                &-icon {
+                    width: 2.5rem;
+                    height: auto;
+                    margin: 0 1rem;
+                    transition: transform 0.3s ease;
+
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+            
+                &-menu {
+                    position: absolute;
+                    background-color: black;
+                    z-index: 10;
+                    top: 100%;
+                    padding: 1rem;
+                    margin-top: 0.8rem;
+                    border: none;
+                    border-radius: 5px;
+            
+                    &-icon {
+                        cursor: pointer;
+                        width: 2.5rem;
+                        height: auto;
+                        transition: transform 0.3s ease;
+
+                        &:hover {
+                            background-color: black;
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+            } 
+        }
         
-            &.dark {
-                background: url('../../images/sun.png') no-repeat center; 
-            }
-        }       
+             
     }
 
     &-main {
@@ -160,7 +209,7 @@
     .dark & {
 
         &-header {
-            border-bottom: 1px solid white;
+            border-bottom: 1px solid rgb(59, 59, 59);
         }
         
         &-main {
@@ -168,7 +217,7 @@
         }
 
         &-footer {
-            border-top: 1px solid white;
+            border-top: 1px solid rgb(59, 59, 59);
         }
     }
 }
@@ -179,10 +228,6 @@
 
         &-mobile {
             display: block; 
-        }
-
-        &-toggle-button {
-            margin-right: 4rem;
         }
 
         &-nav {
@@ -224,6 +269,12 @@
             display: block;
             width: 3rem;
             cursor: pointer;
+            margin-top: 0.2rem;
+            margin-right: 0.4rem;
+        }
+
+        &-toggle {
+            margin-right: 3.7rem;
         }
     }
 
@@ -237,6 +288,23 @@
 
         &-text {
             font-size: 13px;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .layout-header {
+        
+        &-title {
+            margin-left: 0.5rem;
+            font-size: 15px;
+        }
+
+        &-toggle {
+
+            &-theme {
+                margin-left: 0;
+            }
         }
     }
 }
