@@ -18,6 +18,7 @@ import Kasa from './pages/projects/Kasa';
 import Qwenta from './pages/projects/Qwenta';
 import SophieBluel from './pages/projects/SophieBluel';
 import NinaCarducci from './pages/projects/NinaCarducci';
+import Loading from './pages/Loading';
 
 const AppRouter = createBrowserRouter([
     {
@@ -79,6 +80,10 @@ const AppRouter = createBrowserRouter([
     {
         path: "/projects/nina-carducci",
         element: <Layout><NinaCarducci /></Layout>
+    },
+    {
+        path: "/loading",
+        element: <Loading />
     },
     {
         path: "*",
