@@ -11,7 +11,7 @@ function Articles() {
         <>
             <div id="articles">
                 <div className="articles">
-                    <p className='articles-title'>Articles</p>
+                    <h1 className='articles-title'>Articles</h1>
                     <Link to="/articles/hackaprompt2023" className="articles-link">
                         <Article
                         title={t('hackaprompt.title')}
