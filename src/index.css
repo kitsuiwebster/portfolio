@@ -43,7 +43,7 @@ body {
 
 /* Style the scrollbar for Chrome, Safari, and Opera */
 body::-webkit-scrollbar {
-  width: 6px; /* Set the width of the scrollbar */
+  width: 6px ; /* Set the width of the scrollbar */
 }
 
 body::-webkit-scrollbar-track {
