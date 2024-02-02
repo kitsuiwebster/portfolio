@@ -1,0 +1,13 @@
+.loading {
+
+    &-title {
+        font-size: 3rem ;
+    }
+
+    .dark & {
+        
+        &-title {
+            color: white;
+        }
+    }
+}
