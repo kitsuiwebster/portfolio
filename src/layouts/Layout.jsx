@@ -8,6 +8,7 @@ import { useTranslation } from 'react-i18next';
 import ukFlag from '../assets/images/flags/uk.png'
 import frenchFlag from '../assets/images/flags/fr.png'
 import japaneseFlag from '../assets/images/flags/jp.png'
+import koreanFlag from '../assets/images/flags/kr.png'
 
 // Social links
 import gitlabLogo from '../assets/images/social/gitlab.png';
@@ -43,7 +44,7 @@ function Layout({ children }) {
     };
 
     const [currentLanguage, setCurrentLanguage] = useState(getStoredLanguage());
-    const [currentFlag, setCurrentFlag] = useState(currentLanguage === 'en' ? ukFlag : currentLanguage === 'fr' ? frenchFlag : japaneseFlag);
+    const [currentFlag, setCurrentFlag] = useState(currentLanguage === 'en' ? ukFlag : currentLanguage === 'fr' ? frenchFlag : currentLanguage === 'jp' ? japaneseFlag : koreanFlag);
 
     useEffect(() => {
         i18n.changeLanguage(currentLanguage);
@@ -54,9 +55,10 @@ function Layout({ children }) {
 
     const changeLanguage = (lang) => {
         setCurrentLanguage(lang);
-        setCurrentFlag(lang === 'en' ? ukFlag : lang === 'fr' ? frenchFlag : japaneseFlag);
+        setCurrentFlag(lang === 'en' ? ukFlag : lang === 'fr' ? frenchFlag : lang === 'jp' ? japaneseFlag : koreanFlag);
         setIsLangMenuOpen(false);
     };
+    
 
     const toggleNav = () => setIsNavOpen(!isNavOpen);
 
@@ -94,6 +96,10 @@ function Layout({ children }) {
                                     {currentLanguage !== 'jp' && (
                                         <img className='layout-header-toggle-language-menu-icon'
                                         src={japaneseFlag} alt="Japanese flag" onClick={() => changeLanguage('jp')} />
+                                    )}
+                                    {currentLanguage !== 'kr' && (
+                                        <img className='layout-header-toggle-language-menu-icon'
+                                        src={koreanFlag} alt="Korean flag" onClick={() => changeLanguage('kr')} />
                                     )}
                                 </div>
                             )}

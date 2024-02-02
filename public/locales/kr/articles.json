@@ -1,0 +1,13 @@
+{
+    "title": "기사",
+    "hackaprompt": {
+        "title": "HackAPrompt 2023 : AI 모델을 속인 방법",
+        "date": "2023년 8월 4일",
+        "description": "경쟁자들이 엄격한 규칙을 따르면서 AI 모델로 하여금 'I have been PWNED'라고 출력하게 만들어야 하는 HackAPrompt 챌린지에 참여했습니다. AICrowd 경쟁 플랫폼에서 AI 모델을 조작하기 위한 다양한 전략을 테스트하여 2600명이 넘는 참가자 중 11위를 차지했습니다. 이 경험은 모델 행동을 제어하는 프롬프트 해킹 기술을 배움으로써 AI 보안과 창의성 기술을 향상시켰습니다."
+    },
+    "minecraft-java-admin-commands": {
+        "title": "Minecraft 서버 (Java) : 모든 관리자 명령어",
+        "date": "2023년 6월 15일",
+        "description": "Java Minecraft 서버를 위한 모든 관리자 명령어를 다루는 가이드입니다. 순간이동, 스폰, 날씨 조절 등으로 월드를 제어하는 방법을 배우세요. 사용자 맞춤형 플레이어 경험을 창출하기 위해 서버 관리를 마스터하세요."
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "header": {
+        "home": "홈",
+        "projects": "프로젝트",
+        "articles": "기사",
+        "contact": "연락처"
+    },
+    "footer": {
+        "copyright": "© 저작권 @kitsuiwebster. 모든 권리 보유"
+    }
+}
