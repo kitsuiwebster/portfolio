@@ -1,7 +1,7 @@
 import React from 'react';
 import '../assets/scss/pages/Home.scss';
-import profilePicture from '../assets/images/profile-picture.jpg'; 
 import '../assets/scss/index.scss'
+import profilePicture from '../assets/images/profile-picture.jpg'; 
 import TechnoIcon from '../components/TechnoIcon';
 import PaperProof from '../components/PaperProof';
 import { useTheme } from '../ThemeContext';
@@ -15,6 +15,12 @@ import xLogo from '../assets/images/social/x.webp';
 import mediumLogo from '../assets/images/social/medium.png';
 import devtoLogo from '../assets/images/social/devto.png';
 import discordLogo from '../assets/images/social/discord.jpg';
+
+// Languages
+import frenchFlag from '../assets/images/flags/fr.png';
+import ukFlag from '../assets/images/flags/uk.png';
+import speakingLightIcon from '../assets/images/speak-light.png';
+import speakingDarkIcon from '../assets/images/speak-dark.png';
 
 // Technos links
 import chatGptLogo from '../assets/images/technos/chat-gpt.png'; 
@@ -122,6 +128,16 @@ function Home() {
                     </nav>
                 </section>
 
+                <section>
+                    <div className='home-languages'>
+                        <img className='home-languages-icon' src={theme === 'dark' ? speakingLightIcon : speakingDarkIcon} alt='Speaking out' />
+                        <div className='home-languages-flags'>
+                            <img className='home-languages-flags-img' src={frenchFlag} alt='French flag' />
+                            <img className='home-languages-flags-img' src={ukFlag} alt='United Kingdom flag' />
+                        </div>
+                    </div>
+                </section>
+
                 <section className="home-skills">
                     <h2 className="home-skills-title">{t('skills.title')}</h2>
                 
@@ -221,7 +237,7 @@ function Home() {
                         <PaperProof src={certifiedPromptEngineer} alt="Certified Prompt Engineer"/>
                         <PaperProof src={certifiedCsiLinuxInvestigator} alt="Certified CSI Linux Investigator"/>
                     </div>
-                    <h3 className="home-certifications-subtitle">{t('certifications.certificate')}</h3>
+                    <h2 className="home-certifications-subtitle">{t('certifications.certificate')}</h2>
                     <div className="home-certifications-certificates">
                         <PaperProof src={cocLinux} alt="Certificate of Completion General Linux Administration"/>
                         <PaperProof src={justJavaScript} alt="Certificate of Completion Just JavaScript"/>

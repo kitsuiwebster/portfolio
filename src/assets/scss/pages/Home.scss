@@ -61,7 +61,6 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        margin-bottom: 7rem;
 
         &-links {
             display: flex;
@@ -76,6 +75,33 @@
                 height: 3rem;
                 vertical-align: middle;
                 border-radius: 10px;
+                transition: transform 0.2s;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+    &-languages {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 7rem;
+        margin-top: 3rem;
+        align-items: center;
+
+        &-icon {
+            width: 5rem;
+            height: auto;
+        }
+
+        &-flags {
+            margin-top: 1rem;
+
+            &-img {
+                width: 3rem;
+                margin: 0 1rem;
                 transition: transform 0.2s;
 
                 &:hover {
@@ -118,7 +144,7 @@
     &-certifications {
 
         &-subtitle {
-            font-size: 22px;
+            font-size: 35px;
             margin-top: 3rem;
             text-align: center;
         }
