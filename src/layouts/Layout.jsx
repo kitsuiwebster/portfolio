@@ -9,6 +9,7 @@ import ukFlag from '../assets/images/flags/uk.png'
 import frenchFlag from '../assets/images/flags/fr.png'
 import japaneseFlag from '../assets/images/flags/jp.png'
 import koreanFlag from '../assets/images/flags/kr.png'
+import italianFlag from '../assets/images/flags/it.png'
 
 // Social links
 import gitlabLogo from '../assets/images/social/gitlab.png';
@@ -44,7 +45,7 @@ function Layout({ children }) {
     };
 
     const [currentLanguage, setCurrentLanguage] = useState(getStoredLanguage());
-    const [currentFlag, setCurrentFlag] = useState(currentLanguage === 'en' ? ukFlag : currentLanguage === 'fr' ? frenchFlag : currentLanguage === 'jp' ? japaneseFlag : koreanFlag);
+    const [currentFlag, setCurrentFlag] = useState(currentLanguage === 'en' ? ukFlag : currentLanguage === 'fr' ? frenchFlag : currentLanguage === 'jp' ? japaneseFlag : currentLanguage === 'kr' ? koreanFlag : italianFlag);
 
     useEffect(() => {
         i18n.changeLanguage(currentLanguage);
@@ -55,7 +56,7 @@ function Layout({ children }) {
 
     const changeLanguage = (lang) => {
         setCurrentLanguage(lang);
-        setCurrentFlag(lang === 'en' ? ukFlag : lang === 'fr' ? frenchFlag : lang === 'jp' ? japaneseFlag : koreanFlag);
+        setCurrentFlag(lang === 'en' ? ukFlag : lang === 'fr' ? frenchFlag : lang === 'jp' ? japaneseFlag : lang === 'kr' ? koreanFlag : italianFlag);
         setIsLangMenuOpen(false);
     };
     
@@ -100,6 +101,10 @@ function Layout({ children }) {
                                     {currentLanguage !== 'kr' && (
                                         <img className='layout-header-toggle-language-menu-icon'
                                         src={koreanFlag} alt="Korean flag" onClick={() => changeLanguage('kr')} />
+                                    )}
+                                    {currentLanguage !== 'it' && (
+                                        <img className='layout-header-toggle-language-menu-icon'
+                                        src={italianFlag} alt="Italian flag" onClick={() => changeLanguage('it')} />
                                     )}
                                 </div>
                             )}

@@ -1,0 +1,16 @@
+{
+    "tasks": {
+        "task-1": "Ho analizzato il codice esistente del sito web per identificare opportunità di ottimizzazione",
+        "task-2": "Ho minificato codice e risorse per migliorare le prestazioni",
+        "task-3": "Ho compresso e ridimensionato le immagini per ridurre il tempo di caricamento della pagina",
+        "task-4": "Ho migliorato il SEO aggiungendo metadati, testo alternativo, intestazioni e markup Schema",
+        "task-5": "Ho corretto bug nel modal della galleria di immagini e nella funzionalità dei filtri",
+        "task-6": "Ho migliorato l'accessibilità usando ruoli ARIA, etichette e un HTML semantico appropriato",
+        "task-7": "Ho ottimizzato per schermi mobili e obiettivi tattili",
+        "task-8": "Ho utilizzato strumenti come Lighthouse e Wave per misurare i miglioramenti",
+        "task-9": "Ho documentato approfonditamente tutti i cambiamenti fatti in un rapporto dettagliato",
+        "task-10": "Ho preparato una presentazione per dimostrare le ottimizzazioni al cliente",
+        "task-11": "Ho difeso le mie scelte tecniche in una discussione orale"
+    },
+    "button": "Repository GitHub"
+}

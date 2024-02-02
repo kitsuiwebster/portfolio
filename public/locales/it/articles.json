@@ -1,0 +1,13 @@
+{
+    "title": "Articoli",
+    "hackaprompt": {
+        "title": "HackAPrompt 2023: Come ho ingannato i modelli di intelligenza artificiale.",
+        "date": "4 Agosto 2023",
+        "description": "Ho partecipato alla sfida HackAPrompt dove i concorrenti dovevano ingannare i modelli di intelligenza artificiale facendoli dire 'Sono stato PWNED' seguendo regole rigide. Sono arrivato 11° su oltre 2600 partecipanti testando varie strategie per manipolare i modelli di IA sulla piattaforma di competizione AICrowd. L'esperienza ha migliorato le mie competenze in sicurezza dell'IA e creatività attraverso l'apprendimento di tecniche di hacking dei prompt per controllare i comportamenti dei modelli."
+    },
+    "minecraft-java-admin-commands": {
+        "title": "Server Minecraft (Java): Tutti i Comandi Admin",
+        "date": "15 Giugno 2023",
+        "description": "Questa guida copre tutti i comandi admin per i server Minecraft Java. Impara a controllare i mondi con la teletrasportazione, lo spawn, il meteo, e altro ancora. Diventa un maestro dell'amministrazione server per creare esperienze personalizzate per i giocatori."
+    }
+}

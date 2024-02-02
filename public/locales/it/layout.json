@@ -1,0 +1,11 @@
+{
+    "header": {
+        "home": "Home",
+        "projects": "Progetti",
+        "articles": "Articoli",
+        "contact": "Contatto"
+    },
+    "footer": {
+        "copyright": "© Diritti d'autore @kitsuiwebster Tutti i diritti riservati"
+    }
+}

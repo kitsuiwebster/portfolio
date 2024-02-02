@@ -1,0 +1,16 @@
+{
+    "tasks": {
+        "task-1": "Ho arricchito una pagina statica di galleria portfolio in HTML aggiungendo funzionalità dinamiche con JavaScript",
+        "task-2": "Ho implementato una funzionalità di filtro per visualizzare dinamicamente i progetti in base ai criteri",
+        "task-3": "Ho costruito da zero una pagina di login con JavaScript per gestire l'autenticazione dell'amministratore del sito",
+        "task-4": "Ho creato un pop-up modale con JavaScript per permettere all'admin di caricare nuove immagini nella galleria",
+        "task-5": "Ho gestito eventi utente come clic, inserimenti, invii di form ecc. con gli ascoltatori di eventi JavaScript",
+        "task-6": "Ho manipolato il DOM selezionando elementi HTML e aggiornando valori, stili, attributi ecc",
+        "task-7": "Mi sono integrato con un'API backend usando fetch di JavaScript per ottenere dati dei progetti e postare nuove immagini",
+        "task-8": "Ho gestito lo stato di autenticazione dell'utente per alternare le visualizzazioni tra utente connesso e disconnesso",
+        "task-9": "Ho codificato la funzionalità front-end secondo i design/requisiti forniti",
+        "task-10": "Ho organizzato e documentato correttamente il mio codice seguendo le migliori pratiche",
+        "task-11": "Ho preparato una presentazione e discusso le decisioni tecniche e l'implementazione"
+    },
+    "button": "Repository GitHub"
+}
