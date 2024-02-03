@@ -99,41 +99,41 @@ function Home() {
                         <h3 className="home-header-location">{t('header.location')}</h3>
                         <p className="home-header-bio">{t('header.bio')}</p>
                     </div>
-                    <img src={profilePicture} alt="Raphaël Martin" className="home-header-profilepic"/>
+                    <img  loading="lazy" src={profilePicture} alt="Raphaël Martin" className="home-header-profilepic"/>
                 </header>
 
                 <section className="home-social">
                     <nav className="home-social-links">
                         <a href="https://gitlab.com/kitsuiwebster" className="home-social-link"  target="_blank" rel="noopener noreferrer">
-                            <img className="home-social-link-img" src={gitlabLogo} alt="GitLab"/>
+                            <img  loading="lazy" className="home-social-link-img" src={gitlabLogo} alt="GitLab"/>
                         </a>
                         <a href="https://github.com/kitsuiwebster" className="home-social-link"  target="_blank" rel="noopener noreferrer">
-                            <img className="home-social-link-img" src={githubLogo} alt="GitHub"/>
+                            <img  loading="lazy" className="home-social-link-img" src={githubLogo} alt="GitHub"/>
                         </a>
                         <a href="https://www.linkedin.com/in/kitsuiwebster" className="home-social-link"  target="_blank" rel="noopener noreferrer">
-                            <img className="home-social-link-img" src={linkedinLogo} alt="LinkedIn"/>
+                            <img  loading="lazy" className="home-social-link-img" src={linkedinLogo} alt="LinkedIn"/>
                         </a>
                         <a href="https://twitter.com/kitsuiwebster" className="home-social-link"  target="_blank" rel="noopener noreferrer">
-                            <img className="home-social-link-img" src={xLogo} alt="Twitter X"/>
+                            <img  loading="lazy" className="home-social-link-img" src={xLogo} alt="Twitter X"/>
                         </a>
                         <a href="https://kitsuiwebster.medium.com" className="home-social-link"  target="_blank" rel="noopener noreferrer">
-                            <img className="home-social-link-img" src={mediumLogo} alt="Medium"/>
+                            <img  loading="lazy" className="home-social-link-img" src={mediumLogo} alt="Medium"/>
                         </a>
                         <a href="https://dev.to/kitsuiwebster" className="home-social-link"  target="_blank" rel="noopener noreferrer">
-                            <img className="home-social-link-img" src={devtoLogo} alt="Dev.to"/>
+                            <img  loading="lazy" className="home-social-link-img" src={devtoLogo} alt="Dev.to"/>
                         </a>
                         <div onClick={copyDiscordUsername} className="home-social-link">
-                            <img className="home-social-link-img" src={discordLogo} alt="Discord"/>
+                            <img  loading="lazy" className="home-social-link-img" src={discordLogo} alt="Discord"/>
                         </div>
                     </nav>
                 </section>
 
                 <section>
                     <div className='home-languages'>
-                        <img className='home-languages-icon' src={theme === 'dark' ? speakingLightIcon : speakingDarkIcon} alt='Speaking out' />
+                        <img  loading="lazy" className='home-languages-icon' src={theme === 'dark' ? speakingLightIcon : speakingDarkIcon} alt='Speaking out' />
                         <div className='home-languages-flags'>
-                            <img className='home-languages-flags-img' src={frenchFlag} alt='French flag' />
-                            <img className='home-languages-flags-img' src={ukFlag} alt='United Kingdom flag' />
+                            <img  loading="lazy" className='home-languages-flags-img' src={frenchFlag} alt='French flag' />
+                            <img  loading="lazy" className='home-languages-flags-img' src={ukFlag} alt='United Kingdom flag' />
                         </div>
                     </div>
                 </section>

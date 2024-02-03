@@ -11,7 +11,7 @@ function Project({ schoolLogo, title, subtitle, description, imageSrc, imageAlt,
             <div className="project">
                 <div className='project-header'>
                     <div className='project-header-container1'>
-                        <img className='project-header-logo' src={schoolLogo} alt="Openclassrooms"></img>
+                        <img loading="lazy" className='project-header-logo' src={schoolLogo} alt="Openclassrooms"></img>
                         <h1 className='project-header-title'>{title}</h1>
                     </div>
                     <div className='project-header-container2'>
@@ -20,7 +20,7 @@ function Project({ schoolLogo, title, subtitle, description, imageSrc, imageAlt,
                 </div>
                 <p className='project-description'>{description}</p>
                 <div className='project-image'>
-                    <img className='project-image-img' src={imageSrc} alt={imageAlt}></img>
+                    <img loading="lazy" className='project-image-img' src={imageSrc} alt={imageAlt}></img>
                 </div>
                 <div className='project-icons'>
                     <ProjectIcon src={logoSrc0}/>

@@ -11,7 +11,7 @@ function BackArrow({ path }) {
     return (
         <div className='back-arrow-container'>
             <Link to={path}>
-                <img className='back-arrow' alt="back arrow" src={backArrow}></img>
+                <img loading="lazy" className='back-arrow' alt="back arrow" src={backArrow}></img>
             </Link>
         </div>
     );
