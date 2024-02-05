@@ -40,6 +40,22 @@ function Projects() {
             <div id="projects">
                 <div className="projects">
                     <h1 className='projects-title'>{t('titles.title')}</h1>
+                    <Link to="/projects/cozybot" className="projects-link">
+                        <Project
+                        schoolLogo={cozybotLogo}
+                        title="CozyBot"
+                        subtitle={t('cozybot.subtitle')}
+                        description={t('cozybot.description')}
+                        imageSrc={cozybotImage}
+                        imageAlt="CozyBot"
+                        logoSrc0={pythonLogo}
+                        logoSrc1={discordLogo}
+                        logoSrc2={condaLogo}
+                        logoSrc3={raspberryLogo}
+                        logoSrc4={zshLogo}
+                        logoSrc5={gitLogo}
+                        />
+                    </Link>
                     <h2 className='projects-subtitle'>{t('titles.school')}</h2>
                     <Link to="/projects/kasa" className="projects-link">
                         <Project
@@ -99,23 +115,7 @@ function Projects() {
                         logoSrc3={gitLogo}
                         />
                     </Link>
-                    <h2 className='projects-subtitle'>{t('titles.other')}</h2>
-                    <Link to="/projects/cozybot" className="projects-link">
-                        <Project
-                        schoolLogo={cozybotLogo}
-                        title="CozyBot"
-                        subtitle={t('cozybot.subtitle')}
-                        description={t('cozybot.description')}
-                        imageSrc={cozybotImage}
-                        imageAlt="CozyBot"
-                        logoSrc0={pythonLogo}
-                        logoSrc1={discordLogo}
-                        logoSrc2={condaLogo}
-                        logoSrc3={raspberryLogo}
-                        logoSrc4={zshLogo}
-                        logoSrc5={gitLogo}
-                        />
-                    </Link>
+                    {/* <h2 className='projects-subtitle'>{t('titles.other')}</h2> */}
                 </div>
             </div>
         </>
