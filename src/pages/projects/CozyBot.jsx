@@ -13,7 +13,7 @@ function CozyBot() {
   const { t } = useTranslation('cozybot')
 
   useEffect(() => {
-    const rawGistUrl = 'https://gist.githubusercontent.com/kitsuiwebster/e7d1de9b870eae047872979dc52a5f96/raw/b44b3ace44a68138c2b14b5748bbb1bf7ecbdd08/cozybot';
+    const rawGistUrl = 'https://gist.githubusercontent.com/kitsuiwebster/e7d1de9b870eae047872979dc52a5f96/raw/145844d6677e108148fa6ac54a5b74fa60296cba/cozybot';
 
     fetch(rawGistUrl)
       .then(response => response.ok ? response.text() : Promise.reject('Failed to load'))
