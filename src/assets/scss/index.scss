@@ -46,6 +46,10 @@
     max-width: 800px;
     color: black;
 
+    h1 {
+        text-align: left;
+    }
+
     .dark & {
         background-color: black;
         color: white;
