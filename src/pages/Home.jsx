@@ -57,6 +57,7 @@ import workstationLogo from '../assets/images/technos/workstation.png';
 import virtualboxLogo from '../assets/images/technos/virtualbox.png';
 import cubaseLogo from '../assets/images/technos/cubase.png';
 import autotuneLogo from '../assets/images/technos/auto-tune.png';
+import mongodbLogo from '../assets/images/technos/mongodb.png'
 
 // Stars
 import yellowStar from '../assets/images/stars/yellow.png';
@@ -162,11 +163,13 @@ function Home() {
                         <TechnoIcon src={cssLogo} alt="CSS" name="CSS ❤️"
                         star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={yellowStar} />
                         <TechnoIcon src={sassLogo} alt="Sass" name="Sass ❤️"
-                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={halfStar} />
+                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={yellowStar} />
                         <TechnoIcon src={reactLogo} alt="React.js" name="React.js"
                         star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={clearStar} />
                         <TechnoIcon src={nodeLogo} alt="Node.js" name="Node.js"
                         star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={clearStar} star5={clearStar} />
+                        <TechnoIcon src={mongodbLogo} alt="MongoDB" name="MongoDB"
+                        star1={yellowStar} star2={yellowStar} star3={halfStar} star4={clearStar} star5={clearStar} />
                         <TechnoIcon src={jsLogo} alt="JavaScript" name="JavaScript"
                         star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={clearStar} star5={clearStar} />
                         <TechnoIcon src={tsLogo} alt="TypeScript" name="TypeScript"
