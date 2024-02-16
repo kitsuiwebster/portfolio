@@ -1,7 +1,7 @@
 import '../../assets/scss/pages/projects/Kasa.scss';
 import '../../assets/scss/index.scss'
 import BackArrow from '../../components/BackArrow';
-import openclassroomsLogo from '../../assets/images/openclassrooms.png'
+import openclassroomsLogo from '../../assets/images/openclassrooms.webp'
 import { useTranslation } from 'react-i18next';
 
 function Kasa() {

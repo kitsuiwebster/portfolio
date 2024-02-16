@@ -1,23 +1,23 @@
 import '../assets/scss/layouts/Layout.scss';
 import React, { useState, useEffect } from 'react';
-import menuIcon from '../assets/images/menu.png'
+import menuIcon from '../assets/images/menu.webp'
 import { useTheme } from '../ThemeContext';
 
 import { useTranslation } from 'react-i18next';
-import ukFlag from '../assets/images/flags/uk.png'
-import frenchFlag from '../assets/images/flags/fr.png'
-import japaneseFlag from '../assets/images/flags/jp.png'
-import koreanFlag from '../assets/images/flags/kr.png'
-import italianFlag from '../assets/images/flags/it.png'
+import ukFlag from '../assets/images/flags/uk.webp'
+import frenchFlag from '../assets/images/flags/fr.webp'
+import japaneseFlag from '../assets/images/flags/jp.webp'
+import koreanFlag from '../assets/images/flags/kr.webp'
+import italianFlag from '../assets/images/flags/it.webp'
 
 // Social links
-import gitlabLogo from '../assets/images/social/gitlab.png';
-import githubLogo from '../assets/images/social/github.png';
-import linkedinLogo from '../assets/images/social/linkedin.png';
+import gitlabLogo from '../assets/images/social/gitlab.webp';
+import githubLogo from '../assets/images/social/github.webp';
+import linkedinLogo from '../assets/images/social/linkedin.webp';
 import xLogo from '../assets/images/social/x.webp';
-import mediumLogo from '../assets/images/social/medium.png';
-import devtoLogo from '../assets/images/social/devto.png';
-import discordLogo from '../assets/images/social/discord.jpg';
+import mediumLogo from '../assets/images/social/medium.webp';
+import devtoLogo from '../assets/images/social/devto.webp';
+import discordLogo from '../assets/images/social/discord.webp';
 
 
 function copyDiscordUsername() {

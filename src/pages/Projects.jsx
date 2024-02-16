@@ -2,35 +2,35 @@ import { Link } from 'react-router-dom';
 import '../assets/scss/pages/Projects.scss';
 import '../assets/scss/index.scss'
 import Project from '../components/Project';
-import openclassroomsLogo from '../assets/images/openclassrooms.png'
-import cozybotLogo from '../assets/images/cozybot-logo.png'
+import openclassroomsLogo from '../assets/images/openclassrooms.webp'
+import cozybotLogo from '../assets/images/cozybot-logo.webp'
 import { useTranslation } from 'react-i18next';
 
 // Technos icons
-import pythonLogo from '../assets/images/technos/python.png';
-import gitLogo from '../assets/images/technos/git.png';
-import zshLogo from '../assets/images/technos/zsh.png';
-import discordLogo from '../assets/images/social/discord.png';
-import raspberryLogo from '../assets/images/technos/raspberry-pi.png';
-import condaLogo from '../assets/images/technos/conda.png';
-import reactLogo from '../assets/images/technos/react.png';
-import htmlLogo from '../assets/images/technos/html.png';
-import sassLogo from '../assets/images/technos/sass.png';
-import jsLogo from '../assets/images/technos/js.png';
-import figmaLogo from '../assets/images/technos/figma.png'
-import cssLogo from '../assets/images/technos/css.png'
-import waveLogo from '../assets/images/technos/wave.webp'
-import lighthouseLogo from '../assets/images/technos/lighthouse.png'
-import trelloLogo from '../assets/images/technos/trello.png'
-import flipboardLogo from '../assets/images/technos/flipboard.webp'
-import swaggerLogo from '../assets/images/technos/swagger.png'
+import pythonLogo from '../assets/images/technos/python.webp';
+import gitLogo from '../assets/images/technos/git.webp';
+import zshLogo from '../assets/images/technos/zsh.webp';
+import discordLogo from '../assets/images/social/discord.webp';
+import raspberryLogo from '../assets/images/technos/raspberry-pi.webp';
+import condaLogo from '../assets/images/technos/conda.webp';
+import reactLogo from '../assets/images/technos/react.webp';
+import htmlLogo from '../assets/images/technos/html.webp';
+import sassLogo from '../assets/images/technos/sass.webp';
+import jsLogo from '../assets/images/technos/js.webp';
+import figmaLogo from '../assets/images/technos/figma.webp';
+import cssLogo from '../assets/images/technos/css.webp';
+import waveLogo from '../assets/images/technos/wave.webp';
+import lighthouseLogo from '../assets/images/technos/lighthouse.webp';
+import trelloLogo from '../assets/images/technos/trello.webp';
+import flipboardLogo from '../assets/images/technos/flipboard.webp';
+import swaggerLogo from '../assets/images/technos/swagger.webp';
 
 // Projects images
-import kasaImage from '../assets/images/projects/kasa.png'
-import ninacarducciImage from '../assets/images/projects/nina-carducci.png'
-import qwentaImage from '../assets/images/projects/qwenta.png'
-import sophiebluelImage from '../assets/images/projects/sophie-bluel.png'
-import cozybotImage from '../assets/images/projects/cozybot.png'
+import kasaImage from '../assets/images/projects/kasa.webp';
+import ninacarducciImage from '../assets/images/projects/nina-carducci.webp';
+import qwentaImage from '../assets/images/projects/qwenta.webp';
+import sophiebluelImage from '../assets/images/projects/sophie-bluel.webp';
+import cozybotImage from '../assets/images/projects/cozybot.webp';
 
 
 function Projects() {

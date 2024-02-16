@@ -6,10 +6,9 @@ function Dihia() {
 
     const { t } = useTranslation('dihia');
 
-    const { theme } = useTheme(); // Retrieve the current theme
-    const isDarkMode = theme === 'dark'; // Check if the theme is dark
+    const { theme } = useTheme(); 
+    const isDarkMode = theme === 'dark'; 
 
-    // Use a conditional class name based on the theme
     const dihiawrapClass = isDarkMode ? `${styles.dihiawrap} ${styles.darkMode}` : styles.dihiawrap;
 
     return (

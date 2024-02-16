@@ -1,74 +1,74 @@
 import React from 'react';
 import '../assets/scss/pages/Home.scss';
 import '../assets/scss/index.scss'
-import profilePicture from '../assets/images/profile-picture.jpg'; 
+import profilePicture from '../assets/images/profile-picture.webp'; 
 import TechnoIcon from '../components/TechnoIcon';
 import PaperProof from '../components/PaperProof';
 import { useTheme } from '../ThemeContext';
 import { useTranslation } from 'react-i18next';
 
 // Social links
-import gitlabLogo from '../assets/images/social/gitlab.png';
-import githubLogo from '../assets/images/social/github.png';
-import linkedinLogo from '../assets/images/social/linkedin.png';
+import gitlabLogo from '../assets/images/social/gitlab.webp';
+import githubLogo from '../assets/images/social/github.webp';
+import linkedinLogo from '../assets/images/social/linkedin.webp';
 import xLogo from '../assets/images/social/x.webp';
-import mediumLogo from '../assets/images/social/medium.png';
-import devtoLogo from '../assets/images/social/devto.png';
-import discordLogo from '../assets/images/social/discord.jpg';
+import mediumLogo from '../assets/images/social/medium.webp';
+import devtoLogo from '../assets/images/social/devto.webp';
+import discordLogo from '../assets/images/social/discord.webp';
 
 // Languages
-import frenchFlag from '../assets/images/flags/fr.png';
-import ukFlag from '../assets/images/flags/uk.png';
-import speakingLightIcon from '../assets/images/speak-light.png';
-import speakingDarkIcon from '../assets/images/speak-dark.png';
+import frenchFlag from '../assets/images/flags/fr.webp';
+import ukFlag from '../assets/images/flags/uk.webp';
+import speakingLightIcon from '../assets/images/speak-light.webp';
+import speakingDarkIcon from '../assets/images/speak-dark.webp';
 
 // Technos links
-import chatGptLogo from '../assets/images/technos/chat-gpt.png'; 
+import chatGptLogo from '../assets/images/technos/chat-gpt.webp'; 
 import claudeLogo from '../assets/images/technos/claude.webp';
-import bardLogo from '../assets/images/technos/bard.svg';
-import midjourneyLogo from '../assets/images/technos/midjourney.png';
-import mistralLogo from '../assets/images/technos/mistral.png';
-import htmlLogo from '../assets/images/technos/html.png';
-import cssLogo from '../assets/images/technos/css.png';
-import sassLogo from '../assets/images/technos/sass.png';
-import reactLogo from '../assets/images/technos/react.png';
-import nodeLogo from '../assets/images/technos/node.png';
-import jsLogo from '../assets/images/technos/js.png';
-import tsLogo from '../assets/images/technos/ts.png';
-import pythonLogo from '../assets/images/technos/python.png';
-import gitLogo from '../assets/images/technos/git.png';
-import linuxLogo from '../assets/images/technos/linux.png';
-import bashLogo from '../assets/images/technos/bash.png';
-import zshLogo from '../assets/images/technos/zsh.png';
-import n8nLogo from '../assets/images/technos/n8n.png';
-import condaLogo from '../assets/images/technos/conda.png';
-import raspberryLogo from '../assets/images/technos/raspberry-pi.png';
-import figmaLogo from '../assets/images/technos/figma.png';
+import bardLogo from '../assets/images/technos/bard.webp';
+import midjourneyLogo from '../assets/images/technos/midjourney.webp';
+import mistralLogo from '../assets/images/technos/mistral.webp';
+import htmlLogo from '../assets/images/technos/html.webp';
+import cssLogo from '../assets/images/technos/css.webp';
+import sassLogo from '../assets/images/technos/sass.webp';
+import reactLogo from '../assets/images/technos/react.webp';
+import nodeLogo from '../assets/images/technos/node.webp';
+import jsLogo from '../assets/images/technos/js.webp';
+import tsLogo from '../assets/images/technos/ts.webp';
+import pythonLogo from '../assets/images/technos/python.webp';
+import gitLogo from '../assets/images/technos/git.webp';
+import linuxLogo from '../assets/images/technos/linux.webp';
+import bashLogo from '../assets/images/technos/bash.webp';
+import zshLogo from '../assets/images/technos/zsh.webp';
+import n8nLogo from '../assets/images/technos/n8n.webp';
+import condaLogo from '../assets/images/technos/conda.webp';
+import raspberryLogo from '../assets/images/technos/raspberry-pi.webp';
+import figmaLogo from '../assets/images/technos/figma.webp';
 import vegasLogo from '../assets/images/technos/vegas-pro.webp';
-import obsLogo from '../assets/images/technos/obs.png';
-import gimpLogo from '../assets/images/technos/gimp.png';
-import blenderLogo from '../assets/images/technos/blender-icon.png';
-import vscodeLogo from '../assets/images/technos/vs-code.png';
-import flstudioLogo from '../assets/images/technos/fl-studio.png';
-import reaperLogo from '../assets/images/technos/reaper.png';
-import kdenliveLogo from '../assets/images/technos/kden-live.png'
-import windowsLogo from '../assets/images/technos/windows.png';
-import workstationLogo from '../assets/images/technos/workstation.png';
-import virtualboxLogo from '../assets/images/technos/virtualbox.png';
-import cubaseLogo from '../assets/images/technos/cubase.png';
-import autotuneLogo from '../assets/images/technos/auto-tune.png';
-import mongodbLogo from '../assets/images/technos/mongodb.png'
+import obsLogo from '../assets/images/technos/obs.webp';
+import gimpLogo from '../assets/images/technos/gimp.webp';
+import blenderLogo from '../assets/images/technos/blender-icon.webp';
+import vscodeLogo from '../assets/images/technos/vs-code.webp';
+import flstudioLogo from '../assets/images/technos/fl-studio.webp';
+import reaperLogo from '../assets/images/technos/reaper.webp';
+import kdenliveLogo from '../assets/images/technos/kden-live.webp'
+import windowsLogo from '../assets/images/technos/windows.webp';
+import workstationLogo from '../assets/images/technos/workstation.webp';
+import virtualboxLogo from '../assets/images/technos/virtualbox.webp';
+import cubaseLogo from '../assets/images/technos/cubase.webp';
+import autotuneLogo from '../assets/images/technos/auto-tune.webp';
+import mongodbLogo from '../assets/images/technos/mongodb.webp'
 
 // Stars
-import yellowStar from '../assets/images/stars/yellow.png';
-import clearStar from '../assets/images/stars/clear.png';
-import halfStar from '../assets/images/stars/half.png'
+import yellowStar from '../assets/images/stars/yellow.webp';
+import clearStar from '../assets/images/stars/clear.webp';
+import halfStar from '../assets/images/stars/half.webp';
 
 // Certifications links
-import certifiedPromptEngineer from '../assets/images/certifications/prompt-engineer.jpg'
-import certifiedCsiLinuxInvestigator from '../assets/images/certifications/csi-linux-investigator.jpg'
-import cocLinux from '../assets/images/certifications/coc-linux.png'
-import justJavaScript from '../assets/images/certifications/just-javascript.jpg'
+import certifiedPromptEngineer from '../assets/images/certifications/prompt-engineer.webp';
+import certifiedCsiLinuxInvestigator from '../assets/images/certifications/csi-linux-investigator.webp';
+import cocLinux from '../assets/images/certifications/coc-linux.webp';
+import justJavaScript from '../assets/images/certifications/just-javascript.webp';
 
 
 function copyDiscordUsername() {

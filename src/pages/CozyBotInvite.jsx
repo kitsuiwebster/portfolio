@@ -1,6 +1,6 @@
 import React from 'react';
 import '../assets/scss/pages/CozyBotInvite.scss';
-import cozyLogo from '../assets/images/cozybot-logo.png';
+import cozyLogo from '../assets/images/cozybot-logo.webp';
 import BackArrow from '../components/BackArrow';
 import { useTranslation } from 'react-i18next';
 

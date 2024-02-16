@@ -1,6 +1,6 @@
 import '../assets/scss/components/BackArrow.scss';
-import blackBackArrow from '../assets/images/back-arrow.png';
-import whiteBackArrow from '../assets/images/white-back-arrow.png';
+import blackBackArrow from '../assets/images/back-arrow.webp';
+import whiteBackArrow from '../assets/images/white-back-arrow.webp';
 import { Link } from 'react-router-dom';
 import { useTheme } from '../ThemeContext';
 

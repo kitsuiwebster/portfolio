@@ -89,7 +89,7 @@
             align-items: center;
 
             &-theme {
-                background: url('../../images/moon.png') no-repeat center; 
+                background: url('../../images/moon.webp') no-repeat center; 
                 border: none;
                 width: 3rem; 
                 height: 3rem;
@@ -106,7 +106,7 @@
                 }
             
                 &.dark {
-                    background: url('../../images/sun.png') no-repeat center; 
+                    background: url('../../images/sun.webp') no-repeat center; 
                 }
             }
 
