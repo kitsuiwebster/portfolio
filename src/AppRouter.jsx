@@ -19,11 +19,16 @@ import Qwenta from './pages/projects/Qwenta';
 import SophieBluel from './pages/projects/SophieBluel';
 import NinaCarducci from './pages/projects/NinaCarducci';
 import Loading from './pages/Loading';
+import Gallery from './pages/Gallery';
 
 const AppRouter = createBrowserRouter([
     {
         path: "/broken",
         element: <Layout><UnderConstruction /></Layout>
+    },
+    {
+        path: "/gallery",
+        element: <Layout><Gallery /></Layout>
     },
     {
         path: "/",
