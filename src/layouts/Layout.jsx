@@ -1,14 +1,14 @@
 import '../assets/scss/layouts/Layout.scss';
 import React, { useState, useEffect } from 'react';
-import menuIcon from '../assets/images/menu.webp'
+import menuIcon from '../assets/images/menu.webp';
 import { useTheme } from '../ThemeContext';
 
 import { useTranslation } from 'react-i18next';
-import ukFlag from '../assets/images/flags/uk.webp'
-import frenchFlag from '../assets/images/flags/fr.webp'
-import japaneseFlag from '../assets/images/flags/jp.webp'
-import koreanFlag from '../assets/images/flags/kr.webp'
-import italianFlag from '../assets/images/flags/it.webp'
+import ukFlag from '../assets/images/flags/uk.webp';
+import frenchFlag from '../assets/images/flags/fr.webp';
+import japaneseFlag from '../assets/images/flags/jp.webp';
+import koreanFlag from '../assets/images/flags/kr.webp';
+import italianFlag from '../assets/images/flags/it.webp';
 
 // Social links
 import gitlabLogo from '../assets/images/social/gitlab.webp';

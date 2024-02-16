@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 import 'github-markdown-css/github-markdown-light.css';
-import '../../assets/scss/index.scss'
+import '../../assets/scss/index.scss';
 import BackArrow from '../../components/BackArrow';
 
 function McJavaCmds() {

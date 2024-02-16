@@ -14,7 +14,8 @@ function CozyBotInvite() {
             <div id="cozybotinvite">
                 <div className="cozybotinvite">
                     <div className='cozybotinvite-container'>
-                        <img loading="lazy" className='cozybotinvite-image' alt="cozybot logo" src={cozyLogo} />
+                        <img loading="lazy" className='cozybotinvite-image'
+                        alt="CozyBot Logo kitsuiwebster Imène Medjaoui Raphaël Martin" src={cozyLogo} />
                         <div className='cozybotinvite-buttons-container'>
                             <a className='cozybotinvite-invite-button'
                             href="https://discord.com/api/oauth2/authorize?client_id=1156917047284994178&permissions=8&scope=bot"

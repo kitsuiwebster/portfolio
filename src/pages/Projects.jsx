@@ -43,11 +43,12 @@ function Projects() {
                     <Link to="/projects/cozybot" className="projects-link">
                         <Project
                         schoolLogo={cozybotLogo}
+                        schoolLogoAlt="CozyBot logo Imène Medajoui kitsuiwebster Raphaël Martin"
                         title="CozyBot"
                         subtitle={t('cozybot.subtitle')}
                         description={t('cozybot.description')}
                         imageSrc={cozybotImage}
-                        imageAlt="CozyBot"
+                        imageAlt="CozyBot kitsuiwebster Raphaël Martin Imène Medjaoui"
                         logoSrc0={pythonLogo}
                         logoSrc1={discordLogo}
                         logoSrc2={condaLogo}
@@ -60,6 +61,7 @@ function Projects() {
                     <Link to="/projects/kasa" className="projects-link">
                         <Project
                         schoolLogo={openclassroomsLogo}
+                        schoolLogoAlt="OpenClassrooms"
                         title="Kasa"
                         subtitle={t('kasa.subtitle')}
                         description={t('kasa.description')} 
@@ -76,6 +78,7 @@ function Projects() {
                     <Link to="/projects/nina-carducci" className="projects-link">
                         <Project
                         schoolLogo={openclassroomsLogo}
+                        schoolLogoAlt="OpenClassrooms"
                         title="Nina Carducci"
                         subtitle={t('nina.subtitle')}
                         description={t('nina.description')} 
@@ -92,6 +95,7 @@ function Projects() {
                     <Link to="/projects/qwenta" className="projects-link">
                         <Project
                         schoolLogo={openclassroomsLogo}
+                        schoolLogoAlt="OpenClassrooms"
                         title="Qwenta"
                         subtitle={t('qwenta.subtitle')}
                         description={t('qwenta.description')} 
@@ -104,6 +108,7 @@ function Projects() {
                     <Link to="/projects/sophie-bluel" className="projects-link">
                         <Project
                         schoolLogo={openclassroomsLogo}
+                        schoolLogoAlt="OpenClassrooms"
                         title="Sophie Bluel"
                         subtitle={t('sophie.subtitle')}
                         description={t('sophie.description')} 

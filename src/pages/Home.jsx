@@ -1,6 +1,6 @@
 import React from 'react';
 import '../assets/scss/pages/Home.scss';
-import '../assets/scss/index.scss'
+import '../assets/scss/index.scss';
 import profilePicture from '../assets/images/profile-picture.webp'; 
 import TechnoIcon from '../components/TechnoIcon';
 import PaperProof from '../components/PaperProof';
@@ -100,7 +100,7 @@ function Home() {
                         <h3 className="home-header-location">{t('header.location')}</h3>
                         <p className="home-header-bio">{t('header.bio')}</p>
                     </div>
-                    <img  loading="lazy" src={profilePicture} alt="Raphaël Martin" className="home-header-profilepic"/>
+                    <img  loading="lazy" src={profilePicture} alt="Raphaël Martin kitsuiwebster" className="home-header-profilepic"/>
                 </header>
 
                 <section className="home-social">
@@ -237,13 +237,13 @@ function Home() {
                 <section className="home-certifications">
                     <h2 className="home-certifications-title">{t('certifications.certif')}</h2>
                     <div className="home-certifications-certifs">
-                        <PaperProof src={certifiedPromptEngineer} alt="Certified Prompt Engineer"/>
-                        <PaperProof src={certifiedCsiLinuxInvestigator} alt="Certified CSI Linux Investigator"/>
+                        <PaperProof src={certifiedPromptEngineer} alt="Certified Prompt Engineer kitsuiwebster Raphaël Martin"/>
+                        <PaperProof src={certifiedCsiLinuxInvestigator} alt="Certified CSI Linux Investigator kitsuiwebster Raphaël Martin"/>
                     </div>
                     <h2 className="home-certifications-subtitle">{t('certifications.certificate')}</h2>
                     <div className="home-certifications-certificates">
-                        <PaperProof src={cocLinux} alt="Certificate of Completion General Linux Administration"/>
-                        <PaperProof src={justJavaScript} alt="Certificate of Completion Just JavaScript"/>
+                        <PaperProof src={cocLinux} alt="Certificate of Completion General Linux Administration kitsuiwebster Raphaël Martin"/>
+                        <PaperProof src={justJavaScript} alt="Certificate of Completion Just JavaScript kitsuiwebster Raphaël Martin"/>
                     </div>
                 </section>
 

@@ -1,9 +1,9 @@
 import '../assets/scss/components/Project.scss';
-import '../assets/scss/index.scss'
+import '../assets/scss/index.scss';
 import ProjectIcon from './ProjectIcon';
 
 
-function Project({ schoolLogo, title, subtitle, description, imageSrc, imageAlt, logoSrc0, logoSrc1, logoSrc2, logoSrc3, logoSrc4, logoSrc5 }) {
+function Project({ schoolLogo, schoolLogoAlt, title, subtitle, description, imageSrc, imageAlt, logoSrc0, logoSrc1, logoSrc2, logoSrc3, logoSrc4, logoSrc5 }) {
 
     
     return(
@@ -11,7 +11,7 @@ function Project({ schoolLogo, title, subtitle, description, imageSrc, imageAlt,
             <div className="project">
                 <div className='project-header'>
                     <div className='project-header-container1'>
-                        <img loading="lazy" className='project-header-logo' src={schoolLogo} alt="Openclassrooms"></img>
+                        <img loading="lazy" className='project-header-logo' src={schoolLogo} alt={schoolLogoAlt}></img>
                         <h1 className='project-header-title'>{title}</h1>
                     </div>
                     <div className='project-header-container2'>
