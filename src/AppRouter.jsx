@@ -20,6 +20,7 @@ import SophieBluel from './pages/projects/SophieBluel';
 import NinaCarducci from './pages/projects/NinaCarducci';
 import Loading from './pages/Loading';
 import Gallery from './pages/Gallery';
+import HttpErrors from './pages/HttpErrors';
 
 const AppRouter = createBrowserRouter([
     {
@@ -29,6 +30,10 @@ const AppRouter = createBrowserRouter([
     {
         path: "/gallery",
         element: <Layout><Gallery /></Layout>
+    },
+    {
+        path: "/quiz",
+        element: <Layout><HttpErrors /></Layout>
     },
     {
         path: "/",
