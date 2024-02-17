@@ -85,9 +85,10 @@ function HttpErrors() {
                             <li key={index} className="results-list-item">
                                 <img className="results-list-item-img" src={answer.question.imageUrl} alt="Answer" />
                                 <div className="results-list-item-text">
+                                    <p className='results-list-item-text-title'>{answer.question.errorCode}</p>
                                     <p className='results-list-item-text-your-answer'>Your answer: {answer.userAnswer}
                                     {answer.isCorrect ? ' ✅' : ' ❌'}</p>
-                                    <p className='results-list-item-text-correct-answer'>Correct answer: {answer.question.errorCode}</p>
+                                    <p className='results-list-item-text-correct-answer'>Correct answer: {answer.question.answer}</p>
                                 </div>
                             </li>
                         ))}
