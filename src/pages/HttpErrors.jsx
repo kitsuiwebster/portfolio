@@ -1,20 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../assets/scss/pages/HttpErrors.scss';
-import notFound from '../assets/images/errors/not-found.jpg';
-import unauthorized from '../assets/images/errors/unauthorized.png';
-
-const initialQuestions = [
-    {
-        imageUrl: notFound,
-        answer: '404',
-        errorCode: '404 Not Found',
-    },
-    {
-        imageUrl: unauthorized,
-        answer: '401',
-        errorCode: '401 Unauthorized',
-    },
-];
+import { initialQuestions } from '../js/questions';
 
 function HttpErrors() {
     const [questions, setQuestions] = useState([...initialQuestions]);
@@ -67,6 +53,7 @@ function HttpErrors() {
             {!quizEnded ? (
                 <div className='http-errors-container'>
                     <img className="http-errors-img" src={questions[currentQuestionIndex].imageUrl} alt="HTTP Error" />
+                    <p className='http-errors-current'>{currentQuestionIndex} / {questions.length}</p>
                     <form onSubmit={handleSubmit} className="http-errors-form">
                         <input
                             className="http-errors-form-input"
