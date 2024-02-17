@@ -108,7 +108,7 @@ function Layout({ children }) {
                                 </div>
                             )}
                         </div>
-                        <button onClick={toggleTheme} className={`layout-header-toggle-theme ${theme}`}>
+                        <button onClick={toggleTheme} aria-label="Toggle theme" className={`layout-header-toggle-theme ${theme}`}>
                         </button>
                     </div>
                 </header>
