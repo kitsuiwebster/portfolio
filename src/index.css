@@ -62,6 +62,6 @@ body::-webkit-scrollbar-thumb:hover {
 
 
 body {
-  scrollbar-width: thin; /* "auto" or "thin" */
-  scrollbar-color: #4b4b4b transparent; /* Thumb color and transparent track */
+  scrollbar-width: thin;
+  scrollbar-color: #4b4b4b transparent; 
 }

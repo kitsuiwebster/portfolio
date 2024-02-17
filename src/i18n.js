@@ -8,7 +8,8 @@ i18n
   .init({
     fallbackLng: 'en',
     debug: true,
-    ns: ['layout', 'articles', 'contact', 'projects', 'kasa', 'nina', 'qwenta', 'sophie', 'cozybot', 'cozybotinvite', 'dihia', 'notfound', 'loading'],
+    ns: ['layout', 'articles', 'contact', 'projects', 'kasa', 'nina', 'qwenta',
+    'sophie', 'cozybot', 'cozybotinvite', 'dihia', 'notfound', 'loading', 'http'],
     defaultNS: 'layout',
     interpolation: {
       escapeValue: false,

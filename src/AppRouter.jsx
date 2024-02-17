@@ -20,7 +20,10 @@ import SophieBluel from './pages/projects/SophieBluel';
 import NinaCarducci from './pages/projects/NinaCarducci';
 import Loading from './pages/Loading';
 import Gallery from './pages/Gallery';
-import HttpErrors from './pages/HttpErrors';
+import HttpStatus62 from './pages/quiz/HttpStatus62';
+import HttpStatus10 from './pages/quiz/HttpStatus10';
+import HttpStatusQuiz from './pages/HttpStatusQuiz';
+import HttpStatus30 from './pages/quiz/HttpStatus30';
 
 const AppRouter = createBrowserRouter([
     {
@@ -33,7 +36,19 @@ const AppRouter = createBrowserRouter([
     },
     {
         path: "/quiz",
-        element: <Layout><HttpErrors /></Layout>
+        element: <Layout><HttpStatusQuiz /></Layout>
+    },
+    {
+        path: "/quiz/http-status/all",
+        element: <Layout><HttpStatus62 /></Layout>
+    },
+    {
+        path: "/quiz/http-status/30",
+        element: <Layout><HttpStatus30 /></Layout>
+    },
+    {
+        path: "/quiz/http-status/10",
+        element: <Layout><HttpStatus10 /></Layout>
     },
     {
         path: "/",
