@@ -108,5 +108,9 @@
 @media screen and (max-width: 345px) {
     .project {
         width: 17rem;
+
+        &-icons {
+            justify-content: space-around;
+        }
     }
 }

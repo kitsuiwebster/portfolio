@@ -25,4 +25,22 @@
         }
     }
 }
+
+@media screen and (max-width: 550px) {
+    .project-icon {
+
+        &-image {
+            width: 2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .project-icon {
+
+        &-image {
+            width: 1.5rem;
+        }
+    }
+}
   
