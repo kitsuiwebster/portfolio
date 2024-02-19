@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../../assets/scss/pages/quiz/HttpStatus.scss';
-import { initialQuestions } from '../../js/questions';
+import { initialQuestions } from '../../js/httpQuestions';
 import { Link } from 'react-router-dom';
 
 function HttpStatus30() {

@@ -4,5 +4,10 @@
         "title": "HTTP 상태 코드",
         "alt": "HTTP 상태 코드",
         "description": "이 퀴즈는 모든 공식 HTTP 상태 코드(1xx부터 5xx까지)에 대한 당신의 지식을 테스트합니다."
+    },
+    "ports": {
+        "title": "TCP/UDP 포트",
+        "alt": "TCP/UDP 포트",
+        "description": "이 퀴즈는 TCP/UDP 포트 번호에 대한 당신의 지식을 테스트합니다."
     }
 }

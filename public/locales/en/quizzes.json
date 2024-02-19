@@ -4,5 +4,10 @@
         "title": "HTTP Status Codes",
         "alt": "HTTP Status Codes",
         "description": "This quiz tests your knowledge on all official HTTP status codes (from 1xx to 5xx)."
+    },
+    "ports": {
+        "title": "TCP/UDP Ports",
+        "alt": "TCP/UDP Ports",
+        "description": "This quiz tests your knowledge on TCP/UDP ports numbers."
     }
 }

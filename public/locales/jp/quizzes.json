@@ -3,6 +3,11 @@
     "http": {
         "title": "HTTPステータスコード",
         "alt": "HTTPステータスコード",
-        "description": "このクイズは、すべての公式HTTPステータスコード（1xxから5xxまで）に関するあなたの知識をテストします."
+        "description": "このクイズは、すべての公式HTTPステータスコード（1xxから5xxまで）に関するあなたの知識をテストします。"
+    },
+    "ports": {
+        "title": "TCP/UDPポート",
+        "alt": "TCP/UDPポート",
+        "description": "このクイズは、TCP/UDPポート番号に関するあなたの知識をテストします。"
     }
 }

@@ -18,6 +18,14 @@
             border-radius: 20px;
             transform: scale(1.01);
         }
+
+        .dark & {
+            border: 2px solid black;
+
+            &:hover {
+                border: 2px solid rgb(255, 0, 0);
+            }
+        }
     }
 
     &-title {
@@ -26,6 +34,27 @@
 
         .dark & {
             color: white;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .quizzes {
+        &-link {
+            padding: 0 0.5rem;
+        }
+
+        &-title {
+            margin-top: 2rem;
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 345px) {
+    .quizzes {
+        &-link {
+            padding: 0;
         }
     }
 }
