@@ -1,0 +1,10 @@
+{
+    "placeholder": "Inserisci il codice di stato HTTP",
+    "submit": "Invia",
+    "back": "Torna al Menu del Quiz",
+    "useranswer": "La tua risposta: ",
+    "correctanswer": "Risposta corretta: ",
+    "finalscore": "Il tuo punteggio finale è ",
+    "playagain": "Gioca di Nuovo",
+    "back2": "Torna al Menu del Quiz"
+}

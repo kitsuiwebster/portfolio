@@ -1,0 +1,31 @@
+.quizzes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-link {
+        text-decoration: none;
+        padding: 0 2.5rem;
+        border: 2px solid white;
+        transition-duration: 0.3s;
+        border-radius: 20px;
+        margin-top: 1rem;
+        margin-bottom: 5rem;
+
+        &:hover {
+
+            border: 2px solid rgb(255, 0, 0);
+            border-radius: 20px;
+            transform: scale(1.01);
+        }
+    }
+
+    &-title {
+        margin-top: 3rem;
+        font-size: 40px;
+
+        .dark & {
+            color: white;
+        }
+    }
+}

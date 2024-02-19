@@ -1,0 +1,8 @@
+{
+    "title": "Quiz",
+    "http": {
+        "title": "Codici di Stato HTTP",
+        "alt": "Codici di Stato HTTP",
+        "description": "Questo quiz mette alla prova la tua conoscenza su tutti i codici di stato HTTP ufficiali (da 1xx a 5xx)."
+    }
+}

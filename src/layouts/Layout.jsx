@@ -77,6 +77,7 @@ function Layout({ children }) {
                             <li className="layout-header-nav-ul-li"> <a className="layout-header-nav-ul-li-a" href="/" >{t('header.home')}</a></li>
                             <li className="layout-header-nav-ul-li"> <a className="layout-header-nav-ul-li-a" href="/projects">{t('header.projects')}</a></li>
                             <li className="layout-header-nav-ul-li"> <a className="layout-header-nav-ul-li-a" href="/articles">{t('header.articles')}</a></li>
+                            <li className="layout-header-nav-ul-li"> <a className="layout-header-nav-ul-li-a" href="/quiz">{t('header.quiz')}</a></li>
                             <li className="layout-header-nav-ul-li"> <a className="layout-header-nav-ul-li-a" href="/contact">{t('header.contact')}</a></li>
                         </ul>
                     </nav>

@@ -64,12 +64,12 @@ function HttpStatus30() {
                         <input
                             className="http-errors-form-input"
                             type="text"
-                            placeholder="Enter the HTTP error code"
+                            placeholder="Enter the HTTP status code"
                             value={userInput}
                             onChange={handleInputChange}
                         />
                         <button className="http-errors-form-button" type="submit">Submit</button>
-                        <Link className="http-errors-form-menu" to="/quiz">Go back to Quiz Menu</Link>
+                        <Link className="http-errors-form-menu" to="/quiz/http-status">Go back to Quiz Menu</Link>
                     </form>
                 </div>
             ) : (
@@ -90,7 +90,7 @@ function HttpStatus30() {
                     </ul>
                     <h2 className="results-title">Your final score is {userScore} / {questions.length} !</h2>
                     <button className="results-button-restart" onClick={restartQuiz}>Play Again</button>
-                    <Link className="results-button-menu" to="/quiz">Go back to Quiz Menu</Link>
+                    <Link className="results-button-menu" to="/quiz/http-status">Go back to Quiz Menu</Link>
                 </div>
             )}
         </div>

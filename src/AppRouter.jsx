@@ -22,8 +22,9 @@ import Loading from './pages/Loading';
 import Gallery from './pages/Gallery';
 import HttpStatus62 from './pages/quiz/HttpStatus62';
 import HttpStatus10 from './pages/quiz/HttpStatus10';
-import HttpStatusQuiz from './pages/HttpStatusQuiz';
+import HttpStatusQuiz from './pages/quiz/HttpStatusQuiz';
 import HttpStatus30 from './pages/quiz/HttpStatus30';
+import Quizs from './pages/Quizzes';
 
 const AppRouter = createBrowserRouter([
     {
@@ -36,6 +37,10 @@ const AppRouter = createBrowserRouter([
     },
     {
         path: "/quiz",
+        element: <Layout><Quizs /></Layout>
+    },
+    {
+        path: "/quiz/http-status",
         element: <Layout><HttpStatusQuiz /></Layout>
     },
     {

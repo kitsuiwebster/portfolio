@@ -1,0 +1,61 @@
+.quiz {
+    padding: 2.5rem 0;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    box-sizing: border-box;
+    width: 40rem;
+    display: flex;
+    flex-direction: column; 
+
+    &-title {
+        font-size: 30px;
+        color: black;
+    }
+
+    &-img {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    &-description {
+        font-size: 1rem;
+        color: black;
+        font-size: 20px;
+        line-height: 1.6;
+    }
+
+    .dark & {   
+        border-bottom: 1px solid rgb(59, 59, 59);
+
+        &-title {
+            color: white;
+        }
+
+        &-description {
+            color: white;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .quiz {
+        width: 30rem;
+
+        &-description {
+            font-size: 0.8rem;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .quiz {
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width: 345px) {
+    .quiz {
+        width: 17rem;
+    }
+}

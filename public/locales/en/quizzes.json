@@ -1,0 +1,8 @@
+{
+    "title": "Quizzes",
+    "http": {
+        "title": "HTTP Status Codes",
+        "alt": "HTTP Status Codes",
+        "description": "This quiz tests your knowledge on all official HTTP status codes (from 1xx to 5xx)."
+    }
+}

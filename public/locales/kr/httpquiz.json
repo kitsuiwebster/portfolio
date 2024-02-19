@@ -1,0 +1,10 @@
+{
+    "placeholder": "HTTP 상태 코드를 입력하세요",
+    "submit": "제출",
+    "back": "퀴즈 메뉴로 돌아가기",
+    "useranswer": "당신의 답변: ",
+    "correctanswer": "정답: ",
+    "finalscore": "당신의 최종 점수는 ",
+    "playagain": "다시 플레이",
+    "back2": "퀴즈 메뉴로 돌아가기"
+}

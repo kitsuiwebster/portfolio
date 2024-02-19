@@ -67,7 +67,6 @@
             &:hover {
                 background-color: #000000; 
                 color: rgb(255, 255, 255);
-                transform: scale(1.04);
             }
 
             .dark & {
@@ -82,8 +81,8 @@
         &-menu {
             font-weight: 700;
             border: none;
-            background-color: #000000; 
-            color: rgb(255, 255, 255);
+            background-color: white; 
+            color: black;
             padding: 15px 32px;
             text-align: center;
             display: inline-block;
@@ -93,13 +92,17 @@
             transition: 0.2s ease;
             text-decoration: none;
             margin-top: 3rem;
-            border: 1px solid white;
-  
+            border: 2px solid rgb(0, 0, 0);
+
             &:hover {
-                transform: scale(1.04);
+                background-color: black;
+                color: white;
             }
 
             .dark & {
+                background-color: black;
+                color: white;
+                border: 2px solid white;
 
                 &:hover {
                     background-color: white;
@@ -183,7 +186,6 @@
         &:hover {
             background-color: #000000; 
             color: rgb(255, 255, 255);
-            transform: scale(1.04);
         }
     }
 
@@ -204,7 +206,6 @@
         &:hover {
             background-color: #000000; 
             color: rgb(255, 255, 255);
-            transform: scale(1.04);
         }
     }
 

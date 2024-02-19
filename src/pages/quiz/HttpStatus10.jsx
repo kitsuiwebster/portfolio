@@ -2,8 +2,10 @@ import React, { useState, useEffect } from 'react';
 import '../../assets/scss/pages/quiz/HttpStatus.scss';
 import { initialQuestions } from '../../js/questions';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 function HttpStatus10() {
+    const { t } = useTranslation('httpquiz')
     const pickRandomQuestions = (questionsArray, numQuestions) => {
         const shuffled = [...questionsArray].sort(() => Math.random() - 0.5);
         return shuffled.slice(0, numQuestions);
@@ -64,12 +66,12 @@ function HttpStatus10() {
                         <input
                             className="http-errors-form-input"
                             type="text"
-                            placeholder="Enter the HTTP error code"
+                            placeholder={t('placeholder')}
                             value={userInput}
                             onChange={handleInputChange}
                         />
-                        <button className="http-errors-form-button" type="submit">Submit</button>
-                        <Link className="http-errors-form-menu" to="/quiz">Go back to Quiz Menu</Link>
+                        <button className="http-errors-form-button" type="submit">{t('submit')}</button>
+                        <Link className="http-errors-form-menu" to="/quiz/http-status">{t('back')}</Link>
                     </form>
                 </div>
             ) : (
@@ -82,15 +84,15 @@ function HttpStatus10() {
                                     <p className='results-list-item-text-title'>{answer.question.errorCode}</p>
                                     <p className='results-list-item-text-your-answer'>
                                         {answer.isCorrect ? '✅ ' : '❌ '}
-                                        Your answer: {answer.userAnswer}</p>
-                                    <p className='results-list-item-text-correct-answer'>Correct answer: {answer.question.answer}</p>
+                                        {t('useranswer')}{answer.userAnswer}</p>
+                                    <p className='results-list-item-text-correct-answer'>{t('correctanswer')}{answer.question.answer}</p>
                                 </div>
                             </li>
                         ))}
                     </ul>
-                    <h2 className="results-title">Your final score is {userScore} / {questions.length} !</h2>
-                    <button className="results-button-restart" onClick={restartQuiz}>Play Again</button>
-                    <Link className="results-button-menu" to="/quiz">Go back to Quiz Menu</Link>
+                    <h2 className="results-title">{t('finalscore')}{userScore} / {questions.length} !</h2>
+                    <button className="results-button-restart" onClick={restartQuiz}>{t('playagain')}</button>
+                    <Link className="results-button-menu" to="/quiz/http-status">{t('back2')}</Link>
                 </div>
             )}
         </div>

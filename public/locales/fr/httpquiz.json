@@ -1,0 +1,10 @@
+{
+    "placeholder": "Entrez le code HTTP",
+    "submit": "Soumettre",
+    "back": "Retourner au menu du Quiz",
+    "useranswer": "Votre réponse : ",
+    "correctanswer": "Réponse correcte : ",
+    "finalscore": "Votre score final est ",
+    "playagain": "Rejouer",
+    "back2": "Retourner au menu du Quiz"
+}

@@ -22,4 +22,35 @@
             color: white;
         }
     }
+
+    .dark & {
+
+        &-title {
+            color: white;
+        }
+        
+        &-button {
+            color: white;
+            border: 2px solid white;
+
+            &:hover {
+                background-color: white;
+                color: black;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .http {
+
+        &-title {
+            font-size: 22px;
+        }
+
+        &-button {
+            min-width: 10rem;
+            font-size: 19px;
+        }
+    }
 }
