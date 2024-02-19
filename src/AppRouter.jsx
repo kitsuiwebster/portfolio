@@ -24,7 +24,11 @@ import HttpStatus62 from './pages/quiz/HttpStatus62';
 import HttpStatus10 from './pages/quiz/HttpStatus10';
 import HttpStatusQuiz from './pages/quiz/HttpStatusQuiz';
 import HttpStatus30 from './pages/quiz/HttpStatus30';
-import Quizs from './pages/Quizzes';
+import Quizzes from './pages/Quizzes';
+import PortsQuiz from './pages/quiz/PortsQuiz';
+import Ports10 from './pages/quiz/Ports10';
+import Ports50 from './pages/quiz/Ports50';
+import Ports30 from './pages/quiz/Ports30';
 
 const AppRouter = createBrowserRouter([
     {
@@ -37,7 +41,23 @@ const AppRouter = createBrowserRouter([
     },
     {
         path: "/quiz",
-        element: <Layout><Quizs /></Layout>
+        element: <Layout><Quizzes /></Layout>
+    },
+    {
+        path: "/quiz/tcp-udp-ports",
+        element: <Layout><PortsQuiz /></Layout>
+    },
+    {
+        path: "/quiz/tcp-udp-ports/50",
+        element: <Layout><Ports50 /></Layout>
+    },
+    {
+        path: "/quiz/tcp-udp-ports/30",
+        element: <Layout><Ports30 /></Layout>
+    },
+    {
+        path: "/quiz/tcp-udp-ports/10",
+        element: <Layout><Ports10 /></Layout>
     },
     {
         path: "/quiz/http-status",

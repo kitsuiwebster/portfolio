@@ -1,0 +1,10 @@
+{
+    "placeholder": "Enter the port number",
+    "submit": "Submit",
+    "back": "Go back to Quiz Menu",
+    "useranswer": "Your answer: ",
+    "correctanswer": "Correct answer: ",
+    "finalscore": "Your final score is ",
+    "playagain": "Play Again",
+    "back2": "Go back to Quiz Menu"
+}

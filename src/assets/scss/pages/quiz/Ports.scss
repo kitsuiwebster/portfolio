@@ -1,0 +1,302 @@
+.port-numbers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 5rem 5rem;
+    border-radius: 20px;
+
+    &-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-title {
+        text-align: center;
+    }
+  
+    &-img {
+        width: 20rem;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.281);
+
+        .dark & {
+            box-shadow: 0px 0px 20px 2px rgba(255, 255, 255, 0.459);
+        }
+    }
+
+    &-current {
+        margin-bottom: 3rem;
+
+        .dark & {
+            color: white;
+        }
+    }
+  
+    &-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+  
+        &-input {
+            padding: 0.7rem;
+            margin-bottom: 3rem;
+            border: 2px solid #e2e2e2;
+            border-radius: 5px;
+            width: 100%;
+            max-width: 300px;
+            font-size: 15px;
+  
+            &:focus {
+                border-color: #ff3b2d;
+                outline: none;
+            }
+        }
+    
+        &-button {
+            font-weight: 700;
+            background-color: #ff3b2d;
+            border: none;
+            color: #ffffff;
+            padding: 15px 32px;
+            text-align: center;
+            display: inline-block;
+            font-size: 19px;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: 0.2s ease;
+  
+            &:hover {
+                background-color: #000000; 
+                color: rgb(255, 255, 255);
+            }
+
+            .dark & {
+
+                &:hover {
+                    background-color: white;
+                    color: black;
+                }
+            }
+        }
+
+        &-menu {
+            font-weight: 700;
+            border: none;
+            background-color: white; 
+            color: black;
+            padding: 15px 32px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: 0.2s ease;
+            text-decoration: none;
+            margin-top: 3rem;
+            border: 2px solid rgb(0, 0, 0);
+
+            &:hover {
+                background-color: black;
+                color: white;
+            }
+
+            .dark & {
+                background-color: black;
+                color: white;
+                border: 2px solid white;
+
+                &:hover {
+                    background-color: white;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+  
+.ports-results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    &-list {
+        list-style-type: none;
+        padding: 0;
+  
+        &-item {
+            display: flex;
+            align-items: center;
+            margin: 2rem 0;
+  
+            &-img {
+                width: 10rem;
+                height: auto;
+                margin-right: 2rem;
+                border-radius: 5px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.281);
+
+                .dark & {
+                    box-shadow: 0px 0px 20px 2px rgba(255, 255, 255, 0.459);
+                }
+            }
+  
+            &-text {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                &-title, &-your-answer, &-correct-answer {
+                    margin-top: 0.5rem;
+                    margin-bottom: 0.5rem;
+                }
+
+                &-title {
+                    font-size: 30px;
+                    font-weight: 500;
+                }
+
+                &-your-answer, &-correct-answer {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    &-title {
+        font-size: 24px;
+        color: #000000;
+        margin-bottom: 3rem;
+        margin-top: 3rem;
+    }
+  
+    &-button-restart {
+        font-weight: 700;
+        margin: 0 auto;
+        background-color: #ff3b2d;
+        border: none;
+        color: #ffffff;
+        padding: 15px 32px;
+        text-align: center;
+        display: inline-block;
+        font-size: 19px;
+        cursor: pointer;
+        border-radius: 10px;
+        margin-bottom: 3rem;
+        transition: 0.2s ease;
+  
+        &:hover {
+            background-color: #000000; 
+            color: rgb(255, 255, 255);
+        }
+    }
+
+    &-button-menu {
+        font-weight: 650;
+        background-color: #ff3b2d;
+        border: none;
+        color: #ffffff;
+        padding: 15px 32px;
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 10px;
+        transition: 0.2s ease;
+        text-decoration: none;
+
+        &:hover {
+            background-color: #000000; 
+            color: rgb(255, 255, 255);
+        }
+    }
+
+    .dark & {
+        
+        &-list {
+
+            &-item {
+                 
+                &-text {
+
+                    &-title, &-your-answer, &-correct-answer {
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        &-title {
+            color: white;
+        }
+
+        &-button-restart {
+
+            &:hover {
+                background-color: white;
+                color: black;
+            }
+        }
+
+        &-button-menu {
+
+            &:hover {
+                background-color: white;
+                color: black;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .port-numbers {
+        padding-right: 1rem;
+        padding-left: 1rem;
+        padding-top: 0;
+
+        &-img {
+            width: 15rem;
+        }
+
+        &-form {
+
+            &-input {
+                width: 10rem;
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .ports-results {
+        &-list {
+
+            &-item {
+
+                &-img {
+                    width: 7rem;
+                    margin-right: 1rem;
+                }
+                 
+                &-text {
+
+                    &-title {
+                        font-size: 20px;
+                    }
+
+                    &-your-answer, &-correct-answer {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+
+        &-title {
+            font-size: 22px;
+        }
+    }
+}
