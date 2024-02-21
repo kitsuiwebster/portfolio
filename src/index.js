@@ -5,7 +5,8 @@ import AppRouter from './AppRouter';
 import { ThemeProvider } from './ThemeContext';
 import i18n from './i18n';
 import { I18nextProvider } from 'react-i18next';
-import AppWrapper from './AppWrapper'; 
+import AppWrapper from './AppWrapper';
+import { log } from '../src/js/antiCheat';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,3 +18,5 @@ root.render(
     </ThemeProvider>
   </React.StrictMode>
 );
+
+console.log(log);
