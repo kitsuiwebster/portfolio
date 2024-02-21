@@ -1,3 +1,6 @@
+// are you still cheating? yes you still are.
+// but remember nobody cares since the main purpose of this page is to enhance knowledge rather than anything else.
+
 import continuePng from '../assets/images/errors/continue.webp';
 import switchingProtocols from '../assets/images/errors/switching-protocols.webp';
 import processing from '../assets/images/errors/processing.webp';
