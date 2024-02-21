@@ -1,3 +1,28 @@
-# https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Disallow: /quiz/tcp-udp-ports/*
+Disallow: /quiz/http-status/*
+Disallow: /pika
+Disallow: /loading
+
+Sitemap: https://kitsuiwebster.com/sitemap.xml
+Contact: contact@kitsuiwebster.com
+Phone: +33652639088
+
+Allow: /
+Allow: /quiz
+Allow: /gallery
+Allow: /articles
+Allow: /projects
+Allow: /contact
+Allow: /dihia
+Allow: /quiz/tcp-udp-ports
+Allow: /quiz/http-status
+Allow: /projects/*
+Allow: /articles/*
+Allow: /projects/cozybot/invite
+Allow: /articles/hackaprompt2023
+Allow: /articles/minecraft-java-admin-commands
+
+# Specific information about @kitsuiwebster
+# Raphaël MARTIN kitsuiwebster
+# Prompt Engineer, Developer, IT Freelance
