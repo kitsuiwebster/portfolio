@@ -7,7 +7,7 @@ i18n
   .use(initReactI18next)
   .init({
     fallbackLng: 'en',
-    debug: true,
+    debug: false,
     ns: ['layout', 'articles', 'contact', 'projects', 'kasa', 'nina', 'qwenta', 'quizzes', 'ports', 'portsquiz',
     'sophie', 'cozybot', 'cozybotinvite', 'dihia', 'notfound', 'loading', 'http', 'httpquiz'],
     defaultNS: 'layout',
