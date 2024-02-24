@@ -2,7 +2,8 @@ import '../assets/scss/layouts/Layout.scss';
 import React, { useState, useEffect } from 'react';
 import menuIcon from '../assets/images/menu.webp';
 import { useTheme } from '../ThemeContext';
-
+import logo from '../assets/images/logo.webp'
+// Languages
 import { useTranslation } from 'react-i18next';
 import ukFlag from '../assets/images/flags/uk.webp';
 import frenchFlag from '../assets/images/flags/fr.webp';
@@ -67,6 +68,7 @@ function Layout({ children }) {
             <div className={`layout ${theme}`}>
                 <header className="layout-header">
                     <div className='layout-header-title-container'>
+                        <img className='layout-header-logo' src={logo} alt='kitsuiwebster logo Raphaël Martin'></img>
                         <h1 className='layout-header-title'>@kitsuiwebster</h1>
                     </div>
                     <div className="layout-header-mobile" onClick={toggleNav}>

@@ -75,12 +75,20 @@
 
         &-title-container {
             text-decoration: none;
+            display: flex;
+            align-items: center;
         }
 
         &-title {
             color: white;
             font-size: 20px;
-            margin-left: 2rem;
+        }
+
+        &-logo {
+            width: 2rem;
+            height: 2rem;
+            margin-left: 1rem;
+            margin-right: 0.5rem;
         }
 
 
@@ -296,8 +304,12 @@
     .layout-header {
         
         &-title {
-            margin-left: 0.5rem;
+            margin-left: 1rem;
             font-size: 15px;
+        }
+
+        &-logo {
+            display: none;
         }
 
         &-toggle {
