@@ -12,8 +12,8 @@ function PortsQuiz() {
                 <div className='ports'>
                     <h1 className='ports-title'>{t('title')}</h1>
                     <Link className="ports-button" to="/quiz/tcp-udp-ports/10">{t('10')}</Link>
-                    <Link className="ports-button" to="/quiz/tcp-udp-ports/30">{t('30')}</Link>
-                    <Link className="ports-button" to="/quiz/tcp-udp-ports/50">{t('50')}</Link>
+                    {/* <Link className="ports-button" to="/quiz/tcp-udp-ports/30">{t('30')}</Link> */}
+                    {/* <Link className="ports-button" to="/quiz/tcp-udp-ports/50">{t('50')}</Link> */}
                 </div>
             </div>
         </>

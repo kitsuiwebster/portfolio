@@ -31,7 +31,9 @@ function Ports50() {
 
         const isCorrect = userInput.trim() === questions[currentQuestionIndex].answer ||
                       (questions[currentQuestionIndex].port === '67/68 DHCP' && 
-                       (userInput.trim() === '67' || userInput.trim() === '68'));
+                       (userInput.trim() === '67' || userInput.trim() === '68')) ||
+                       (questions[currentQuestionIndex].port === '20/21 FTP' && 
+                       (userInput.trim() === '20' || userInput.trim() === '21'))
         if (isCorrect) {
             setUserScore(userScore + 1);
         }
