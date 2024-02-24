@@ -1,0 +1,313 @@
+
+.pikalayout {
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+        /*
+    * === HEADER ===
+    */
+
+    &-header {
+        background-color: rgb(255, 230, 0);
+        position: sticky;
+        top: 0;
+        z-index: 3;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.4rem 0;
+        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.473);
+
+        &-mobile {
+            display: none; 
+            cursor: pointer;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 0.3rem;
+        }
+
+        &-icon {
+            display: none;
+        }
+        
+
+        &-nav {
+            height: 3rem;
+            display: flex;
+            width: 100%;
+
+            &-ul {
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                list-style: none;
+                padding-left: 0;
+
+
+                &-li {
+                    display: flex;
+                    align-items: center;
+
+
+                    &-a {
+                        text-decoration: none;
+                        color: black;
+                        font-weight: 600;
+                        font-size: larger;
+                        padding: 1.15rem 1rem 1.12rem 1rem;
+                        margin: 0 1rem;
+                        transition-duration: 0.2s;
+
+
+                        &:hover {
+                            cursor: pointer;
+                            background-color: black;
+                            transform: scale(1.1);
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+
+        &-title-container {
+            text-decoration: none;
+        }
+
+        &-title {
+            color: black;
+            font-size: 20px;
+            margin-left: 2rem;
+            width: 8rem;
+
+        }
+
+
+        &-toggle {
+            display: flex;
+            align-items: center;
+
+            &-theme {
+                background: url('../../images/moon.webp') no-repeat center; 
+                border: none;
+                width: 3rem; 
+                height: 3rem;
+                cursor: pointer;
+                background-size: cover;
+                position: relative;
+                transition: background-color 0.3s;
+                margin-right: 1rem;
+                margin-left: 0.9rem;
+                transition: transform 0.2s;
+    
+                &:hover {
+                    transform: scale(1.1) rotate(360deg);
+                }
+            
+                &.dark {
+                    background: url('../../images/sun.webp') no-repeat center; 
+                }
+            }
+
+            &-language {
+                position: relative;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                
+          
+                &-icon {
+                    width: 2.5rem;
+                    height: auto;
+                    margin: 0 1rem;
+                    transition: transform 0.3s ease;
+
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+            
+                &-menu {
+                    position: absolute;
+                    background-color: rgb(255, 230, 0);
+                    z-index: 10;
+                    top: 100%;
+                    padding: 0 1rem 1rem 1rem;
+                    border: none;
+                    border-radius: 5px;
+            
+                    &-icon {
+                        cursor: pointer;
+                        width: 2.5rem;
+                        height: auto;
+                        transition: transform 0.3s ease;
+                        margin-top: 1rem;
+
+                        &:hover {
+                            background-color: rgb(255, 230, 0);
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+            } 
+        }
+        
+             
+    }
+
+    &-main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*
+    * === FOOTER ===
+    */
+
+    &-footer {
+        margin-top: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        color: black;
+        background-color: rgb(255, 230, 0);
+        position: relative;
+        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.473);
+        flex-direction: column;
+        z-index: 3;
+
+        &-links {
+            display: flex;
+            margin-top: 1rem;
+        }
+
+        &-link {
+            margin: 1rem;
+            border-radius: 10px;
+            cursor: pointer;
+            background-color: rgb(255, 230, 0);
+
+            &-img {
+                width: 2rem;
+                height: 2rem;
+                vertical-align: middle;
+                border-radius: 10px;
+                padding: 0.15rem;
+            }
+        }
+
+        &-text {
+            font-size: 15px;
+        }
+    }
+
+
+    .dark & {
+
+        &-header {
+            border-bottom: 1px solid rgb(59, 59, 59);
+        }
+        
+        &-main {
+            background-color: black;
+        }
+
+        &-footer {
+            border-top: 1px solid rgb(59, 59, 59);
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .pikalayout-header {
+
+        &-mobile {
+            display: block; 
+        }
+
+        &-nav {
+            display: block;
+            position: absolute;
+            background-color: black;
+            top: 100%;
+            right: 0;
+            left: 0;
+            flex-direction: column;
+            width: 100%;
+            visibility: hidden; 
+
+
+            &.open {
+                visibility: visible; 
+                height: auto; 
+            }
+
+
+            &-ul {
+                display: block;
+                width: 100%;
+                padding: 0;
+                background-color: black;
+
+                &-li {
+                    width: 100%;
+                    &-a {
+                        display: block;
+                        width: 100%;
+                        padding: 1rem;
+                    }
+                }
+            }
+        }
+
+        &-icon {
+            display: block;
+            width: 3rem;
+            cursor: pointer;
+            margin-top: 0.2rem;
+            margin-right: 0.4rem;
+        }
+
+        &-toggle {
+            margin-right: 3.7rem;
+        }
+    }
+
+    .pikalayout-footer {
+
+        &-links {
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 20rem;
+        }
+
+        &-text {
+            font-size: 13px;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .pikalayout-header {
+        
+        &-title {
+            margin-left: 0.5rem;
+            font-size: 15px;
+        }
+
+        &-toggle {
+
+            &-theme {
+                margin-left: 0;
+            }
+        }
+    }
+}
