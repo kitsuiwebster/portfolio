@@ -7,8 +7,6 @@ Disallow: /loading
 # why are you here?
 
 Sitemap: https://kitsuiwebster.com/sitemap.xml
-Contact: contact@kitsuiwebster.com
-Phone: +33652639088
 
 Allow: /
 Allow: /quiz
