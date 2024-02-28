@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const routes = [
-    { path: "/broken", changefreq: "yearly", priority: 0.1 },
+    // { path: "/broken", changefreq: "yearly", priority: 0.1 },
     { path: "/gallery", changefreq: "monthly", priority: 0.5 },
     { path: "/quiz", changefreq: "monthly", priority: 0.9 },
     { path: "/quiz/tcp-udp-ports", changefreq: "monthly", priority: 0.8 },
@@ -21,13 +21,13 @@ const routes = [
     { path: "/contact", changefreq: "yearly", priority: 0.4 },
     { path: "/projects", changefreq: "monthly", priority: 0.7 },
     { path: "/projects/cozybot/invite", changefreq: "monthly", priority: 0.9 },
-    { path: "/pika", changefreq: "yearly", priority: 0 },
+    // { path: "/pika", changefreq: "yearly", priority: 0 },
     { path: "/dihia", changefreq: "monthly", priority: 0.5 },
-    { path: "/projects/kasa", changefreq: "yearly", priority: 0 },
-    { path: "/projects/qwenta", changefreq: "yearly", priority: 0.7 },
-    { path: "/projects/sophie-bluel", changefreq: "yearly", priority: 0.7 },
-    { path: "/projects/nina-carducci", changefreq: "yearly", priority: 0.7 },
-    { path: "/loading", changefreq: "yearly", priority: 0 }
+    // { path: "/projects/kasa", changefreq: "yearly", priority: 0 },
+    // { path: "/projects/qwenta", changefreq: "yearly", priority: 0.7 },
+    // { path: "/projects/sophie-bluel", changefreq: "yearly", priority: 0.7 },
+    // { path: "/projects/nina-carducci", changefreq: "yearly", priority: 0.7 },
+    // { path: "/loading", changefreq: "yearly", priority: 0 }
 ];
 
 const createSitemap = (routes) => {
