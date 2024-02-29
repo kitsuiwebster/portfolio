@@ -144,6 +144,8 @@ function Home() {
                 
                     <h3 className="home-skills-titles">{t('skills.ai')}</h3>
                     <div className="home-skills-category">
+                        <TechnoIcon src={mistralLogo} alt="Mistral" name="Mistral ❤️"
+                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={clearStar} />
                         <TechnoIcon src={chatGptLogo} alt="Chat GPT" name="ChatGPT ❤️"
                         star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={yellowStar}/>
                         <TechnoIcon src={claudeLogo} alt="Claude" name="Claude"
@@ -152,8 +154,6 @@ function Home() {
                         star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={halfStar} star5={clearStar} />
                         <TechnoIcon src={midjourneyLogo} alt="Midjourney" name="Midjourney ❤️"
                         star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={yellowStar} />
-                        <TechnoIcon src={mistralLogo} alt="Mistral" name="Mistral"
-                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={clearStar} star5={clearStar} />
                     </div>
 
                     <h3 className="home-skills-titles">{t('skills.dev')}</h3>
