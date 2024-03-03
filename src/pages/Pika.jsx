@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 import '../assets/scss/pages/Pika.scss';
 
 const Pika = () => {
-    const emojis = ['💛', '😇', '🤗', '🥺', '😊', '😋', '⚡'];
+    const emojis = ['💛', '😇', '🤗', '🥺', '😊', '😋', '⚡', '🙏', '✨', '🥺', '🌼', '🥷', '😈', '😁', '☀️', '😍', '😼', '😌', '😅'];
     const textRefs = useRef([]);
     const [copiedIndex, setCopiedIndex] = useState(null);
 
