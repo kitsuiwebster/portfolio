@@ -13,23 +13,23 @@ import zshLogo from '../assets/images/technos/zsh.webp';
 import discordLogo from '../assets/images/social/discord.webp';
 import raspberryLogo from '../assets/images/technos/raspberry-pi.webp';
 import condaLogo from '../assets/images/technos/conda.webp';
-import reactLogo from '../assets/images/technos/react.webp';
-import htmlLogo from '../assets/images/technos/html.webp';
-import sassLogo from '../assets/images/technos/sass.webp';
-import jsLogo from '../assets/images/technos/js.webp';
-import figmaLogo from '../assets/images/technos/figma.webp';
-import cssLogo from '../assets/images/technos/css.webp';
-import waveLogo from '../assets/images/technos/wave.webp';
-import lighthouseLogo from '../assets/images/technos/lighthouse.webp';
-import trelloLogo from '../assets/images/technos/trello.webp';
-import flipboardLogo from '../assets/images/technos/flipboard.webp';
-import swaggerLogo from '../assets/images/technos/swagger.webp';
+// import reactLogo from '../assets/images/technos/react.webp';
+// import htmlLogo from '../assets/images/technos/html.webp';
+// import sassLogo from '../assets/images/technos/sass.webp';
+// import jsLogo from '../assets/images/technos/js.webp';
+// import figmaLogo from '../assets/images/technos/figma.webp';
+// import cssLogo from '../assets/images/technos/css.webp';
+// import waveLogo from '../assets/images/technos/wave.webp';
+// import lighthouseLogo from '../assets/images/technos/lighthouse.webp';
+// import trelloLogo from '../assets/images/technos/trello.webp';
+// import flipboardLogo from '../assets/images/technos/flipboard.webp';
+// import swaggerLogo from '../assets/images/technos/swagger.webp';
 
 // Projects images
-import kasaImage from '../assets/images/projects/kasa.webp';
-import ninacarducciImage from '../assets/images/projects/nina-carducci.webp';
-import qwentaImage from '../assets/images/projects/qwenta.webp';
-import sophiebluelImage from '../assets/images/projects/sophie-bluel.webp';
+// import kasaImage from '../assets/images/projects/kasa.webp';
+// import ninacarducciImage from '../assets/images/projects/nina-carducci.webp';
+// import qwentaImage from '../assets/images/projects/qwenta.webp';
+// import sophiebluelImage from '../assets/images/projects/sophie-bluel.webp';
 import cozybotImage from '../assets/images/projects/cozybot.webp';
 
 
@@ -57,69 +57,69 @@ function Projects() {
                         logoSrc5={gitLogo}
                         />
                     </Link>
-                    <h2 className='projects-subtitle'>{t('titles.school')}</h2>
+                    {/*  <h2 className='projects-subtitle'>{t('titles.school')}</h2>
                     <Link to="/projects/kasa" className="projects-link">
-                        <Project
-                        schoolLogo={openclassroomsLogo}
-                        schoolLogoAlt="OpenClassrooms"
-                        title="Kasa"
-                        subtitle={t('kasa.subtitle')}
-                        description={t('kasa.description')} 
-                        imageSrc={kasaImage}
-                        imageAlt="Kasa"
-                        logoSrc0={reactLogo}
-                        logoSrc1={htmlLogo}
-                        logoSrc2={sassLogo}
-                        logoSrc3={jsLogo}
-                        logoSrc4={figmaLogo}
-                        logoSrc5={gitLogo}
-                        />
+                    <Project
+                    schoolLogo={openclassroomsLogo}
+                    schoolLogoAlt="OpenClassrooms"
+                    title="Kasa"
+                    subtitle={t('kasa.subtitle')}
+                    description={t('kasa.description')} 
+                    imageSrc={kasaImage}
+                    imageAlt="Kasa"
+                    logoSrc0={reactLogo}
+                    logoSrc1={htmlLogo}
+                    logoSrc2={sassLogo}
+                    logoSrc3={jsLogo}
+                    logoSrc4={figmaLogo}
+                    logoSrc5={gitLogo}
+                    />
                     </Link>
                     <Link to="/projects/nina-carducci" className="projects-link">
-                        <Project
-                        schoolLogo={openclassroomsLogo}
-                        schoolLogoAlt="OpenClassrooms"
-                        title="Nina Carducci"
-                        subtitle={t('nina.subtitle')}
-                        description={t('nina.description')} 
-                        imageSrc={ninacarducciImage}
-                        imageAlt="Nina Carducci"
-                        logoSrc0={htmlLogo}
-                        logoSrc1={cssLogo}
-                        logoSrc2={jsLogo}
-                        logoSrc3={lighthouseLogo}
-                        logoSrc4={waveLogo}
-                        logoSrc5={gitLogo}
-                        />
+                    <Project
+                    schoolLogo={openclassroomsLogo}
+                    schoolLogoAlt="OpenClassrooms"
+                    title="Nina Carducci"
+                    subtitle={t('nina.subtitle')}
+                    description={t('nina.description')} 
+                    imageSrc={ninacarducciImage}
+                    imageAlt="Nina Carducci"
+                    logoSrc0={htmlLogo}
+                    logoSrc1={cssLogo}
+                    logoSrc2={jsLogo}
+                    logoSrc3={lighthouseLogo}
+                    logoSrc4={waveLogo}
+                    logoSrc5={gitLogo}
+                    />
                     </Link>
                     <Link to="/projects/qwenta" className="projects-link">
-                        <Project
-                        schoolLogo={openclassroomsLogo}
-                        schoolLogoAlt="OpenClassrooms"
-                        title="Qwenta"
-                        subtitle={t('qwenta.subtitle')}
-                        description={t('qwenta.description')} 
-                        imageSrc={qwentaImage}
-                        imageAlt="Qwenta"
-                        logoSrc0={trelloLogo}
-                        logoSrc1={flipboardLogo}
-                        />
+                    <Project
+                    schoolLogo={openclassroomsLogo}
+                    schoolLogoAlt="OpenClassrooms"
+                    title="Qwenta"
+                    subtitle={t('qwenta.subtitle')}
+                    description={t('qwenta.description')} 
+                    imageSrc={qwentaImage}
+                    imageAlt="Qwenta"
+                    logoSrc0={trelloLogo}
+                    logoSrc1={flipboardLogo}
+                    />
                     </Link>
                     <Link to="/projects/sophie-bluel" className="projects-link">
-                        <Project
-                        schoolLogo={openclassroomsLogo}
-                        schoolLogoAlt="OpenClassrooms"
-                        title="Sophie Bluel"
-                        subtitle={t('sophie.subtitle')}
-                        description={t('sophie.description')} 
-                        imageSrc={sophiebluelImage}
-                        imageAlt="Sophie Bluel"
-                        logoSrc0={jsLogo}
-                        logoSrc1={figmaLogo}
-                        logoSrc2={swaggerLogo}
-                        logoSrc3={gitLogo}
-                        />
-                    </Link>
+                    <Project
+                    schoolLogo={openclassroomsLogo}
+                    schoolLogoAlt="OpenClassrooms"
+                    title="Sophie Bluel"
+                    subtitle={t('sophie.subtitle')}
+                    description={t('sophie.description')} 
+                    imageSrc={sophiebluelImage}
+                    imageAlt="Sophie Bluel"
+                    logoSrc0={jsLogo}
+                    logoSrc1={figmaLogo}
+                    logoSrc2={swaggerLogo}
+                    logoSrc3={gitLogo}
+                    />
+                    </Link> */}
                     {/* <h2 className='projects-subtitle'>{t('titles.other')}</h2> */}
                 </div>
             </div>
@@ -128,3 +128,5 @@ function Projects() {
 }
 
 export default Projects;
+
+
