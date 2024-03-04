@@ -39,7 +39,9 @@
 
     .dark & {
 
-        .cozybot-try {
+        .cozybot-try,
+        .cozybot-repo,
+        .cozybot-changelog {
             margin-bottom: 2rem;
             border: 2px solid white;
             color: black;
