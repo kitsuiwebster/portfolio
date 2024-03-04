@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import '../assets/scss/pages/Projects.scss';
 import '../assets/scss/index.scss'
 import Project from '../components/Project';
-import openclassroomsLogo from '../assets/images/openclassrooms.webp'
+// import openclassroomsLogo from '../assets/images/openclassrooms.webp'
 import cozybotLogo from '../assets/images/cozybot-logo.webp'
 import { useTranslation } from 'react-i18next';
 

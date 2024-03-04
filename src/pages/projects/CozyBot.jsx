@@ -32,6 +32,10 @@ function CozyBot() {
           <div className="markdown-body">
               <ReactMarkdown>{markdown}</ReactMarkdown>
           </div>
+          <a href="https://github.com/kitsuiwebster/cozy-bot" id="cozybot-repo"
+          target="_blank" rel="noopener noreferrer" className="cozybot-repo">{t('repo')}</a>
+          <a href="https://github.com/kitsuiwebster/cozy-bot/blob/main/CHANGELOG.md"
+          target="_blank" rel="noopener noreferrer" className="cozybot-changelog">{t('changelog')}</a>
           <Link id="cozybot-try-bottom" className="cozybot-try" to="/projects/cozybot/invite">{t('button')}</Link>
       </div>
     </>

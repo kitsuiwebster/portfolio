@@ -4,7 +4,9 @@
     align-items: center;
     flex-direction: column;
 
-    .cozybot-try {
+    .cozybot-try,
+    .cozybot-repo,
+    .cozybot-changelog {
         font-size: 20px;
         font-weight: 500;
         text-decoration: none;
@@ -27,9 +29,12 @@
         }
     }
 
+    #cozybot-repo {
+        margin-top: 3rem;
+    }
+
     #cozybot-try-bottom {
         margin-bottom: 5rem;
-        margin-top: 3rem;
     }
 
     .dark & {
