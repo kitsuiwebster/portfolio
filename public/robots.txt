@@ -3,6 +3,10 @@ Disallow: /quiz/tcp-udp-ports/*
 Disallow: /quiz/http-status/*
 Disallow: /pika
 Disallow: /loading
+Disallow: /projects/qwenta
+Disallow: /projects/sophie-bluel
+Disallow: /projects/nina-carducci
+Disallow: /projects/kasa
 
 # why are you here?
 
@@ -17,7 +21,7 @@ Allow: /contact
 Allow: /dihia
 Allow: /quiz/tcp-udp-ports
 Allow: /quiz/http-status
-Allow: /projects/*
+Allow: /projects/cozybot
 Allow: /articles/*
 Allow: /projects/cozybot/invite
 Allow: /articles/hackaprompt2023
