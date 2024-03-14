@@ -1,19 +1,22 @@
 {
     "header": {
-        "subtitle": "Freelance IT, Ingegnere dei Prompt, Sviluppatore",
-        "bio": "Appassionato di IT, convinto dai valori dell'opensource, sono in continua formazione e cerco progetti che risuonino con me. Da grande autodidatta, ho già sviluppato una vasta gamma di competenze fin da molto giovane in questo campo e, sempre assetato di conoscenza, non smetto mai di evolvermi nell'IT.",
+        "subtitle": "Freelance IT, Ingegnere di Prompt, Sviluppatore",
+        "bio": "Appassionato di IT, convinto dai valori dell'opensource, mi formo continuamente e cerco progetti che risuonino con me. Come grande autodidatta, ho già sviluppato un'ampia gamma di competenze da quando ero molto giovane in questo campo e, sempre assetato di conoscenza, non smetto mai di evolvermi nell'IT.",
         "location": "📍 Toulouse, Francia"
     },
-    "skills" : {
+    "skills": {
         "title": "Competenze",
-        "ai": "IA - Ingegneria dei Prompt",
+        "ai": "IA - Prompt Engineering",
+        "lang": "Linguaggi",
+        "db": "Basi di Dati",
         "dev": "Sviluppo",
+        "auto": "Automazione",
         "sys": "Sistema",
         "visual": "Visivo",
         "audio": "Audio"
     },
     "certifications": {
         "certif": "Certificazioni",
-        "certificate": "Certificato di Completamento"
+        "certificate": "Certificati di Completamento"
     }
 }

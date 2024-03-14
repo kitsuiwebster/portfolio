@@ -7,7 +7,10 @@
     "skills" : {
         "title": "Skills",
         "ai": "AI - Prompt Engineering",
+        "lang": "Languages",
+        "db": "Databases",
         "dev": "Development",
+        "auto": "Automation",
         "sys": "System",
         "visual": "Visual",
         "audio": "Audio"

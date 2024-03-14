@@ -57,7 +57,11 @@ import workstationLogo from '../assets/images/technos/workstation.webp';
 import virtualboxLogo from '../assets/images/technos/virtualbox.webp';
 import cubaseLogo from '../assets/images/technos/cubase.webp';
 import autotuneLogo from '../assets/images/technos/auto-tune.webp';
-import mongodbLogo from '../assets/images/technos/mongodb.webp'
+import mongodbLogo from '../assets/images/technos/mongodb.webp';
+import noderedLogo from '../assets/images/technos/nodered.webp';
+import couchdbLogo from '../assets/images/technos/couchdb.webp';
+import nestLogo from '../assets/images/technos/nest.webp';
+import geminiLogo from '../assets/images/technos/gemini.webp';
 
 // Stars
 import yellowStar from '../assets/images/stars/yellow.webp';
@@ -151,12 +155,14 @@ function Home() {
                         <TechnoIcon src={claudeLogo} alt="Claude" name="Claude"
                         star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={clearStar} />
                         <TechnoIcon src={bardLogo} alt="Bard" name="Bard"
+                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={clearStar} />
+                        <TechnoIcon src={geminiLogo} alt="Gemini" name="Gemini"
                         star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={halfStar} star5={clearStar} />
                         <TechnoIcon src={midjourneyLogo} alt="Midjourney" name="Midjourney ❤️"
                         star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={yellowStar} />
                     </div>
 
-                    <h3 className="home-skills-titles">{t('skills.dev')}</h3>
+                    <h3 className="home-skills-titles">{t('skills.lang')}</h3>
                     <div className="home-skills-category">
                         <TechnoIcon src={htmlLogo} alt="HTML" name="HTML"
                         star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={yellowStar} />
@@ -164,24 +170,42 @@ function Home() {
                         star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={yellowStar} />
                         <TechnoIcon src={sassLogo} alt="Sass" name="Sass ❤️"
                         star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={yellowStar} />
-                        <TechnoIcon src={reactLogo} alt="React.js" name="React.js"
-                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={clearStar} />
-                        <TechnoIcon src={nodeLogo} alt="Node.js" name="Node.js"
-                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={clearStar} star5={clearStar} />
-                        <TechnoIcon src={mongodbLogo} alt="MongoDB" name="MongoDB"
-                        star1={yellowStar} star2={yellowStar} star3={halfStar} star4={clearStar} star5={clearStar} />
                         <TechnoIcon src={jsLogo} alt="JavaScript" name="JavaScript"
                         star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={clearStar} star5={clearStar} />
                         <TechnoIcon src={tsLogo} alt="TypeScript" name="TypeScript"
                         star1={yellowStar} star2={yellowStar} star3={halfStar} star4={clearStar} star5={clearStar} />
                         <TechnoIcon src={pythonLogo} alt="Python" name="Python"
                         star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={halfStar} star5={clearStar} />
+                    </div>
+
+                    <h3 className="home-skills-titles">{t('skills.dev')}</h3>
+                    <div className="home-skills-category">
+                        <TechnoIcon src={reactLogo} alt="React.js" name="React.js"
+                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={clearStar} />
+                        <TechnoIcon src={nodeLogo} alt="Node.js" name="Node.js"
+                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={clearStar} />
+                        <TechnoIcon src={nestLogo} alt="NestJS" name="NestJS"
+                        star1={yellowStar} star2={yellowStar} star3={halfStar} star4={clearStar} star5={clearStar} />
                         <TechnoIcon src={gitLogo} alt="Git" name="Git"
                         star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={halfStar} />
-                        <TechnoIcon src={n8nLogo} alt="N8n" name="N8n"
-                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={clearStar} />
                         <TechnoIcon src={vscodeLogo} alt="VS Code" name="VS Code"
                         star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={halfStar} />
+                    </div>
+
+                    <h3 className="home-skills-titles">{t('skills.db')}</h3>
+                    <div className="home-skills-category">
+                        <TechnoIcon src={couchdbLogo} alt="CouchDB" name="CouchDB"
+                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={clearStar} />
+                        <TechnoIcon src={mongodbLogo} alt="MongoDB" name="MongoDB"
+                        star1={yellowStar} star2={yellowStar} star3={halfStar} star4={clearStar} star5={clearStar} />
+                    </div>
+
+                    <h3 className="home-skills-titles">{t('skills.auto')}</h3>
+                    <div className="home-skills-category">
+                        <TechnoIcon src={n8nLogo} alt="N8n" name="N8n"
+                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={clearStar} />
+                        <TechnoIcon src={noderedLogo} alt="Node-RED" name="Node-RED"
+                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={clearStar} />
                     </div>
 
                     <h3 className="home-skills-titles">{t('skills.sys')}</h3>
