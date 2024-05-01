@@ -62,6 +62,8 @@ import noderedLogo from '../assets/images/technos/nodered.webp';
 import couchdbLogo from '../assets/images/technos/couchdb.webp';
 import nestLogo from '../assets/images/technos/nest.webp';
 import geminiLogo from '../assets/images/technos/gemini.webp';
+import vuejsLogo from '../assets/images/technos/vuejs.png';
+import nuxtLogo from '../assets/images/technos/nuxt.png';
 
 // Stars
 import yellowStar from '../assets/images/stars/yellow.webp';
@@ -182,6 +184,10 @@ function Home() {
                     <div className="home-skills-category">
                         <TechnoIcon src={reactLogo} alt="React.js" name="React.js"
                         star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={clearStar} />
+                        <TechnoIcon src={vuejsLogo} alt="Vue.js" name="Vue.js"
+                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={clearStar} star5={clearStar} />
+                        <TechnoIcon src={nuxtLogo} alt="Nuxt.js" name="Nuxt.js"
+                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={clearStar} star5={clearStar} />
                         <TechnoIcon src={nodeLogo} alt="Node.js" name="Node.js"
                         star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={clearStar} />
                         <TechnoIcon src={nestLogo} alt="NestJS" name="NestJS"
