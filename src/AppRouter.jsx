@@ -30,6 +30,8 @@ import Ports10 from './pages/quiz/Ports10';
 import Ports50 from './pages/quiz/Ports50';
 import Ports30 from './pages/quiz/Ports30';
 import PikaLayout from './layouts/PikaLayout';
+import AllCards from './pages/AllCards';
+import CardTemplate from './pages/CardTemplate';
 
 const AppRouter = createBrowserRouter([
     {
@@ -79,6 +81,14 @@ const AppRouter = createBrowserRouter([
     {
         path: "/",
         element: <Layout><Home /></Layout>
+    },
+    {
+        path: "/cards/all",
+        element: <AllCards />
+    },
+    {
+        path: "/cards/template",
+        element: <CardTemplate />
     },
     {
         path: "/articles/hackaprompt2023",
