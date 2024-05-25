@@ -1,0 +1,42 @@
+// Style for the filter container
+.filter-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+// General style for filter buttons
+.filter-button {
+    padding: 8px 16px;
+    margin: 0 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: capitalize;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: darken(#007bff, 10%);
+    }
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+    }
+}
+
+// Specific style to make the "All" button a bit more distinct
+.filter-button:last-child {
+    background-color: #28a745;
+
+    &:hover {
+        background-color: darken(#28a745, 10%);
+    }
+}

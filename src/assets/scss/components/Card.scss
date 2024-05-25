@@ -1,0 +1,132 @@
+.card-container {
+    border-radius: 10px;
+    overflow: hidden;
+    width: 244px;
+    height: 337px;
+    margin: 1rem;
+}
+
+.card {
+    width: 218px;
+    height: 311px;
+    background-color: white;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 20px;
+
+    &-title {
+        margin: 0 0 0.5rem 0;
+        font-size: 17px;
+    }
+
+    &-image-container {
+        width: 100%;
+        height: 300px;
+        border-radius: 5px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .card-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &-details-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: 100%;
+        text-align: left;
+        width: 100%;
+        padding: 1rem 0;
+
+        .card-localisation {
+            font-weight: 500;
+        }
+        
+        .card-localisation,
+        .card-detail {
+            margin: 0.1rem 0;
+            font-size: 14px; 
+        }
+    }
+}
+
+
+
+$mountain-color: #009b53; 
+$lake-color: #00ffdd; 
+$city-color: #FF4136; 
+$country-color: #ffee00; 
+$sea-color: #0074D9; 
+$ocean-color: #001f3f; 
+$river-color: #7FDBFF; 
+
+$colors: (
+  "mountain": $mountain-color,
+  "lake": $lake-color,
+  "city": $city-color,
+  "country": $country-color,
+  "sea": $sea-color,
+  "ocean": $ocean-color,
+  "river": $river-color
+);
+
+
+
+@function set-text-color($bgColor) {
+    @if (lightness($bgColor) > 50) {
+      @return #000000; // dark text for lighter backgrounds
+    } @else {
+      @return #FFFFFF; // light text for darker backgrounds
+    }
+}
+
+
+aside:before, aside:after {
+  height: 0;
+  width: 0;
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 0;
+}
+
+aside {
+    margin: 0.5rem 0;
+    line-height: 34px;
+    position: relative;
+    background-color: var(--ribbon-bg-color); // Use CSS variable for background color
+    color: var(--ribbon-text-color); // Use CSS variable for text color
+    padding: 0 1rem;
+  
+    &:before, &:after {
+      top: 3px;
+      height: 0;
+      width: 0;
+      content: '';
+      position: absolute;
+      border-style: solid;
+    }
+    &:before {
+      left: -33px;
+      border-width: 17px;
+      border-color: var(--ribbon-bg-color) var(--ribbon-bg-color) var(--ribbon-bg-color) transparent; // Match the ribbon background
+    }
+    &:after {
+      right: -33px;
+      border-width: 17px;
+      border-color: var(--ribbon-bg-color) transparent var(--ribbon-bg-color) var(--ribbon-bg-color); // Match the ribbon background
+    }
+}
+
+  

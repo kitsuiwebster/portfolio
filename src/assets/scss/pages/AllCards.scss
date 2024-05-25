@@ -1,0 +1,43 @@
+.all-cards-container {
+    background-color: #121212; 
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #333; 
+
+        .header-title {
+            font-size: 24px;
+            color: #fff;
+        }
+
+        .download-btn {
+            background-color: #4CAF50; 
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: #45a049; 
+            }
+        }
+    }
+
+    .cards-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .card-box {
+            margin: 1rem;
+        }
+    }
+}
