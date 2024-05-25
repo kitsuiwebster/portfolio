@@ -41,17 +41,19 @@ function AllCards() {
         <div className='all-cards-container'>
             <div className='header'>
                 <h1 className='header-title'>Earth Cards 🌍</h1>
-                <button className='download-btn' onClick={downloadAllCards}>Download All</button>
-                <select onChange={handleFilterChange} className="filter-select">
-                    <option value="">All Types</option>
-                    <option value="mountain">Mountains</option>
-                    <option value="lake">Lakes</option>
-                    <option value="city">Cities</option>
-                    <option value="country">Countries</option>
-                    <option value="sea">Seas</option>
-                    <option value="ocean">Oceans</option>
-                    <option value="river">Rivers</option>
-                </select>
+                <div className='buttons-container'>
+                    <button className='download-btn' onClick={downloadAllCards}>Download All 📥</button>
+                    <select onChange={handleFilterChange} className="filter-select">
+                        <option value="">All Types</option>
+                        <option value="mountain">Mountains</option>
+                        <option value="lake">Lakes</option>
+                        <option value="city">Cities</option>
+                        <option value="country">Countries</option>
+                        <option value="sea">Seas</option>
+                        <option value="ocean">Oceans</option>
+                        <option value="river">Rivers</option>
+                    </select>
+                </div>
             </div>
             <div className='cards-grid'>
                 {filteredCards.map((card, index) => (

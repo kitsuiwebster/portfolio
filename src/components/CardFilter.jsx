@@ -1,14 +1,16 @@
 import React from 'react';
+import '../assets/scss/components/CardFilter.scss';
+import '../assets/scss/index.scss';
 
 function CardFilter({ types, onFilterSelect }) {
   return (
-    <div className="filter-container">
+    <div>
       {types.map(type => (
-        <button key={type} onClick={() => onFilterSelect(type)} className="filter-button">
+        <button key={type} onClick={() => onFilterSelect(type)}>
           {type.charAt(0).toUpperCase() + type.slice(1)}
         </button>
       ))}
-      <button onClick={() => onFilterSelect(null)} className="filter-button">All</button>
+      <button onClick={() => onFilterSelect(null)}>All</button>
     </div>
   );
 }

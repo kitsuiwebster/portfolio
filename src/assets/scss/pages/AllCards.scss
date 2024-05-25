@@ -1,5 +1,5 @@
 .all-cards-container {
-    background-color: #121212; 
+    background-color: #121212;
     min-height: 100vh;
     padding: 20px;
     box-sizing: border-box;
@@ -9,26 +9,38 @@
         justify-content: space-between;
         align-items: center;
         padding-bottom: 20px;
-        border-bottom: 1px solid #333; 
+        border-bottom: 1px solid #333;
 
         .header-title {
             font-size: 24px;
             color: #fff;
         }
 
-        .download-btn {
-            background-color: #4CAF50; 
-            color: #fff;
+        .buttons-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .download-btn, .filter-select {
+            background-color: #fff;
+            color: #000;
             border: none;
             padding: 10px 20px;
             border-radius: 5px;
             cursor: pointer;
             font-size: 16px;
             transition: background-color 0.3s;
+            margin: 0 0.5rem;
 
             &:hover {
-                background-color: #45a049; 
+                background-color: #fff;
             }
+        }
+
+        .filter-select {
+            display: inline-block;
+            -webkit-appearance: none;
+            appearance: none;
         }
     }
 
@@ -36,6 +48,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        
         .card-box {
             margin: 1rem;
         }
