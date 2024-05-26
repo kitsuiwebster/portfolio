@@ -12,6 +12,10 @@ function AllCards() {
         const zip = new JSZip();
         for (const card of cardsData) {
             const cardElement = document.getElementById(`card-${card.nom}`);
+
+            // Ensuring the styles are rendered before capturing
+            await new Promise(resolve => requestAnimationFrame(resolve));
+
             const scale = 1920 / 175;
             const canvas = await html2canvas(cardElement, {
                 scale: scale,
@@ -52,6 +56,8 @@ function AllCards() {
                         <option value="sea">Seas</option>
                         <option value="ocean">Oceans</option>
                         <option value="river">Rivers</option>
+                        <option value="desert">Deserts</option>
+                        <option value="island">Islands</option>
                     </select>
                 </div>
             </div>
@@ -69,7 +75,7 @@ export default AllCards;
 function applyRoundedCorners(canvas, scale) {
     const width = canvas.width;
     const height = canvas.height;
-    const radius = 20 * scale;
+    const radius = 12 * scale;
 
     const roundedCanvas = document.createElement('canvas');
     roundedCanvas.width = width;
