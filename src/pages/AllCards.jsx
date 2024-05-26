@@ -8,15 +8,21 @@ import '../assets/scss/pages/AllCards.scss';
 function AllCards() {
     const [filterType, setFilterType] = useState('');
     const [isLoading, setIsLoading] = useState(false);
-    const [progress, setProgress] = useState(0); // State to manage progress
+    const [progress, setProgress] = useState(0);
+
+    const handleFilterChange = (event) => {
+        setFilterType(event.target.value);
+    };
+
+    const filteredCards = filterType ? cardsData.filter(card => card.type === filterType) : cardsData;
 
     const downloadAllCards = async () => {
         setIsLoading(true);
-        setProgress(0); // Reset progress to 0
+        setProgress(0); 
         const zip = new JSZip();
-        const totalCards = cardsData.length;
+        const totalCards = filteredCards.length;
         try {
-            for (const [index, card] of cardsData.entries()) {
+            for (const [index, card] of filteredCards.entries()) {
                 const cardElement = document.getElementById(`card-${card.nom}`);
                 await new Promise(resolve => requestAnimationFrame(resolve));
                 const scale = 1920 / 175;
@@ -27,7 +33,7 @@ function AllCards() {
                 const roundedCanvas = applyRoundedCorners(canvas, scale);
                 const imgData = roundedCanvas.toDataURL("image/png");
                 zip.file(`${card.nom}.png`, imgData.split('base64,')[1], { base64: true });
-                setProgress(((index + 1) / totalCards) * 100); // Update progress
+                setProgress(((index + 1) / totalCards) * 100); 
             }
             const content = await zip.generateAsync({ type: "blob" });
             const url = window.URL.createObjectURL(content);
@@ -42,36 +48,30 @@ function AllCards() {
         }
     };
 
-    const handleFilterChange = (event) => {
-        setFilterType(event.target.value);
-    };
-
-    const filteredCards = filterType ? cardsData.filter(card => card.type === filterType) : cardsData;
-
     return (
         <div className='all-cards-container'>
             <div className='header'>
-                <h1 className='header-title'>Earth Cards 🌍</h1>
+                <h1 className='header-title'>Cartes de la Terre 🌍</h1>
                 <div className='buttons-container'>
                     {isLoading && (
                         <div className="loading" style={{ color: 'white', textAlign: 'center', fontSize: '16px', marginRight: '10px' }}>
-                            Preparing download... {Math.round(progress)}%
+                            Préparation du téléchargement... {Math.round(progress)}%
                         </div>
                     )}
                     <button className='download-btn' onClick={downloadAllCards} disabled={isLoading}>
-                        Download All 📥
+                        Tout télécharger 📥
                     </button>
                     <select onChange={handleFilterChange} className="filter-select">
-                        <option value="">All Types</option>
-                        <option value="mountain">Sommets</option>
-                        <option value="lake">Lacs</option>
-                        <option value="city">Villes</option>
-                        <option value="country">Pays</option>
-                        <option value="sea">Mers</option>
-                        <option value="ocean">Océans</option>
-                        <option value="river">Fleuves</option>
-                        <option value="desert">Déserts</option>
-                        <option value="island">îles</option>
+                        <option value="">Tous les types</option>
+                        <option value="Sommet">Sommets</option>
+                        <option value="Lac">Lacs</option>
+                        <option value="Ville">Villes</option>
+                        <option value="Pays">Pays</option>
+                        <option value="Mer">Mers</option>
+                        <option value="Océan">Océans</option>
+                        <option value="Fleuve">Fleuves</option>
+                        <option value="Désert">Déserts</option>
+                        <option value="Île">îles</option>
                     </select>
                 </div>
             </div>
@@ -85,7 +85,6 @@ function AllCards() {
 }
 
 export default AllCards;
-
 
 function applyRoundedCorners(canvas, scale) {
     const width = canvas.width;
