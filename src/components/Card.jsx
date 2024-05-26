@@ -4,27 +4,27 @@ import '../assets/scss/index.scss';
 
 function Card({ card }) {
     const borderColor = {
-        Mountain: "#009b53",
-        Lake: "#00ffdd",
-        City: "#FF4136",
-        Country: "#FF851B",
-        Sea: "#0074D9",
-        Ocean: "#001f3f",
-        River: "#7FDBFF",
-        Desert: "#ffee00",
-        Island: "#ba30e4"
+        Sommet: "#009b53",
+        Lac: "#00ffdd",
+        Ville: "#FF4136",
+        Pays: "#FF851B",
+        Mer: "#0074D9",
+        Océan: "#001f3f",
+        Fleuve: "#7FDBFF",
+        Désert: "#ffee00",
+        Île: "#ba30e4"
     };
 
     const ribbonColors = {
-        Mountain: { backgroundColor: "#009b53", color: "#fff" },
-        Lake: { backgroundColor: "#00ffdd", color: "#000" },
-        City: { backgroundColor: "#FF4136", color: "#fff" },
-        Country: { backgroundColor: "#FF851B", color: "#fff" },
-        Sea: { backgroundColor: "#0074D9", color: "#fff" },
-        Ocean: { backgroundColor: "#001f3f", color: "#fff" },
-        River: { backgroundColor: "#7FDBFF", color: "#000" },
-        Desert: { backgroundColor: "#ffee00", color: "#000" },
-        Island: { backgroundColor: "#ba30e4", color: "#fff" },
+        Sommet: { backgroundColor: "#009b53", color: "#fff" },
+        Lac: { backgroundColor: "#00ffdd", color: "#000" },
+        Ville: { backgroundColor: "#FF4136", color: "#fff" },
+        Pays: { backgroundColor: "#FF851B", color: "#fff" },
+        Mer: { backgroundColor: "#0074D9", color: "#fff" },
+        Océan: { backgroundColor: "#001f3f", color: "#fff" },
+        Fleuve: { backgroundColor: "#7FDBFF", color: "#000" },
+        Désert: { backgroundColor: "#ffee00", color: "#000" },
+        Île: { backgroundColor: "#ba30e4", color: "#fff" },
     };
 
     const ribbonStyle = {

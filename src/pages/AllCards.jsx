@@ -49,15 +49,15 @@ function AllCards() {
                     <button className='download-btn' onClick={downloadAllCards}>Download All 📥</button>
                     <select onChange={handleFilterChange} className="filter-select">
                         <option value="">All Types</option>
-                        <option value="mountain">Mountains</option>
-                        <option value="lake">Lakes</option>
-                        <option value="city">Cities</option>
-                        <option value="country">Countries</option>
-                        <option value="sea">Seas</option>
-                        <option value="ocean">Oceans</option>
-                        <option value="river">Rivers</option>
-                        <option value="desert">Deserts</option>
-                        <option value="island">Islands</option>
+                        <option value="mountain">Sommets</option>
+                        <option value="lake">Lacs</option>
+                        <option value="city">Villes</option>
+                        <option value="country">Pays</option>
+                        <option value="sea">Mers</option>
+                        <option value="ocean">Océans</option>
+                        <option value="river">Fleuves</option>
+                        <option value="desert">Déserts</option>
+                        <option value="island">îles</option>
                     </select>
                 </div>
             </div>
