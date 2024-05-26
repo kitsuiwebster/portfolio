@@ -7,32 +7,39 @@ import '../assets/scss/pages/AllCards.scss';
 
 function AllCards() {
     const [filterType, setFilterType] = useState('');
+    const [isLoading, setIsLoading] = useState(false);
+    const [progress, setProgress] = useState(0); // State to manage progress
 
     const downloadAllCards = async () => {
+        setIsLoading(true);
+        setProgress(0); // Reset progress to 0
         const zip = new JSZip();
-        for (const card of cardsData) {
-            const cardElement = document.getElementById(`card-${card.nom}`);
-
-            // Ensuring the styles are rendered before capturing
-            await new Promise(resolve => requestAnimationFrame(resolve));
-
-            const scale = 1920 / 175;
-            const canvas = await html2canvas(cardElement, {
-                scale: scale,
-                useCORS: true
-            });
-            const roundedCanvas = applyRoundedCorners(canvas, scale);
-            const imgData = roundedCanvas.toDataURL("image/png");
-            zip.file(`${card.nom}.png`, imgData.split('base64,')[1], { base64: true });
-        }
-
-        zip.generateAsync({ type: "blob" }).then(function(content) {
+        const totalCards = cardsData.length;
+        try {
+            for (const [index, card] of cardsData.entries()) {
+                const cardElement = document.getElementById(`card-${card.nom}`);
+                await new Promise(resolve => requestAnimationFrame(resolve));
+                const scale = 1920 / 175;
+                const canvas = await html2canvas(cardElement, {
+                    scale: scale,
+                    useCORS: true
+                });
+                const roundedCanvas = applyRoundedCorners(canvas, scale);
+                const imgData = roundedCanvas.toDataURL("image/png");
+                zip.file(`${card.nom}.png`, imgData.split('base64,')[1], { base64: true });
+                setProgress(((index + 1) / totalCards) * 100); // Update progress
+            }
+            const content = await zip.generateAsync({ type: "blob" });
             const url = window.URL.createObjectURL(content);
             const link = document.createElement('a');
             link.href = url;
             link.download = "cards.zip";
             link.click();
-        });
+        } catch (error) {
+            console.error('Failed to generate zip:', error);
+        } finally {
+            setIsLoading(false);
+        }
     };
 
     const handleFilterChange = (event) => {
@@ -46,7 +53,14 @@ function AllCards() {
             <div className='header'>
                 <h1 className='header-title'>Earth Cards 🌍</h1>
                 <div className='buttons-container'>
-                    <button className='download-btn' onClick={downloadAllCards}>Download All 📥</button>
+                    {isLoading && (
+                        <div className="loading" style={{ color: 'white', textAlign: 'center', fontSize: '16px', marginRight: '10px' }}>
+                            Preparing download... {Math.round(progress)}%
+                        </div>
+                    )}
+                    <button className='download-btn' onClick={downloadAllCards} disabled={isLoading}>
+                        Download All 📥
+                    </button>
                     <select onChange={handleFilterChange} className="filter-select">
                         <option value="">All Types</option>
                         <option value="mountain">Sommets</option>
@@ -71,6 +85,7 @@ function AllCards() {
 }
 
 export default AllCards;
+
 
 function applyRoundedCorners(canvas, scale) {
     const width = canvas.width;
