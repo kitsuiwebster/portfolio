@@ -40,7 +40,9 @@ function Card({ card }) {
     return (
         <div className="card-container" style={containerStyle} id={`card-${card.nom}`}>
             <div className="card">
-                <h2 className="card-title">{card.nom}</h2>
+                <div className='card-title-container'>
+                    <h2 className="card-title">{card.nom}</h2>
+                </div>
                 <div className="card-image-container">
                     <img src={card.image} alt={card.nom} className="card-image" />
                 </div>
