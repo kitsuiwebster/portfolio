@@ -59,7 +59,7 @@ function AllCards() {
                         </div>
                     )}
                     <button className='download-btn' onClick={downloadAllCards} disabled={isLoading}>
-                        Tout télécharger 📥
+                        Télécharger 📥
                     </button>
                     <select onChange={handleFilterChange} className="filter-select">
                         <option value="">Tous les types</option>
