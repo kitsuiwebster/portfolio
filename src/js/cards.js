@@ -1,4 +1,4 @@
-// moountains
+// mountains
 import everest from '../assets/images/cards/mountain/everest.jpg';
 import k2 from '../assets/images/cards/mountain/k2.jpg';
 import denali from '../assets/images/cards/mountain/denali.jpg';
@@ -8,8 +8,44 @@ import vinson from '../assets/images/cards/mountain/vinson.jpg';
 import aconcagua from '../assets/images/cards/mountain/aconcagua.jpg';
 // lakes
 import baikal from '../assets/images/cards/lake/baikal.jpg';
+import superior from '../assets/images/cards/lake/superior.jpg';
+import victoria from '../assets/images/cards/lake/victoria.jpg';
+import huron from '../assets/images/cards/lake/huron.jpg';
+import michigan from '../assets/images/cards/lake/michigan.jpg';
+import tanganyika from '../assets/images/cards/lake/tanganyika.jpg';
+import titicaca from '../assets/images/cards/lake/titicaca.jpg';
+import malawi from '../assets/images/cards/lake/malawi.jpg';
+import greatSlave from '../assets/images/cards/lake/great-slave.jpg';
+import leman from '../assets/images/cards/lake/leman.jpg';  
+import natron from '../assets/images/cards/lake/natron.png';
+import almaty from '../assets/images/cards/lake/almaty.jpg';
+import erie from '../assets/images/cards/lake/erie.jpg';
+import ontario from '../assets/images/cards/lake/ontario.jpeg';
+import greatBear from '../assets/images/cards/lake/great-bear.jpg';
+import kariba from '../assets/images/cards/lake/kariba.jpg';
+import issykKul from '../assets/images/cards/lake/issyk-kul.jpg';
+import caspian from '../assets/images/cards/lake/caspian.jpg';
+
+
+
+
 // cities
 import paris from '../assets/images/cards/city/paris.jpg';
+import tokyo from '../assets/images/cards/city/tokyo.jpg';
+import newyork from '../assets/images/cards/city/new-york.jpg';
+import london from '../assets/images/cards/city/london.jpg';
+import sydney from '../assets/images/cards/city/sydney.jpeg';
+import berlin from '../assets/images/cards/city/berlin.jpg';
+import moscow from '../assets/images/cards/city/moscow.jpg';
+import rio from '../assets/images/cards/city/rio.jpg';
+import mumbai from '../assets/images/cards/city/mumbai.jpg';
+import capeTown from '../assets/images/cards/city/cape-town.jpg';
+import beijing from '../assets/images/cards/city/beijing.jpg';
+
+
+
+
+
 // countries
 import australia from '../assets/images/cards/country/australia.png';
 import fiji from '../assets/images/cards/country/fiji.jpg';
@@ -51,6 +87,22 @@ import arctic from '../assets/images/cards/ocean/arctic.jpg';
 
 // rivers
 import nil from '../assets/images/cards/river/nil.jpg';
+import amazon from '../assets/images/cards/river/amazon.jpg';
+import yangtze from '../assets/images/cards/river/yangtze.jpg';
+import mississippi from '../assets/images/cards/river/mississippi.png';
+import yenisei from '../assets/images/cards/river/yenisei.jpg';
+import congo from '../assets/images/cards/river/congo.jpg';
+import volga from '../assets/images/cards/river/volga.jpg';
+import mekong from '../assets/images/cards/river/mekong.jpg';
+import ganges from '../assets/images/cards/river/ganges.jpg';
+import danube from '../assets/images/cards/river/danube.jpg';
+
+
+
+
+
+
+
 // deserts
 import sahara from '../assets/images/cards/desert/sahara.jpg';
 import arabianDesert from '../assets/images/cards/desert/arabian-desert.jpg';
@@ -67,6 +119,16 @@ import java from '../assets/images/cards/island/java.jpg';
 import hawaii from '../assets/images/cards/island/hawaii.jpg';
 import sicily from '../assets/images/cards/island/sicily.jpg';
 import newZealandNorth from '../assets/images/cards/island/new-zealand-north.jpg';
+import newZealandSouth from '../assets/images/cards/island/new-zealand-south.jpg';
+import borneo from '../assets/images/cards/island/borneo.jpeg';
+import sumatra from '../assets/images/cards/island/sumatra.jpg';
+import crete from '../assets/images/cards/island/crete.jpg';
+import longIsland from '../assets/images/cards/island/long-island.jpg';
+import jeju from '../assets/images/cards/island/jeju.jpg';
+import phuket from '../assets/images/cards/island/phuket.jpg';
+import galapagos from '../assets/images/cards/island/galapagos.jpg';
+import majorca from '../assets/images/cards/island/majorca.jpg';
+
 
 const cards = [
   // mountains
@@ -126,6 +188,13 @@ const cards = [
     localisation: "Argentine",
     hauteur: "6,961 m"
   },
+
+
+
+
+
+
+
   // lakes
   {
     type: "Lac",
@@ -135,6 +204,148 @@ const cards = [
     localisation: "Russie",
     surface: "31,500 km²"
   },
+  {
+    type: "Lac",
+    emoji: "🐟",
+    image: superior,
+    nom: "Lac Supérieur",
+    localisation: "États-Unis et Canada",
+    surface: "82,100 km²"
+  },
+  {
+    type: "Lac",
+    emoji: "🐟",
+    image: victoria,
+    nom: "Lac Victoria",
+    localisation: "Tanzanie, Ouganda et Kenya",
+    surface: "68,800 km²"
+  },
+  {
+    type: "Lac",
+    emoji: "🐟",
+    image: huron,
+    nom: "Lac Huron",
+    localisation: "États-Unis et Canada",
+    surface: "59,600 km²"
+  },
+  {
+    type: "Lac",
+    emoji: "🐟",
+    image: michigan,
+    nom: "Lac Michigan",
+    localisation: "États-Unis",
+    surface: "58,000 km²"
+  },
+  {
+    type: "Lac",
+    emoji: "🐟",
+    image: tanganyika,
+    nom: "Lac Tanganyika",
+    localisation: "Burundi, R.D.C, Tanzanie et Zambie",
+    surface: "32,900 km²"
+  },
+  {
+    type: "Lac",
+    emoji: "🐟",
+    image: titicaca,
+    nom: "Lac Titicaca",
+    localisation: "Pérou et Bolivie",
+    surface: "8,372 km²"
+  },
+  {
+    type: "Lac",
+    emoji: "🐟",
+    image: malawi,
+    nom: "Lac Malawi",
+    localisation: "Malawi, Mozambique et Tanzanie",
+    surface: "29,600 km²"
+  },
+  {
+    type: "Lac",
+    emoji: "🐟",
+    image: greatSlave,
+    nom: "Grand Lac des Esclaves",
+    localisation: "Canada",
+    surface: "27,200 km²"
+  },
+  {
+    type: "Lac",
+    emoji: "🐟",
+    image: leman,
+    nom: "Lac Léman",
+    localisation: "Suisse et France",
+    surface: "580 km²"
+  },
+  {
+    type: "Lac",
+    emoji: "🐟",
+    image: natron,
+    nom: "Lac Natron",
+    localisation: "Tanzanie",
+    surface: "1,040 km²"
+  },
+  {
+    type: "Lac",
+    emoji: "🐟",
+    image: almaty,
+    nom: "Lac d'Almaty",
+    localisation: "Kazakhstan",
+    surface: "1.82 km²"
+  },
+  {
+    type: "Lac",
+    emoji: "🐟",
+    image: erie,
+    nom: "Lac Érié",
+    localisation: "États-Unis et Canada",
+    surface: "25,700 km²"
+  },
+  {
+    type: "Lac",
+    emoji: "🐟",
+    image: ontario,
+    nom: "Lac Ontario",
+    localisation: "États-Unis et Canada",
+    surface: "18,960 km²"
+  },
+  {
+    type: "Lac",
+    emoji: "🐟",
+    image: greatBear,
+    nom: "Grand Lac de l'Ours",
+    localisation: "Canada",
+    surface: "31,080 km²"
+  },
+  {
+    type: "Lac",
+    emoji: "🐟",
+    image: kariba,
+    nom: "Lac Kariba",
+    localisation: "Zimbabwe et Zambie",
+    surface: "5,580 km²"
+  },
+  {
+    type: "Lac",
+    emoji: "🐟",
+    image: issykKul,
+    nom: "Lac Issyk-Koul",
+    localisation: "Kirghizistan",
+    surface: "6,236 km²"
+  },
+  {
+    type: "Lac",
+    emoji: "🐟",
+    image: caspian,
+    nom: "Mer Caspienne",
+    localisation: "Iran, Russie, Kazakhstan, Turkménistan et Azerbaïdjan",
+    surface: "371,000 km²"
+  },
+  
+
+
+
+
+
   // cities
   {
     type: "Ville",
@@ -144,6 +355,94 @@ const cards = [
     localisation: "France",
     population: "2,161,000 M"
   },
+  {
+    type: "Ville",
+    emoji: "🏘️",
+    image: tokyo,
+    nom: "Tokyo",
+    localisation: "Japon",
+    population: "13,960,000 M"
+  },
+  {
+    type: "Ville",
+    emoji: "🏘️",
+    image: newyork,
+    nom: "New York",
+    localisation: "États-Unis",
+    population: "8,336,000 M"
+  },
+  {
+    type: "Ville",
+    emoji: "🏘️",
+    image: london,
+    nom: "Londres",
+    localisation: "Royaume-Uni",
+    population: "8,982,000 M"
+  },
+  {
+    type: "Ville",
+    emoji: "🏘️",
+    image: sydney,
+    nom: "Sydney",
+    localisation: "Australie",
+    population: "5,312,000 M"
+  },
+  {
+    type: "Ville",
+    emoji: "🏘️",
+    image: berlin,
+    nom: "Berlin",
+    localisation: "Allemagne",
+    population: "3,748,000 M"
+  },
+  {
+    type: "Ville",
+    emoji: "🏘️",
+    image: moscow,
+    nom: "Moscou",
+    localisation: "Russie",
+    population: "12,506,000 M"
+  },
+  {
+    type: "Ville",
+    emoji: "🏘️",
+    image: rio,
+    nom: "Rio de Janeiro",
+    localisation: "Brésil",
+    population: "6,748,000 M"
+  },
+  {
+    type: "Ville",
+    emoji: "🏘️",
+    image: mumbai,
+    nom: "Mumbai",
+    localisation: "Inde",
+    population: "20,411,000 M"
+  },
+  {
+    type: "Ville",
+    emoji: "🏘️",
+    image: capeTown,
+    nom: "Le Cap",
+    localisation: "Afrique du Sud",
+    population: "4,004,000 M"
+  },
+  {
+    type: "Ville",
+    emoji: "🏘️",
+    image: beijing,
+    nom: "Pékin",
+    localisation: "Chine",
+    population: "21,893,000 M"
+  },
+
+
+
+
+
+
+
+  
   // countries
   {
     type: "Pays",
@@ -271,6 +570,402 @@ const cards = [
     population: "11.3 K",
     superficie: "26 km²"
   },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: albania,
+    nom: "Albanie",
+    localisation: "Europe",
+    population: "2.8 M",
+    superficie: "28,748 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: germany,
+    nom: "Allemagne",
+    localisation: "Europe",
+    population: "83 M",
+    superficie: "357,022 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: andorra,
+    nom: "Andorre",
+    localisation: "Europe",
+    population: "77 K",
+    superficie: "468 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: austria,
+    nom: "Autriche",
+    localisation: "Europe",
+    population: "8.9 M",
+    superficie: "83,879 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: belarus,
+    nom: "Biélorussie",
+    localisation: "Europe",
+    population: "9.4 M",
+    superficie: "207,600 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: belgium,
+    nom: "Belgique",
+    localisation: "Europe",
+    population: "11.5 M",
+    superficie: "30,689 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: bosnia,
+    nom: "Bosnie-Herzégovine",
+    localisation: "Europe",
+    population: "3.3 M",
+    superficie: "51,197 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: bulgaria,
+    nom: "Bulgarie",
+    localisation: "Europe",
+    population: "7 M",
+    superficie: "110,879 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: croatia,
+    nom: "Croatie",
+    localisation: "Europe",
+    population: "4.1 M",
+    superficie: "56,594 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: cyprus,
+    nom: "Chypre",
+    localisation: "Europe",
+    population: "1.2 M",
+    superficie: "9,251 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: czechRepublic,
+    nom: "République Tchèque",
+    localisation: "Europe",
+    population: "10.7 M",
+    superficie: "78,867 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: denmark,
+    nom: "Danemark",
+    localisation: "Europe",
+    population: "5.8 M",
+    superficie: "42,933 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: estonia,
+    nom: "Estonie",
+    localisation: "Europe",
+    population: "1.3 M",
+    superficie: "45,227 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: finland,
+    nom: "Finlande",
+    localisation: "Europe",
+    population: "5.5 M",
+    superficie: "338,424 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: france,
+    nom: "France",
+    localisation: "Europe",
+    population: "67 M",
+    superficie: "643,801 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: georgia,
+    nom: "Géorgie",
+    localisation: "Europe",
+    population: "3.7 M",
+    superficie: "69,700 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: greece,
+    nom: "Grèce",
+    localisation: "Europe",
+    population: "10.4 M",
+    superficie: "131,957 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: hungary,
+    nom: "Hongrie",
+    localisation: "Europe",
+    population: "9.6 M",
+    superficie: "93,028 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: iceland,
+    nom: "Islande",
+    localisation: "Europe",
+    population: "364 K",
+    superficie: "103,000 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: ireland,
+    nom: "Irlande",
+    localisation: "Europe",
+    population: "4.9 M",
+    superficie: "70,273 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: italy,
+    nom: "Italie",
+    localisation: "Europe",
+    population: "60.4 M",
+    superficie: "301,340 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: latvia,
+    nom: "Lettonie",
+    localisation: "Europe",
+    population: "1.9 M",
+    superficie: "64,589 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: lithuania,
+    nom: "Lituanie",
+    localisation: "Europe",
+    population: "2.8 M",
+    superficie: "65,300 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: luxembourg,
+    nom: "Luxembourg",
+    localisation: "Europe",
+    population: "626 K",
+    superficie: "2,586 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: malta,
+    nom: "Malte",
+    localisation: "Europe",
+    population: "514 K",
+    superficie: "316 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: moldova,
+    nom: "Moldavie",
+    localisation: "Europe",
+    population: "2.6 M",
+    superficie: "33,846 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: monaco,
+    nom: "Monaco",
+    localisation: "Europe",
+    population: "39 K",
+    superficie: "2.02 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: montenegro,
+    nom: "Monténégro",
+    localisation: "Europe",
+    population: "622 K",
+    superficie: "13,812 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: netherlands,
+    nom: "Pays-Bas",
+    localisation: "Europe",
+    population: "17.3 M",
+    superficie: "41,543 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: norway,
+    nom: "Norvège",
+    localisation: "Europe",
+    population: "5.4 M",
+    superficie: "385,207 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: poland,
+    nom: "Pologne",
+    localisation: "Europe",
+    population: "38 M",
+    superficie: "312,696 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: portugal,
+    nom: "Portugal",
+    localisation: "Europe",
+    population: "10.3 M",
+    superficie: "92,090 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: romania,
+    nom: "Roumanie",
+    localisation: "Europe",
+    population: "19.3 M",
+    superficie: "238,397 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: russia,
+    nom: "Russie",
+    localisation: "Europe, Asie",
+    population: "146 M",
+    superficie: "17,098,242 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: sanMarino,
+    nom: "Saint-Marin",
+    localisation: "Europe",
+    population: "34 K",
+    superficie: "61 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: serbia,
+    nom: "Serbie",
+    localisation: "Europe",
+    population: "7 M",
+    superficie: "88,361 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: slovakia,
+    nom: "Slovaquie",
+    localisation: "Europe",
+    population: "5.4 M",
+    superficie: "49,035 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: slovenia,
+    nom: "Slovénie",
+    localisation: "Europe",
+    population: "2.1 M",
+    superficie: "20,273 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: spain,
+    nom: "Espagne",
+    localisation: "Europe",
+    population: "47 M",
+    superficie: "505,990 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: sweden,
+    nom: "Suède",
+    localisation: "Europe",
+    population: "10.3 M",
+    superficie: "450,295 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: switzerland,
+    nom: "Suisse",
+    localisation: "Europe",
+    population: "8.6 M",
+    superficie: "41,290 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: ukraine,
+    nom: "Ukraine",
+    localisation: "Europe",
+    population: "41 M",
+    superficie: "603,500 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: unitedKingdom,
+    nom: "Royaume-Uni",
+    localisation: "Europe",
+    population: "67 M",
+    superficie: "242,495 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: vatican,
+    nom: "Vatican",
+    localisation: "Europe",
+    population: "800",
+    superficie: "0.44 km²"
+  },
 
 
 
@@ -393,6 +1088,87 @@ const cards = [
     localisation: "Égypte, Soudan et Soudan du sud",
     longueur: "6,650 km"
   },
+  {
+    type: "Fleuve",
+    emoji: "💦",
+    image: amazon,
+    nom: "Amazone",
+    localisation: "Brésil, Pérou, Colombie",
+    longueur: "7,062 km"
+  },
+  {
+    type: "Fleuve",
+    emoji: "💦",
+    image: yangtze,
+    nom: "Yangtsé",
+    localisation: "Chine",
+    longueur: "6,300 km"
+  },
+  {
+    type: "Fleuve",
+    emoji: "💦",
+    image: mississippi,
+    nom: "Mississippi",
+    localisation: "États-Unis",
+    longueur: "3,734 km"
+  },
+  {
+    type: "Fleuve",
+    emoji: "💦",
+    image: yenisei,
+    nom: "Ienisseï",
+    localisation: "Russie",
+    longueur: "5,539 km"
+  },
+  {
+    type: "Fleuve",
+    emoji: "💦",
+    image: congo,
+    nom: "Congo",
+    localisation: "République démocratique du Congo",
+    longueur: "4,700 km"
+  },
+  {
+    type: "Fleuve",
+    emoji: "💦",
+    image: volga,
+    nom: "Volga",
+    localisation: "Russie",
+    longueur: "3,530 km"
+  },
+  {
+    type: "Fleuve",
+    emoji: "💦",
+    image: mekong,
+    nom: "Mékong",
+    localisation: "Chine, Myanmar, Laos, Thaïlande, Cambodge, Vietnam",
+    longueur: "4,350 km"
+  },
+  {
+    type: "Fleuve",
+    emoji: "💦",
+    image: ganges,
+    nom: "Gange",
+    localisation: "Inde, Bangladesh",
+    longueur: "2,525 km"
+  },
+  {
+    type: "Fleuve",
+    emoji: "💦",
+    image: danube,
+    nom: "Danube",
+    localisation: "Allemagne, Autriche, Slovaquie, Hongrie, Croatie, Serbie, Roumanie, Bulgarie, Moldavie, Ukraine",
+    longueur: "2,860 km"
+  },
+
+
+
+
+
+
+
+
+
   // deserts
   {
     type: "Désert",
@@ -505,7 +1281,80 @@ const cards = [
     nom: "Île du Nord",
     localisation: "Nouvelle-Zélande",
     superficie: "113,729 km²"
-  }  
+  },
+  {
+    type: "Île",
+    emoji: "🌴",
+    image: newZealandSouth,
+    nom: "Île du Sud",
+    localisation: "Nouvelle-Zélande",
+    superficie: "150,437 km²"
+  },
+  {
+    type: "Île",
+    emoji: "🌴",
+    image: borneo,
+    nom: "Bornéo",
+    localisation: "Indonésie, Malaisie et Brunei",
+    superficie: "748,168 km²"
+  },
+  {
+    type: "Île",
+    emoji: "🌴",
+    image: sumatra,
+    nom: "Sumatra",
+    localisation: "Indonésie",
+    superficie: "473,481 km²"
+  },
+  {
+    type: "Île",
+    emoji: "🌴",
+    image: crete,
+    nom: "Crète",
+    localisation: "Grèce",
+    superficie: "8,336 km²"
+  },
+  {
+    type: "Île",
+    emoji: "🌴",
+    image: longIsland,
+    nom: "Long Island",
+    localisation: "États-Unis",
+    superficie: "3,629 km²"
+  },
+  {
+    type: "Île",
+    emoji: "🌴",
+    image: jeju,
+    nom: "Jeju",
+    localisation: "Corée du Sud",
+    superficie: "1,846 km²"
+  },
+  {
+    type: "Île",
+    emoji: "🌴",
+    image: phuket,
+    nom: "Phuket",
+    localisation: "Thaïlande",
+    superficie: "543 km²"
+  },
+  {
+    type: "Île",
+    emoji: "🌴",
+    image: galapagos,
+    nom: "Galápagos",
+    localisation: "Équateur",
+    superficie: "8,010 km²"
+  },
+  {
+    type: "Île",
+    emoji: "🌴",
+    image: majorca,
+    nom: "Majorque",
+    localisation: "Espagne",
+    superficie: "3,640 km²"
+  }
+  
 ];
 
 
