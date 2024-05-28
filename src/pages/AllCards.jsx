@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Card from '../components/Card';
 import cardsData from '../js/cards';
 import html2canvas from 'html2canvas';
@@ -9,20 +9,33 @@ function AllCards() {
     const [filterType, setFilterType] = useState('');
     const [isLoading, setIsLoading] = useState(false);
     const [progress, setProgress] = useState(0);
+    const [shuffledCards, setShuffledCards] = useState([]);
 
     const handleFilterChange = (event) => {
         setFilterType(event.target.value);
     };
 
-    const filteredCards = filterType ? cardsData.filter(card => card.type === filterType) : cardsData;
+    useEffect(() => {
+        const filtered = filterType ? cardsData.filter(card => card.type === filterType) : cardsData;
+        setShuffledCards(shuffleArray([...filtered]));
+    }, [filterType]); // Re-shuffle and re-filter when filterType changes
+
+    // Utility function to shuffle an array
+    function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+    }
 
     const downloadAllCards = async () => {
         setIsLoading(true);
-        setProgress(0); 
+        setProgress(0);
         const zip = new JSZip();
-        const totalCards = filteredCards.length;
+        const totalCards = shuffledCards.length;
         try {
-            for (const [index, card] of filteredCards.entries()) {
+            for (const [index, card] of shuffledCards.entries()) {
                 const cardElement = document.getElementById(`card-${card.nom}`);
                 await new Promise(resolve => requestAnimationFrame(resolve));
                 const scale = 1920 / 175;
@@ -33,7 +46,7 @@ function AllCards() {
                 const roundedCanvas = applyRoundedCorners(canvas, scale);
                 const imgData = roundedCanvas.toDataURL("image/png");
                 zip.file(`${card.nom}.png`, imgData.split('base64,')[1], { base64: true });
-                setProgress(((index + 1) / totalCards) * 100); 
+                setProgress(((index + 1) / totalCards) * 100);
             }
             const content = await zip.generateAsync({ type: "blob" });
             const url = window.URL.createObjectURL(content);
@@ -76,8 +89,8 @@ function AllCards() {
                 </div>
             </div>
             <div className='cards-grid'>
-                {filteredCards.map((card, index) => (
-                    <Card className="card-box" key={index} card={card} />
+                {shuffledCards.map((card, index) => (
+                    <Card className="card-box" key={card.nom} card={card} />
                 ))}
             </div>
         </div>
