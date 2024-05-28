@@ -1187,7 +1187,7 @@ const cards = [
     emoji: "💦",
     image: ganges,
     nom: "Gange",
-    localisation: "Inde, Bangladesh",
+    localisation: "Inde et Bangladesh",
     longueur: "2,525 km"
   },
   {
@@ -1228,7 +1228,7 @@ const cards = [
     type: "Désert",
     emoji: "🌵",
     image: gobi,
-    nom: "Gobi",
+    nom: "Désert de Gobi",
     localisation: "Asie",
     superficie: "1,295,000 km²"
   },
@@ -1236,7 +1236,7 @@ const cards = [
     type: "Désert",
     emoji: "🌵",
     image: kalahari,
-    nom: "Kalahari",
+    nom: "Désert de Kalahari",
     localisation: "Afrique",
     superficie: "900,000 km²"
   },
@@ -1252,7 +1252,7 @@ const cards = [
     type: "Désert",
     emoji: "🌵",
     image: sonoran,
-    nom: "Sonora",
+    nom: "Désert de Sonora",
     localisation: "Amérique",
     superficie: "260,000 km²"
   },
@@ -1260,7 +1260,7 @@ const cards = [
     type: "Désert",
     emoji: "🌵",
     image: atacama,
-    nom: "Atacama",
+    nom: "Désert d'Atacama",
     localisation: "Amérique",
     superficie: "105,000 km²"
   },
