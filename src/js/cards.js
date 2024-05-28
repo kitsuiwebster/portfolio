@@ -47,6 +47,7 @@ import beijing from '../assets/images/cards/city/beijing.jpg';
 
 
 // countries
+// oceania
 import australia from '../assets/images/cards/country/australia.png';
 import fiji from '../assets/images/cards/country/fiji.jpg';
 import papua_new_guinea from '../assets/images/cards/country/papua_new_guinea.jpg';
@@ -61,6 +62,51 @@ import palau from '../assets/images/cards/country/palau.jpg';
 import nauru from '../assets/images/cards/country/nauru.jpg';
 import solomon_islands from '../assets/images/cards/country/solomon_islands.jpg';
 import tuvalu from '../assets/images/cards/country/tuvalu.jpg';
+// europe
+import albania from '../assets/images/cards/country/albania.jpg';
+import germany from '../assets/images/cards/country/germany.jpg';
+import andorra from '../assets/images/cards/country/andorra.jpg';
+import austria from '../assets/images/cards/country/austria.jpg';
+import belarus from '../assets/images/cards/country/belarus.jpg';
+import belgium from '../assets/images/cards/country/belgium.jpg';
+import bosnia from '../assets/images/cards/country/bosnia.jpg';
+import bulgaria from '../assets/images/cards/country/bulgaria.jpg';
+import croatia from '../assets/images/cards/country/croatia.jpg';
+import cyprus from '../assets/images/cards/country/cyprus.jpg';
+import czechRepublic from '../assets/images/cards/country/czech-republic.jpg';
+import denmark from '../assets/images/cards/country/denmark.jpeg';
+import estonia from '../assets/images/cards/country/estonia.jpg';
+import finland from '../assets/images/cards/country/finland.jpg';
+import france from '../assets/images/cards/country/france.jpg';
+import georgia from '../assets/images/cards/country/georgia.jpg';
+import greece from '../assets/images/cards/country/greece.jpg';
+import hungary from '../assets/images/cards/country/hungary.jpg';
+import iceland from '../assets/images/cards/country/iceland.jpg';
+import ireland from '../assets/images/cards/country/ireland.jpg';
+import italy from '../assets/images/cards/country/italy.jpg';
+import latvia from '../assets/images/cards/country/latvia.jpg';
+import lithuania from '../assets/images/cards/country/lithuania.jpg';
+import luxembourg from '../assets/images/cards/country/luxembourg.jpg';
+import malta from '../assets/images/cards/country/malta.jpeg';
+import moldova from '../assets/images/cards/country/moldova.jpg';
+import montenegro from '../assets/images/cards/country/montenegro.jpeg';
+import netherlands from '../assets/images/cards/country/netherlands.jpg';
+import macedonia from '../assets/images/cards/country/macedonia.jpeg';
+import norway from '../assets/images/cards/country/norway.jpg';
+import poland from '../assets/images/cards/country/poland.jpg';
+import portugal from '../assets/images/cards/country/portugal.jpg';
+import romania from '../assets/images/cards/country/romania.jpg';
+import russia from '../assets/images/cards/country/russia.jpg';
+import serbia from '../assets/images/cards/country/serbia.jpg';
+import slovakia from '../assets/images/cards/country/slovakia.jpg';
+import slovenia from '../assets/images/cards/country/slovenia.jpg';
+import spain from '../assets/images/cards/country/spain.jpg';
+import sweden from '../assets/images/cards/country/sweden.jpg';
+import switzerland from '../assets/images/cards/country/switzerland.jpeg';
+import ukraine from '../assets/images/cards/country/ukraine.jpg';
+import unitedKingdom from '../assets/images/cards/country/united-kingdom.jpg';
+import sanMarino from '../assets/images/cards/country/san-marino.jpg';
+
 
 
 
@@ -710,7 +756,7 @@ const cards = [
     emoji: "🤠",
     image: georgia,
     nom: "Géorgie",
-    localisation: "Europe",
+  localisation: "Europe et Asie",
     population: "3.7 M",
     superficie: "69,700 km²"
   },
@@ -807,15 +853,6 @@ const cards = [
   {
     type: "Pays",
     emoji: "🤠",
-    image: monaco,
-    nom: "Monaco",
-    localisation: "Europe",
-    population: "39 K",
-    superficie: "2.02 km²"
-  },
-  {
-    type: "Pays",
-    emoji: "🤠",
     image: montenegro,
     nom: "Monténégro",
     localisation: "Europe",
@@ -872,7 +909,7 @@ const cards = [
     emoji: "🤠",
     image: russia,
     nom: "Russie",
-    localisation: "Europe, Asie",
+    localisation: "Europe et Asie",
     population: "146 M",
     superficie: "17,098,242 km²"
   },
@@ -960,12 +997,13 @@ const cards = [
   {
     type: "Pays",
     emoji: "🤠",
-    image: vatican,
-    nom: "Vatican",
+    image: macedonia,
+    nom: "Macédoine du Nord",
     localisation: "Europe",
-    population: "800",
-    superficie: "0.44 km²"
+    population: "2.1 M",
+    superficie: "25,713 km²"
   },
+  
 
 
 
