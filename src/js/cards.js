@@ -106,6 +106,20 @@ import switzerland from '../assets/images/cards/country/switzerland.jpeg';
 import ukraine from '../assets/images/cards/country/ukraine.jpg';
 import unitedKingdom from '../assets/images/cards/country/united-kingdom.jpg';
 import sanMarino from '../assets/images/cards/country/san-marino.jpg';
+// south america
+import argentina from '../assets/images/cards/country/argentina.jpeg';
+import brazil from '../assets/images/cards/country/brazil.jpg';
+import chile from '../assets/images/cards/country/chile.jpg';
+import colombia from '../assets/images/cards/country/colombia.jpg';
+import ecuador from '../assets/images/cards/country/ecuador.jpg';
+import guyana from '../assets/images/cards/country/guyana.jpg';
+import paraguay from '../assets/images/cards/country/paraguay.jpg';
+import peru from '../assets/images/cards/country/peru.jpg';
+import suriname from '../assets/images/cards/country/suriname.jpg';
+import uruguay from '../assets/images/cards/country/uruguay.jpg';
+import venezuela from '../assets/images/cards/country/venezuela.jpg';
+import bolivia from '../assets/images/cards/country/bolivia.jpg';
+
 
 
 
@@ -616,6 +630,9 @@ const cards = [
     population: "11.3 K",
     superficie: "26 km²"
   },
+
+
+  // europe
   {
     type: "Pays",
     emoji: "🤠",
@@ -1003,6 +1020,119 @@ const cards = [
     population: "2.1 M",
     superficie: "25,713 km²"
   },
+
+
+  // south america
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: argentina,
+    nom: "Argentine",
+    localisation: "Amérique du Sud",
+    population: "45 M",
+    superficie: "2,780,400 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: brazil,
+    nom: "Brésil",
+    localisation: "Amérique du Sud",
+    population: "213 M",
+    superficie: "8,515,767 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: chile,
+    nom: "Chili",
+    localisation: "Amérique du Sud",
+    population: "19 M",
+    superficie: "756,102 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: colombia,
+    nom: "Colombie",
+    localisation: "Amérique du Sud",
+    population: "51 M",
+    superficie: "1,141,748 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: ecuador,
+    nom: "Équateur",
+    localisation: "Amérique du Sud",
+    population: "17.4 M",
+    superficie: "283,561 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: peru,
+    nom: "Pérou",
+    localisation: "Amérique du Sud",
+    population: "33 M",
+    superficie: "1,285,216 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: venezuela,
+    nom: "Venezuela",
+    localisation: "Amérique du Sud",
+    population: "28 M",
+    superficie: "916,445 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: uruguay,
+    nom: "Uruguay",
+    localisation: "Amérique du Sud",
+    population: "3.5 M",
+    superficie: "176,215 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: paraguay,
+    nom: "Paraguay",
+    localisation: "Amérique du Sud",
+    population: "7.1 M",
+    superficie: "406,752 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: bolivia,
+    nom: "Bolivie",
+    localisation: "Amérique du Sud",
+    population: "11.6 M",
+    superficie: "1,098,581 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: suriname,
+    nom: "Suriname",
+    localisation: "Amérique du Sud",
+    population: "0.6 M",
+    superficie: "163,821 km²"
+  },
+  {
+    type: "Pays",
+    emoji: "🤠",
+    image: guyana,
+    nom: "Guyana",
+    localisation: "Amérique du Sud",
+    population: "0.8 M",
+    superficie: "214,969 km²"
+  },
+  
+  
   
 
 
