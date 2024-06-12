@@ -72,6 +72,7 @@ import halfStar from '../assets/images/stars/half.webp';
 
 // Certifications links
 import certifiedPromptEngineer from '../assets/images/certifications/prompt-engineer.webp';
+import certifiedReactDeveloper from '../assets/images/certifications/react-developer.webp';
 import certifiedCsiLinuxInvestigator from '../assets/images/certifications/csi-linux-investigator.webp';
 import cocLinux from '../assets/images/certifications/coc-linux.webp';
 import justJavaScript from '../assets/images/certifications/just-javascript.webp';
@@ -183,7 +184,7 @@ function Home() {
                     <h3 className="home-skills-titles">{t('skills.dev')}</h3>
                     <div className="home-skills-category">
                         <TechnoIcon src={reactLogo} alt="React.js" name="React.js"
-                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={clearStar} />
+                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={halfStar} />
                         <TechnoIcon src={vuejsLogo} alt="Vue.js" name="Vue.js"
                         star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={clearStar} star5={clearStar} />
                         <TechnoIcon src={nuxtLogo} alt="Nuxt.js" name="Nuxt.js"
@@ -268,6 +269,7 @@ function Home() {
                     <h2 className="home-certifications-title">{t('certifications.certif')}</h2>
                     <div className="home-certifications-certifs">
                         <PaperProof src={certifiedPromptEngineer} alt="Certified Prompt Engineer kitsuiwebster Raphaël Martin"/>
+                        <PaperProof src={certifiedReactDeveloper} alt="Certified React Developer kitsuiwebster Raphaël Martin"/>
                         <PaperProof src={certifiedCsiLinuxInvestigator} alt="Certified CSI Linux Investigator kitsuiwebster Raphaël Martin"/>
                     </div>
                     <h2 className="home-certifications-subtitle">{t('certifications.certificate')}</h2>
