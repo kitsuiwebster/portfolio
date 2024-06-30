@@ -16,6 +16,7 @@
         "audio": "오디오"
     },
     "certifications": {
+        "title": "직업 타이틀",
         "certif": "인증",
         "certificate": "이수 증명서"
     }

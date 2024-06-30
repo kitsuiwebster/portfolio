@@ -16,6 +16,7 @@
         "audio": "Audio"
     },
     "certifications": {
+        "title": "Professional Titles",
         "certif": "Certifications",
         "certificate": "Certificates of Completion"
     }

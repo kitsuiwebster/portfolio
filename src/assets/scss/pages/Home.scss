@@ -149,7 +149,7 @@
             text-align: center;
         }
 
-        &-certifs, &-certificates {
+        &-certifs, &-certificates, &-professional-title {
             display: flex;
             margin-bottom: 3rem;
             justify-content: center;
@@ -235,7 +235,7 @@
 
         &-certifications {
 
-            &-certifs, &-certificates {
+            &-certifs, &-certificates, &-professional-title {
                 flex-direction: column;
             }
         }
@@ -269,7 +269,7 @@
             margin: 0 0 7rem 0;
         }
 
-        &-certifs, &-certificates {
+        &-certifs, &-certificates, &-professional-title {
             width: 60%;
         }
     }

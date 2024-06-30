@@ -16,6 +16,7 @@
         "audio": "オーディオ"
     },
     "certifications": {
+        "title": "職業タイトル",
         "certif": "認定",
         "certificate": "修了証書"
     }

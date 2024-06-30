@@ -76,6 +76,9 @@ import certifiedReactDeveloper from '../assets/images/certifications/react-devel
 import certifiedCsiLinuxInvestigator from '../assets/images/certifications/csi-linux-investigator.webp';
 import cocLinux from '../assets/images/certifications/coc-linux.webp';
 import justJavaScript from '../assets/images/certifications/just-javascript.webp';
+import systemAndNetworksTech from '../assets/images/certifications/systems-and-networks-tech.png';
+import webItegratorAndDeveloper from '../assets/images/certifications/web-integrator-and-developer.png';
+import graviteeCertified from '../assets/images/certifications/gravitee-certified.png';
 
 
 function copyDiscordUsername() {
@@ -266,16 +269,22 @@ function Home() {
                 </section>
 
                 <section className="home-certifications">
+                    <h2 className="home-certifications-title">{t('certifications.title')}</h2>
+                    <div className="home-certifications-professional-title">
+                        <PaperProof date="2022-11-21" src={systemAndNetworksTech} alt="Systems and networks technician (cybersecurity option) kitsuiwebster Raphaël Martin"/>
+                        <PaperProof date="2024-04-19" src={webItegratorAndDeveloper} alt="Web Integrator and Developer kitsuiwebster Raphaël Martin"/>
+                    </div>
                     <h2 className="home-certifications-title">{t('certifications.certif')}</h2>
                     <div className="home-certifications-certifs">
-                        <PaperProof src={certifiedPromptEngineer} alt="Certified Prompt Engineer kitsuiwebster Raphaël Martin"/>
-                        <PaperProof src={certifiedReactDeveloper} alt="Certified React Developer kitsuiwebster Raphaël Martin"/>
-                        <PaperProof src={certifiedCsiLinuxInvestigator} alt="Certified CSI Linux Investigator kitsuiwebster Raphaël Martin"/>
+                        <PaperProof date="2023-08-30" src={certifiedPromptEngineer} alt="Certified Prompt Engineer kitsuiwebster Raphaël Martin"/>
+                        <PaperProof date="2024-06-11" src={certifiedReactDeveloper} alt="Certified React Developer kitsuiwebster Raphaël Martin"/>
+                        <PaperProof date="2023-08-21" src={certifiedCsiLinuxInvestigator} alt="Certified CSI Linux Investigator kitsuiwebster Raphaël Martin"/>
+                        <PaperProof date="2024-06-26" src={graviteeCertified} alt="Gravitee.io Certified kitsuiwebster Raphaël Martin"/>
                     </div>
                     <h2 className="home-certifications-subtitle">{t('certifications.certificate')}</h2>
                     <div className="home-certifications-certificates">
-                        <PaperProof src={cocLinux} alt="Certificate of Completion General Linux Administration kitsuiwebster Raphaël Martin"/>
-                        <PaperProof src={justJavaScript} alt="Certificate of Completion Just JavaScript kitsuiwebster Raphaël Martin"/>
+                        <PaperProof date="2023-07-02" src={cocLinux} alt="Certificate of Completion General Linux Administration kitsuiwebster Raphaël Martin"/>
+                        <PaperProof date="2023-01-03" src={justJavaScript} alt="Certificate of Completion Just JavaScript kitsuiwebster Raphaël Martin"/>
                     </div>
                 </section>
 
