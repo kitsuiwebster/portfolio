@@ -1,16 +1,16 @@
 .techno-icon {
     margin: 0.7rem 0;
-    padding: 0 1.85rem;
+    padding: 0 0.5rem;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
     min-width: 5rem;
     min-height: 7.3rem;
-    width: 10%;
+    width: 1%;
   
     &-image {
-        width: 6rem;
+        width: 3rem;
         height: auto;
         margin-bottom: 5px;
         transition: transform 0.2s;
@@ -21,11 +21,11 @@
     }
   
     &-name {
-        font-size: 1rem;
+        font-size: 0.8rem;
         color: #000000;
         min-width: 7rem;
         text-align: center;
-        margin-bottom: 0.5rem;
+        margin: 0;
     }
 
     &-star-container {
@@ -33,7 +33,7 @@
     }
 
     &-star {
-        width: 1rem;
+        width: 0.7rem;
     }
 
     .dark & {
@@ -41,7 +41,7 @@
         &-image {
             background-color: white;
             padding: 0.5rem;
-            border-radius: 1rem;
+            border-radius: 0.5rem;
             box-shadow: 0px 0px 15px 2px rgba(255, 255, 255, 0.425);
         }
 

@@ -64,6 +64,12 @@ import nestLogo from '../assets/images/technos/nest.webp';
 import geminiLogo from '../assets/images/technos/gemini.webp';
 import vuejsLogo from '../assets/images/technos/vuejs.png';
 import nuxtLogo from '../assets/images/technos/nuxt.png';
+import tailwindLogo from '../assets/images/technos/tailwind.png';
+import kubernetesLogo from '../assets/images/technos/kubernetes.png';
+import keycloakLogo from '../assets/images/technos/keycloak.png';
+import graviteeLogo from '../assets/images/technos/gravitee.png';
+import rustLogo from '../assets/images/technos/rust.png';
+import angularLogo from '../assets/images/technos/angular.png';
 
 // Stars
 import yellowStar from '../assets/images/stars/yellow.webp';
@@ -177,29 +183,41 @@ function Home() {
                         <TechnoIcon src={sassLogo} alt="Sass" name="Sass ❤️"
                         star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={yellowStar} />
                         <TechnoIcon src={jsLogo} alt="JavaScript" name="JavaScript"
-                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={clearStar} star5={clearStar} />
+                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={halfStar} star5={clearStar} />
                         <TechnoIcon src={tsLogo} alt="TypeScript" name="TypeScript"
                         star1={yellowStar} star2={yellowStar} star3={halfStar} star4={clearStar} star5={clearStar} />
+                        <TechnoIcon src={rustLogo} alt="Rust" name="Rust"
+                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={clearStar} star5={clearStar} />
                         <TechnoIcon src={pythonLogo} alt="Python" name="Python"
-                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={halfStar} star5={clearStar} />
+                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={clearStar} star5={clearStar} />
                     </div>
 
                     <h3 className="home-skills-titles">{t('skills.dev')}</h3>
                     <div className="home-skills-category">
                         <TechnoIcon src={reactLogo} alt="React.js" name="React.js"
-                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={halfStar} />
+                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={clearStar} />
+                        <TechnoIcon src={angularLogo} alt="Angular" name="Angular"
+                        star1={yellowStar} star2={yellowStar} star3={halfStar} star4={clearStar} star5={clearStar} />
                         <TechnoIcon src={vuejsLogo} alt="Vue.js" name="Vue.js"
-                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={clearStar} star5={clearStar} />
+                        star1={yellowStar} star2={yellowStar} star3={halfStar} star4={clearStar} star5={clearStar} />
                         <TechnoIcon src={nuxtLogo} alt="Nuxt.js" name="Nuxt.js"
-                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={clearStar} star5={clearStar} />
+                        star1={yellowStar} star2={yellowStar} star3={halfStar} star4={clearStar} star5={clearStar} />
+                        <TechnoIcon src={tailwindLogo} alt="Tailwind CSS" name="Tailwind CSS"
+                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={halfStar} star5={clearStar} />
                         <TechnoIcon src={nodeLogo} alt="Node.js" name="Node.js"
                         star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={clearStar} />
                         <TechnoIcon src={nestLogo} alt="NestJS" name="NestJS"
                         star1={yellowStar} star2={yellowStar} star3={halfStar} star4={clearStar} star5={clearStar} />
+                    </div>
+
+                    <h3 className="home-skills-titles">{t('skills.tools')}</h3>
+                    <div className="home-skills-category">
                         <TechnoIcon src={gitLogo} alt="Git" name="Git"
                         star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={halfStar} />
                         <TechnoIcon src={vscodeLogo} alt="VS Code" name="VS Code"
                         star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={halfStar} />
+                        <TechnoIcon src={figmaLogo} alt="Figma" name="Figma"
+                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={clearStar} star5={clearStar} />
                     </div>
 
                     <h3 className="home-skills-titles">{t('skills.db')}</h3>
@@ -210,12 +228,22 @@ function Home() {
                         star1={yellowStar} star2={yellowStar} star3={halfStar} star4={clearStar} star5={clearStar} />
                     </div>
 
+                    <h3 className="home-skills-titles">{t('skills.archi')}</h3>
+                    <div className="home-skills-category">
+                        <TechnoIcon src={kubernetesLogo} alt="Kubernetes" name="Kubernetes"
+                        star1={yellowStar} star2={yellowStar} star3={halfStar} star4={clearStar} star5={clearStar} />
+                        <TechnoIcon src={graviteeLogo} alt="Gravitee" name="Gravitee"
+                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={halfStar} />                  
+                        <TechnoIcon src={keycloakLogo} alt="Keycloak" name="Keycloak"
+                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={clearStar} star5={clearStar} />
+                    </div>
+
                     <h3 className="home-skills-titles">{t('skills.auto')}</h3>
                     <div className="home-skills-category">
                         <TechnoIcon src={n8nLogo} alt="N8n" name="N8n"
                         star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={clearStar} />
                         <TechnoIcon src={noderedLogo} alt="Node-RED" name="Node-RED"
-                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={clearStar} />
+                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={halfStar} />
                     </div>
 
                     <h3 className="home-skills-titles">{t('skills.sys')}</h3>
@@ -251,8 +279,6 @@ function Home() {
                         star1={yellowStar} star2={yellowStar} star3={halfStar} star4={clearStar} star5={clearStar} />
                         <TechnoIcon src={obsLogo} alt="OBS" name="OBS"
                         star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={yellowStar} />
-                        <TechnoIcon src={figmaLogo} alt="Figma" name="Figma"
-                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={clearStar} star5={clearStar} />
                     </div>
 
                     <h3 className="home-skills-titles">{t('skills.audio')}</h3>

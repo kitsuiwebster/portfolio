@@ -10,6 +10,8 @@
         "lang": "Languages",
         "db": "Databases",
         "dev": "Development",
+        "tools": "Development Tools",
+        "archi": "Architecture",
         "auto": "Automation",
         "sys": "System",
         "visual": "Visual",
