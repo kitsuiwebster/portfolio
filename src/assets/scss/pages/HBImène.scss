@@ -1,0 +1,142 @@
+.hb-container {
+    text-align: center;
+    background: linear-gradient(135deg, #01a3fa, #00dbac);
+    min-height: 100vh;
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Arial', sans-serif;
+    animation: gradientAnimation 5s ease infinite;
+}
+
+
+.hb-title {
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: titleAnimation 2s ease-in-out infinite;
+}
+
+.hb-message {
+    font-size: 1.5em;
+    color: #fff;
+    margin-bottom: 30px;
+    animation: messageAnimation 2s ease-in-out infinite;
+}
+
+.hb-button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #00b4db;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+        background-color: #0096c7;
+        transform: scale(1.1);
+    }
+}
+
+.hb-present {
+    margin-top: 30px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hb-present-image {
+    max-width: 60%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: presentAnimation 2s ease-in-out infinite;
+    margin-top: 50px;
+}
+
+.hb-present-details {
+    list-style-type: none;
+    animation: detailsAnimation 2s ease-in-out infinite;
+    background: linear-gradient(90deg, #ffffff, #d4fff6);
+    border-radius: 20px;
+    padding: 40px 0;
+    margin: 100px 300px 0 300px;
+}
+
+.hb-present-details li {
+    font-size: 1.2em;
+    color: #333333;
+    padding: 10px 5px;
+    animation: fadeInUp 1s ease-in-out;
+    
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes titleAnimation {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes messageAnimation {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes presentAnimation {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes detailsAnimation {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
