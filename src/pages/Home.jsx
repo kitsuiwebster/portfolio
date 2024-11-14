@@ -75,6 +75,7 @@ import flowiseLogo from '../assets/images/technos/flowise.svg';
 import premiereproLogo from '../assets/images/technos/premiere-pro.png';
 import csharpLogo from '../assets/images/technos/c-sharp.png';
 import mysqlLogo from '../assets/images/technos/mysql.png';
+import insomniaLogo from '../assets/images/technos/insomnia.png';
 
 // Stars
 import yellowStar from '../assets/images/stars/yellow.webp';
@@ -225,8 +226,10 @@ function Home() {
                         star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={yellowStar} star5={halfStar} />
                         <TechnoIcon src={figmaLogo} alt="Figma" name="Figma"
                         star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={clearStar} star5={clearStar} />
-                         <TechnoIcon src={unityLogo} alt="Unity" name="Unity"
+                        <TechnoIcon src={unityLogo} alt="Unity" name="Unity"
                         star1={yellowStar} star2={yellowStar} star3={halfStar} star4={clearStar} star5={clearStar} />
+                        <TechnoIcon src={insomniaLogo} alt="Insomnia" name="Insomnia"
+                        star1={yellowStar} star2={yellowStar} star3={yellowStar} star4={halfStar} star5={clearStar} />
                     </div>
 
                     <h3 className="home-skills-titles">{t('skills.db')}</h3>
